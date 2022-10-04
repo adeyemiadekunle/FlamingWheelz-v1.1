@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.main`
-position: relative;
-margin-top: 70px;
+
+
 
 
 &::-webkit-scrollbar {
     display: block;
     width: 0.3em;
-    z-index: 1;
+    /* z-index: 1; */
   }
 &::-webkit-scrollbar-track {
     margin-top: 0.5rem;

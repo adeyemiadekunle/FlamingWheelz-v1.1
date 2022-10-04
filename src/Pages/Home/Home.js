@@ -8,10 +8,12 @@ import {
   Btncontainer,
   Text,
   Links,
-  NewExpCon,
-  NewExpHead,
+  AboutCon,
+  Col,
   Row,
-  NewExpH5,
+  AboutTextCon,
+  AboutH5,
+  AboutText,
   NFTContainer,
   NFTTextCon,
   NFTText,
@@ -19,12 +21,31 @@ import {
   CommunityHead,
   CommunityH5,
   Patner,
+  KleverNFT,
 } from './styles';
 import Card from '../../Component/Card/Card';
-import { Card2 } from '../../Component/Card/Card';
 import Sample from '../../Image/NewExperince/image-sample.jpg';
 
 function Home() {
+  const Abouts = [
+    {
+      id: 1,
+      title: ' A fantasy RPG Mixed',
+      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+    },
+    {
+      id: 2,
+      title: 'Genesis Edition',
+      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+    },
+
+    {
+      id: 3,
+      title: 'Commemoratic Tournament',
+      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+    },
+  ];
+
   return (
     <>
       <HomeContainer>
@@ -35,7 +56,7 @@ function Home() {
               <br />
               Racing Game
             </Heading>
-            <Heading h3>Redefing Web3 Gaming Experince</Heading>
+            <Heading h4>Redefing Web3 Gaming Experince</Heading>
             <Text>
               {' '}
               A Hyper Realistic Racing Games developed by{' '}
@@ -53,37 +74,28 @@ function Home() {
           </Herotext>
         </Hero>
 
-        {/* New Experience Section */}
-        <NewExpCon>
-          <NewExpHead>
-            <div>
-              <NewExpH5> DISCOVER ALL OUR</NewExpH5>
-              <h2>
-                {' '}
-                Maps and Streets Experience!
-              </h2>
-            </div>
-            <div>
-              <div>See more</div>
-            </div>
-          </NewExpHead>
+        {/* About FlamingWheelz Section */}
+        <AboutCon>
           <Row>
-            <Card
-              image={Sample}
-              title="Welcome to FlamingWheelz"
-              text="Redefing Gaming Experince"
-              button="Play"
-              latest="LATEST"
-            ></Card>
-            <Card
-              image={Sample}
-              title="Hypatia Games New NFT"
-              text="Taking it to the greater height"
-              button="Play"
-              latest="LATEST"
-            ></Card>
+            <AboutTextCon>
+              <AboutH5> OVERVIEW</AboutH5>
+              <Heading h3>What is FlamingWheelz?</Heading>
+              <AboutText>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Repellat, quaerat accusamus fuga ratione
+                expedita cumque id dolorem commodi fugiat porro sunt
+                saepe harum illum, distinctio, dolores repudiandae
+                voluptas iusto architecto.
+              </AboutText>
+              <Button>Join Us</Button>
+            </AboutTextCon>
+            <Col>
+              {Abouts.map((about) => (
+                <Card  key={about.id} title={about.title} text={about.text}/>
+              ))}
+            </Col>
           </Row>
-        </NewExpCon>
+        </AboutCon>
 
         {/* NFT Section */}
         <NFTContainer>
@@ -92,50 +104,52 @@ function Home() {
             <NFTText>
               Over 4K NFTs are available at the moment to play.
               <br />
-              Check out the <Links as="a">
+              Check out our <Links as="a">
                 Genesis Collection
               </Links>{' '}
+              on Klever<KleverNFT>NFT </KleverNFT>
               and turn your NFT in life.
             </NFTText>
-            <Button>Explore NFT Collections</Button>
+            <Button
+              as="a"
+              href="https://www.klevernft.com/launchpad/FWZ-COMING"
+            >
+              Explore NFT Collections
+            </Button>
           </NFTTextCon>
         </NFTContainer>
-         
-           {/*  The Community */}
-         
+
+        {/*  The Community */}
+
         <Community>
           <CommunityHead>
             <div>
               <CommunityH5> COMMUNITY</CommunityH5>
-              <h2>
-                LATEST NEWS
-              </h2>
+              <h2>LATEST NEWS</h2>
             </div>
             <div>
               <div>Read more</div>
             </div>
           </CommunityHead>
           <Row>
-            <Card2
+            <div
               image={Sample}
               title="Welcome to FlamingWheelz"
               text="Redefing Gaming Experince"
               latest="LATEST"
-            ></Card2>
-            <Card2
+            ></div>
+            <div
               image={Sample}
               title="Hypatia Games New NFT"
               text="Taking it to the greater height"
               latest="LATEST"
-            ></Card2>
+            ></div>
           </Row>
         </Community>
-        {/* The Patner */}
-      
-      <Patner>
-        
-      </Patner>
 
+        {/* The Patner */}
+
+        <Patner></Patner>
       </HomeContainer>
     </>
   );

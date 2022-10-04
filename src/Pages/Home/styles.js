@@ -1,14 +1,15 @@
 import styled, { css } from 'styled-components';
 import HeroImage from '../../Image/Hero/Hero-img.jpg';
+import PlayNFT from '../../Image/PlayNFT/Play-NFT.jpg';
 
 export const HomeContainer = styled.div``;
 
 // Hero Section
 
 export const Hero = styled.div`
-  height: 600px;
+  height: 700px;
   width: 100%;
-  background-image: linear-gradient( 
+  background-image: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.8)
     ),
@@ -17,15 +18,13 @@ export const Hero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* display: flex; */
-  /* justify-content: left; */
-  /* align-items:center; */
+  margin-top: -70px;
 `;
 
 export const Herotext = styled.div`
   text-align: center;
   position: absolute;
-  top: 18%;
+  top: 30%;
   left: 8%;
   color: white;
 `;
@@ -34,33 +33,43 @@ export const Heading = styled.h1`
   font-size: 4rem;
   text-align: left;
   font-weight: bold;
-  /* letter-spacing: 5px; */
   color: white;
 
   ${(props) =>
-    props.h3 &&
+    props.h4 &&
     css`
       padding-top: 20px;
       font-size: 1rem;
+      padding-left: 2px;
     `}
 
   ${(props) =>
     props.h2 &&
     css`
+      padding-top: 20px;
+      font-size: 2.5rem;
+    `}
+
+
+    ${(props) =>
+    props.h3 &&
+    css`
+      padding-top: 20px;
       font-size: 2rem;
+      color: black;
     `}
 `;
 
 export const HeroButton = styled.button`
-  background: ${(props) => props.theme.red};
+  background: red;
   border-radius: 6px;
-  border: 2px solid ${(props) => props.theme.red};
-  color: ${(props) => props.theme.color};
+  border: 2px solid red;
+  color: white;
   padding: 1em 1.5em;
   width: 150px;
 
   &:hover {
-    border: 2px solid #ffffff;
+    border: 2px solid white;
     transition: 0s;
     cursor: pointer;
   }
@@ -73,7 +82,7 @@ export const HeroButton = styled.button`
       border: 2px solid white;
 
       &:hover {
-        border: 2px solid #ff0033;
+        border: 2px solid red;
       }
     `}
 `;
@@ -82,10 +91,10 @@ export const HeroButton = styled.button`
 export const Button = styled.button`
   margin-top: 10px;
   padding: 10px 50px;
-  background: ${(props) => props.theme.red};
+  background: red;
   border-radius: 20px;
-  border: ${(props) => props.theme.red};
-  color: ${props=> props.theme.color};
+  border: red;
+  color: white;
 
   :hover {
     opacity: 0.8;
@@ -95,8 +104,8 @@ export const Button = styled.button`
     props.primary &&
     css`
       background: transparent;
-      color: ${(props) => props.theme.red};
-      border: 2px solid ${(props) => props.theme.red};
+      color: red;
+      border: 2px solid red;
 
       &:hover {
         opacity: 0.8;
@@ -109,6 +118,7 @@ export const Btncontainer = styled.div`
   display: flex;
   gap: 40px;
   justify-content: left;
+  padding-left: 3px;
 `;
 
 export const Text = styled.p`
@@ -116,58 +126,70 @@ export const Text = styled.p`
   width: 600px;
   text-align: left;
   line-height: 1.4rem;
-  color:${props=>props.theme.color}
+  color: white;
+  padding-left: 3px;
 `;
 
 export const Links = styled.a`
-  color: Orange;
+  color: orange;
   font-weight: bold;
 `;
 
-// Latest Map Section
+// About FlamingWheelz Section
 
-export const NewExpCon = styled.div`
-  margin: 40px 30px 40px 30px;
-  padding: 0 20px;
-  display: flex;
-  padding: 20px 60px;
-  justify-content: space-between;
-  flex-direction: column;
- 
+export const AboutCon = styled.div`
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid green;
 `;
 
-export const NewExpHead = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  line-height: 2rem;
- 
-`;
-
-export const NewExpH5 = styled.h5`
-  color: ${(props) => props.theme.red};
+export const AboutTextCon = styled.div`
+width: 50%;
+margin-top: -300px;
 
 `;
+
+export const AboutH5 = styled.h5`
+  color: red;
+`;
+
+
+export const AboutText = styled.p`
+line-height: 1.5rem;
+padding-top: 20px;
+padding-bottom: 30px;
+`
 
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-
+  align-items: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
 `;
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+ 
+
+`
 
 // Play with your NFT Section
 
 export const NFTContainer = styled.div`
   height: 600px;
-  width: 100%;
+  background: black;
   background-image: linear-gradient(
+      to right,
       rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
     ),
-    url(${HeroImage});
+    url(${PlayNFT});
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,24 +201,30 @@ export const NFTTextCon = styled.div`
   text-align: left;
   position: absolute;
   top: 30%;
-  right: 8%;
+  left: 8%;
   color: white;
 `;
 
 export const NFTText = styled(Text)`
   width: 500px;
   padding: 10px 0;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
 `;
 
+export const KleverNFT = styled.span`
+  color: rgb(160, 57, 194);
+`;
 // The Cumminity
 
 export const Community = styled.div`
-margin: 40px 30px 40px 30px;
- padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
   display: flex;
-  padding: 20px 60px;
   justify-content: space-between;
   flex-direction: column;
+  border: 1px solid red;
 `;
 
 export const CommunityHead = styled.div`
@@ -205,18 +233,17 @@ export const CommunityHead = styled.div`
   justify-content: space-between;
   margin-bottom: 40px;
   line-height: 2rem;
+  border: 1px solid green;
 `;
 
 export const CommunityH5 = styled.h5`
-  color: ${(props) => props.theme.red};
+  color: red;
 `;
-
 
 // The Patner
 
- export const Patner = styled.div`
- width: 100%;
- height: 400px;
- border: 1px solid green;
- 
- ` 
+export const Patner = styled.div`
+  width: 100%;
+  height: 400px;
+  border: 1px solid green;
+`;

@@ -5,7 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: ${props=> props.theme.dark}
+    color: black;
   }
 
   @media (max-width: 1080px) {
@@ -21,7 +21,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.background.primary};
+    background: white;
       
   }
 
