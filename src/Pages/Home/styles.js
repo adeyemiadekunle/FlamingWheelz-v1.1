@@ -8,6 +8,7 @@ export const Row = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+
   /* flex-wrap: wrap; */
 `;
 export const Col = styled.div`
@@ -61,7 +62,7 @@ export const HeroHeading = styled.h1`
 export const HeroButton = styled.button`
   background: red;
   border-radius: 6px;
-  border: 2px solid red;
+  border: 2px solid #ff0033;
   color: white;
   padding: 1em 1.5em;
   width: 150px;
@@ -80,7 +81,7 @@ export const HeroButton = styled.button`
       border: 2px solid white;
 
       &:hover {
-        border: 2px solid red;
+        border: 2px solid #ff0033;
       }
     `}
 `;
@@ -91,7 +92,7 @@ export const Button = styled.button`
   padding: 10px 50px;
   background: red;
   border-radius: 20px;
-  border: red;
+  border: #ff0033;
   color: white;
 
   :hover {
@@ -103,7 +104,7 @@ export const Button = styled.button`
     css`
       background: transparent;
       color: red;
-      border: 2px solid red;
+      border: 2px solid #ff0033;
 
       &:hover {
         opacity: 0.8;
@@ -135,7 +136,6 @@ export const Links = styled.a`
 `;
 
 // About FlamingWheelz Section
-
 export const AboutCon = styled.div`
   padding: 40px 20px;
   max-width: 1200px;
@@ -144,7 +144,6 @@ export const AboutCon = styled.div`
 
 export const AboutTextCon = styled.div`
   width: 50%;
-  margin-top: -300px;
 `;
 
 export const AboutHeading = styled.h2`
@@ -153,7 +152,8 @@ export const AboutHeading = styled.h2`
   color: black;
 `;
 export const AboutH5 = styled.h5`
-  color: red;
+  color: #ff0033;
+  font-size: 1rem;
 `;
 
 export const AboutText = styled.p`
@@ -174,8 +174,8 @@ export const NFTContainer = styled.div`
       rgba(0, 0, 0, 0)
     ),
     url(${PlayNFT});
-  background-color: white;
-  background-position: center;
+  /* background-color: white; */
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -207,7 +207,6 @@ export const KleverNFT = styled.span`
 `;
 
 // The Cummunity
-
 export const Community = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -226,14 +225,46 @@ export const CommunityHead = styled.div`
 `;
 
 export const CommunityH5 = styled.h5`
-  color: red;
+  color: #ff0033;
+  font-size: 1rem;
 `;
 
 
 // The Patner
-
 export const Patner = styled.div`
   width: 100%;
   height: 400px;
-  border: 1px solid green;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+`;
+
+export const PatnerCon = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const PatnerList = styled.img`
+  width: 120px;
+  height: 100%;
+  margin: 20px;
+`;
+
+export const PatnerListcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+`;
+
+export const PatnerHeading = styled.h5`
+  color: #ff0033;
+  font-size: 1rem;
 `;

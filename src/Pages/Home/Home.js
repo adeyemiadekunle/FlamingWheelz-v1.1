@@ -1,4 +1,6 @@
 import {
+  Col,
+  Row,
   HomeContainer,
   Hero,
   Herotext,
@@ -9,8 +11,6 @@ import {
   Text,
   Links,
   AboutCon,
-  Col,
-  Row,
   AboutTextCon,
   AboutHeading,
   AboutH5,
@@ -19,15 +19,26 @@ import {
   NFTHeading,
   NFTTextCon,
   NFTText,
+  KleverNFT,
   Community,
   CommunityHead,
   CommunityH5,
   Patner,
-  KleverNFT,
+  PatnerCon,
+  PatnerList,
+  PatnerHeading,
+  PatnerListcon,
+  
 } from './styles';
 import Card from '../../Component/Card/Card';
 import Sample from '../../Image/NewExperince/image-sample.jpg';
 import NewsCard from '../../Component/News/NewCard';
+import Klever from '../../Image/Patner/Klever.png';
+import KleverKid from '../../Image/Patner/KleverKid.png';
+import Unreal from '../../Image/Patner/Unreal.png';
+import Avax from '../../Image/Patner/Avax.png';
+import Dragon from '../../Image/Patner/Dragon.png';
+import EpicGame from '../../Image/Patner/Epicgame.png';
 
 function Home() {
   const Abouts = [
@@ -49,9 +60,19 @@ function Home() {
     },
   ];
 
+  const Patners = [
+    { id: 0, img: EpicGame, title: 'EpicGame' },
+    { id: 1, img: Klever, title: 'Klever' },
+    { id: 2, img: Unreal, title: 'Unreal' },
+    { id: 3, img: Avax, title: 'Avax' },
+    { id: 4, img: Dragon, title: 'Dragon' },
+    { id: 5, img: KleverKid, title: 'KleverKid' },
+  ];
+
   return (
     <>
       <HomeContainer>
+        {/* Hero */}
         <Hero>
           <Herotext>
             <HeroHeading>
@@ -130,8 +151,7 @@ function Home() {
           </NFTTextCon>
         </NFTContainer>
 
-        {/*  The Community */}
-
+        {/*  The Community New */}
         <Community>
           <CommunityHead>
             <div>
@@ -150,8 +170,23 @@ function Home() {
         </Community>
 
         {/* The Patner */}
-
-        <Patner></Patner>
+        <Patner>
+          <PatnerCon>
+            <div>
+              <PatnerHeading>Our Partner</PatnerHeading>
+            </div>
+            <PatnerListcon>
+              {Patners.map((patner) => (
+                <PatnerList
+                  key={patner.id}
+                  src={patner.img}
+                  alt={patner.title}
+                />
+              ))}
+            </PatnerListcon>
+          </PatnerCon>
+        </Patner>
+       
       </HomeContainer>
     </>
   );

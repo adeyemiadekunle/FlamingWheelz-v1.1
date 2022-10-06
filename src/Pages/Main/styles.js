@@ -5,6 +5,7 @@ export const MainContainer = styled.main`
 
 
 
+
 &::-webkit-scrollbar {
     display: block;
     width: 0.3em;

@@ -21,7 +21,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: white;
+    background: #f3f3f3;
       
   }
 

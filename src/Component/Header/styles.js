@@ -2,29 +2,28 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.header`
-height: 70px;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
-top: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 0;
 right: 0;
 left: 0;
-z-index: 2;
-background: white;
+z-index: 2; */
+  background: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+`;
 
-`
-
-export  const Head = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-max-width: 1400px;
-margin: 0 auto;
-
-`
- 
+export const Head = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+`;
 
 export const StyledLink = styled(Link)`
   color: black;
@@ -35,7 +34,6 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     border-bottom: 1px solid #ff0033;
-    
   }
 `;
 
@@ -67,12 +65,11 @@ export const Container = styled.div`
   align-items: center;
   gap: 5px;
   padding: 5px 10px;
-  
 `;
 
 export const Img = styled.img`
   width: 200px;
 `;
 export const ImgCon = styled.div`
-padding-left: 10px;
-`
+  padding-left: 10px;
+`;
