@@ -11,7 +11,7 @@ top: 0;
 right: 0;
 left: 0;
 z-index: 2;
-background: rgba(-0 , 0, 0, 0.2);
+background: white;
 
 `
 
@@ -27,7 +27,7 @@ margin: 0 auto;
  
 
 export const StyledLink = styled(Link)`
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 5px 10px;

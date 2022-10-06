@@ -2,7 +2,7 @@ import {
   HomeContainer,
   Hero,
   Herotext,
-  Heading,
+  HeroHeading,
   HeroButton,
   Button,
   Btncontainer,
@@ -12,9 +12,11 @@ import {
   Col,
   Row,
   AboutTextCon,
+  AboutHeading,
   AboutH5,
   AboutText,
   NFTContainer,
+  NFTHeading,
   NFTTextCon,
   NFTText,
   Community,
@@ -25,12 +27,13 @@ import {
 } from './styles';
 import Card from '../../Component/Card/Card';
 import Sample from '../../Image/NewExperince/image-sample.jpg';
+import NewsCard from '../../Component/News/NewCard';
 
 function Home() {
   const Abouts = [
     {
       id: 1,
-      title: ' A fantasy RPG Mixed',
+      title: ' A Fantasy RPG Mixed',
       text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
     },
     {
@@ -51,18 +54,22 @@ function Home() {
       <HomeContainer>
         <Hero>
           <Herotext>
-            <Heading>
+            <HeroHeading>
               Multi Chain
               <br />
               Racing Game
-            </Heading>
-            <Heading h4>Redefing Web3 Gaming Experince</Heading>
+            </HeroHeading>
+            <HeroHeading heroh4>
+              Redefing Web3 Gaming Experince
+            </HeroHeading>
             <Text>
               {' '}
               A Hyper Realistic Racing Games developed by{' '}
-              <Links>Hypatia Games,</Links> graced with tournament,
-              challenge and best of all <Links>PLAY</Links> and{' '}
-              <Links>EARN</Links>{' '}
+              <Links as="a" href="">
+                Hypatia Games,
+              </Links>{' '}
+              graced with tournament, challenge and best of all{' '}
+              <Links>PLAY</Links> and <Links>EARN</Links>{' '}
             </Text>
             <Btncontainer>
               <HeroButton as="a"> Learn More</HeroButton>
@@ -79,7 +86,7 @@ function Home() {
           <Row>
             <AboutTextCon>
               <AboutH5> OVERVIEW</AboutH5>
-              <Heading h3>What is FlamingWheelz?</Heading>
+              <AboutHeading>What is FlamingWheelz?</AboutHeading>
               <AboutText>
                 Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Repellat, quaerat accusamus fuga ratione
@@ -91,7 +98,11 @@ function Home() {
             </AboutTextCon>
             <Col>
               {Abouts.map((about) => (
-                <Card  key={about.id} title={about.title} text={about.text}/>
+                <Card
+                  key={about.id}
+                  title={about.title}
+                  text={about.text}
+                />
               ))}
             </Col>
           </Row>
@@ -100,7 +111,7 @@ function Home() {
         {/* NFT Section */}
         <NFTContainer>
           <NFTTextCon>
-            <Heading h2>PLAY WITH YOUR NFTS</Heading>
+            <NFTHeading>PLAY WITH YOUR NFTS</NFTHeading>
             <NFTText>
               Over 4K NFTs are available at the moment to play.
               <br />
@@ -124,7 +135,7 @@ function Home() {
         <Community>
           <CommunityHead>
             <div>
-              <CommunityH5> COMMUNITY</CommunityH5>
+              <CommunityH5>COMMUNITY</CommunityH5>
               <h2>LATEST NEWS</h2>
             </div>
             <div>
@@ -132,18 +143,9 @@ function Home() {
             </div>
           </CommunityHead>
           <Row>
-            <div
-              image={Sample}
-              title="Welcome to FlamingWheelz"
-              text="Redefing Gaming Experince"
-              latest="LATEST"
-            ></div>
-            <div
-              image={Sample}
-              title="Hypatia Games New NFT"
-              text="Taking it to the greater height"
-              latest="LATEST"
-            ></div>
+            <NewsCard></NewsCard>
+            <NewsCard></NewsCard>
+            <NewsCard></NewsCard>
           </Row>
         </Community>
 

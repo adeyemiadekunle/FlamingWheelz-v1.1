@@ -2,10 +2,25 @@ import styled, { css } from 'styled-components';
 import HeroImage from '../../Image/Hero/Hero-img.jpg';
 import PlayNFT from '../../Image/PlayNFT/Play-NFT.jpg';
 
+// Flexbox Styling
+export const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  /* flex-wrap: wrap; */
+`;
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+`;
+
 export const HomeContainer = styled.div``;
 
 // Hero Section
-
 export const Hero = styled.div`
   height: 700px;
   width: 100%;
@@ -18,45 +33,28 @@ export const Hero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: -70px;
 `;
 
 export const Herotext = styled.div`
-  text-align: center;
-  position: absolute;
-  top: 30%;
-  left: 8%;
-  color: white;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 150px 20px;
 `;
 
-export const Heading = styled.h1`
+export const HeroHeading = styled.h1`
   font-size: 4rem;
   text-align: left;
   font-weight: bold;
   color: white;
 
   ${(props) =>
-    props.h4 &&
+    props.heroh4 &&
     css`
       padding-top: 20px;
-      font-size: 1rem;
+      font-size: 1.5rem;
       padding-left: 2px;
-    `}
-
-  ${(props) =>
-    props.h2 &&
-    css`
-      padding-top: 20px;
-      font-size: 2.5rem;
-    `}
-
-
-    ${(props) =>
-    props.h3 &&
-    css`
-      padding-top: 20px;
-      font-size: 2rem;
-      color: black;
+      padding-bottom: 10px;
     `}
 `;
 
@@ -128,6 +126,7 @@ export const Text = styled.p`
   line-height: 1.4rem;
   color: white;
   padding-left: 3px;
+  font-size: 1.2rem;
 `;
 
 export const Links = styled.a`
@@ -139,44 +138,29 @@ export const Links = styled.a`
 
 export const AboutCon = styled.div`
   padding: 40px 20px;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid green;
 `;
 
 export const AboutTextCon = styled.div`
-width: 50%;
-margin-top: -300px;
-
+  width: 50%;
+  margin-top: -300px;
 `;
 
+export const AboutHeading = styled.h2`
+  padding-top: 20px;
+  font-size: 3rem;
+  color: black;
+`;
 export const AboutH5 = styled.h5`
   color: red;
 `;
 
-
 export const AboutText = styled.p`
-line-height: 1.5rem;
-padding-top: 20px;
-padding-bottom: 30px;
-`
-
-export const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  /* flex-wrap: wrap; */
+  line-height: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 30px;
 `;
-export const Col = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
- 
-
-`
 
 // Play with your NFT Section
 
@@ -197,12 +181,18 @@ export const NFTContainer = styled.div`
   position: relative;
   margin-bottom: 50px;
 `;
-export const NFTTextCon = styled.div`
-  text-align: left;
-  position: absolute;
-  top: 30%;
-  left: 8%;
+
+export const NFTHeading = styled.h2`
+  padding-top: 20px;
+  font-size: 3rem;
   color: white;
+`;
+
+export const NFTTextCon = styled.div`
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 140px 20px;
 `;
 
 export const NFTText = styled(Text)`
@@ -215,16 +205,16 @@ export const NFTText = styled(Text)`
 export const KleverNFT = styled.span`
   color: rgb(160, 57, 194);
 `;
-// The Cumminity
+
+// The Cummunity
 
 export const Community = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border: 1px solid red;
 `;
 
 export const CommunityHead = styled.div`
@@ -233,12 +223,12 @@ export const CommunityHead = styled.div`
   justify-content: space-between;
   margin-bottom: 40px;
   line-height: 2rem;
-  border: 1px solid green;
 `;
 
 export const CommunityH5 = styled.h5`
   color: red;
 `;
+
 
 // The Patner
 
