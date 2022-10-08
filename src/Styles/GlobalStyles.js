@@ -6,21 +6,30 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+    
+
+  @media (max-width: 1200px){
+    html {
+      font-size: 94.75%;
+    }
+  }
 
    @media (max-width: 1080px) {
     html {
-      font-size: 90.75%;
+      font-size: 92.75%;
     }
   }
 
   @media (max-width: 720px) {
     html {
-      font-size: 82.5%;
+      font-size: 80.5%;
     }
   } 
 
   body {
     background: #f3f3f3;
+    margin: 0;
+    padding: 0;
     
       
   }

@@ -1,6 +1,7 @@
 import {
   Col,
   Row,
+  Button,
   HomeSection,
   HeroSection,
   HeroSectionBg,
@@ -10,14 +11,22 @@ import {
   HeroHeadingh1,
   HeroHeadingh4,
   HeroTextContainer,
-  Button,
+  HeroText,
+  HeroLink,
+  HeroBtnContainer,
+  HeroButton,
+
+ 
   Text,
   Links,
-  AboutCon,
+  AboutContainer,
   AboutTextCon,
   AboutHeading,
-  AboutH5,
+  AboutHeadingh5,
   AboutText,
+  AboutRow,
+  AboutColumn,
+
   NFTContainer,
   NFTHeading,
   NFTTextCon,
@@ -35,6 +44,7 @@ import {
   HGTText,
   HGTTextCon,
 } from './styles';
+
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
@@ -95,43 +105,28 @@ function Home() {
               Redefing Web3 Gaming Experince
             </HeroHeadingh4>
           </HeroHeadingContainer>
-
-          <HeroTextContainer>Hello</HeroTextContainer>
-          <div className="hero_btn"></div>
-
-          {/* <Herotext>
-            <HeroHeading>
-              Multi Chain
-              <br />
-              Racing Game
-            </HeroHeading>
-            <HeroHeading heroh4>
-             
-            </HeroHeading>
-            <Text>
-              {' '}
+  
+          <HeroTextContainer>
+            <HeroText>
               A Hyper Realistic Racing Games developed by{' '}
-              <Links as="a" href="">
+              <HeroLink as="a" href="">
                 Hypatia Games,
-              </Links>{' '}
+              </HeroLink>{' '}
               graced with tournament, challenge and best of all{' '}
-              <Links>PLAY</Links> and <Links>EARN</Links>{' '}
-            </Text>
-            <Btncontainer>
-              <HeroButton as="a"> Learn More</HeroButton>
-              <HeroButton primary as="a">
-                {' '}
-                Buy NFT
-              </HeroButton>
-            </Btncontainer>
-          </Herotext> */}
+              <HeroLink>PLAY</HeroLink> and <HeroLink>EARN.</HeroLink>
+            </HeroText>
+          </HeroTextContainer>
+          <HeroBtnContainer>
+               <HeroButton>BUY NFT</HeroButton>
+          </HeroBtnContainer>
         </HeroSection>
+        {/* End of Hero */}
 
         {/* About FlamingWheelz Section */}
-        <AboutCon>
-          <Row>
+        <AboutContainer>
+          <AboutRow>
             <AboutTextCon>
-              <AboutH5> OVERVIEW</AboutH5>
+              <AboutHeadingh5> OVERVIEW</AboutHeadingh5>
               <AboutHeading>What is FlamingWheelz?</AboutHeading>
               <AboutText>
                 Lorem ipsum dolor sit amet consectetur adipisicing
@@ -142,7 +137,7 @@ function Home() {
               </AboutText>
               <Button>Join Us</Button>
             </AboutTextCon>
-            <Col>
+            <AboutColumn>
               {Abouts.map((about) => (
                 <Card
                   key={about.id}
@@ -150,9 +145,10 @@ function Home() {
                   text={about.text}
                 />
               ))}
-            </Col>
-          </Row>
-        </AboutCon>
+            </AboutColumn>
+          </AboutRow>
+        </AboutContainer>
+        {/* End of About */}
 
         {/* NFT Section */}
         <NFTContainer>

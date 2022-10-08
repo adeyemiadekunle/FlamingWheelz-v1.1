@@ -2,24 +2,35 @@ import styled, { css } from 'styled-components';
 import PlayNFT from '../../Image/PlayNFT/Play-NFT.jpg';
 import HGTToken from '../../Image/HGT/HGT.png';
 
-// Flexbox Styling
-export const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+// Global Style
 
-  /* flex-wrap: wrap; */
+// Button
+export const Button = styled.button`
+  margin-top: 10px;
+  padding: 10px 50px;
+  background: red;
+  border-radius: 20px;
+  border: #ff0033;
+  color: white;
+
+  :hover {
+    opacity: 0.8;
+  }
+
+  ${(props) =>
+    props.primary &&
+    css`
+      background: transparent;
+      color: red;
+      border: 2px solid #ff0033;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    `}
 `;
-export const Col = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-`;
 
-
+// End of Global
 
 // Home Section
 export const HomeSection = styled.div`
@@ -67,50 +78,60 @@ export const HeroSectionOverlay = styled.div`
 
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
-  max-width: 1300px;
-  margin: auto;
-  border: 1px solid red;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  padding: 20px 0px;
+  padding:  0 10px;
+
 `;
 
 export const HeroHeadingh1 = styled.h1`
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: left;
   font-weight: bold;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+ 
+
+
 `;
 
 export const HeroHeadingh4 = styled.h4`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #33aaf5;
+  padding-bottom: 10px;
 `;
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
-  max-width: 1300px;
-  margin: auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin:  0 auto;
   width: 100%;
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
+
 `;
 
-
-
-
-
-
-
-
-export const Text = styled.p`
-  margin-top: 5px;
-  width: 600px;
-  text-align: left;
-  line-height: 1.4rem;
+export const HeroText = styled.div`
+  line-height: 1.5rem;
+  width: 50%;
   color: white;
-  padding-left: 3px;
-  font-size: 1.2rem;
 `;
+
+export const HeroLink = styled.span`
+  color: orange;
+  font-weight: bold;
+`;
+
+
+export const HeroBtnContainer = styled.div`
+  z-index: 1;
+  max-width: 1200px;
+  margin:  0 auto;
+  width: 100%;
+  padding: 0 10px;
+  padding-top: 40px;
+`
 
 export const HeroButton = styled.button`
   background: red;
@@ -140,47 +161,34 @@ export const HeroButton = styled.button`
     `}
 `;
 
-// Button
-export const Button = styled.button`
-  margin-top: 10px;
-  padding: 10px 50px;
-  background: red;
-  border-radius: 20px;
-  border: #ff0033;
+// End of Hero
+
+
+
+
+export const Text = styled.p`
+  margin-top: 5px;
+  width: 600px;
+  text-align: left;
+  line-height: 1.4rem;
   color: white;
-
-  :hover {
-    opacity: 0.8;
-  }
-
-  ${(props) =>
-    props.primary &&
-    css`
-      background: transparent;
-      color: red;
-      border: 2px solid #ff0033;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    `}
-`;
-
-export const Btncontainer = styled.div`
-  margin-top: 50px;
-  display: flex;
-  gap: 40px;
-  justify-content: left;
   padding-left: 3px;
+  font-size: 1.2rem;
 `;
+
+
+
 
 export const Links = styled.a`
   color: orange;
   font-weight: bold;
 `;
 
+
+
+
 // About FlamingWheelz Section
-export const AboutCon = styled.div`
+export const AboutContainer = styled.div`
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -195,7 +203,7 @@ export const AboutHeading = styled.h2`
   font-size: 3rem;
   color: black;
 `;
-export const AboutH5 = styled.h5`
+export const AboutHeadingh5 = styled.h5`
   color: #ff0033;
   font-size: 1rem;
 `;
@@ -205,6 +213,27 @@ export const AboutText = styled.p`
   padding-top: 20px;
   padding-bottom: 30px;
 `;
+
+
+export const AboutRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+`
+
+export const AboutColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+`;
+
+
+// End of About Section
+
+
 
 // Play with your NFT Section
 
@@ -332,4 +361,21 @@ export const HGTTextCon = styled.div`
 export const HGTText = styled.h2`
   font-size: 3rem;
   color: black;
+`;
+
+// Flexbox Styling
+export const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  /* flex-wrap: wrap; */
+`;
+export const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 `;
