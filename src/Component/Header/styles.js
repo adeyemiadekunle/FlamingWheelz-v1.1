@@ -26,7 +26,7 @@ export const Head = styled.div`
   margin: 0 auto;
 `;
 
-export const Top_Header = styled.div`
+export const TopHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +49,7 @@ export const ImgCon = styled.div`
 `;
 
 // The Side Menu
-export const Side_Menu_Container = styled.div`
+export const SideMenuContainer = styled.div`
   display: flex;
   flex-flow: column nowrap;
   transition: all 0.25s linear;
@@ -67,7 +67,7 @@ export const Side_Menu_Container = styled.div`
   pointer-events: none;
 `;
 
-export const Side_Menu_Header = styled.div`
+export const SideMenuHeader = styled.div`
   display: flex;
   align-items: center;
   height: 4rem;
@@ -78,7 +78,7 @@ export const Side_Menu_Header = styled.div`
  
 `;
 
-export const Side_Menu_Wrapper = styled.div`
+export const SideMenuWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -90,7 +90,7 @@ export const Side_Menu_Wrapper = styled.div`
   pointer-events: all;
 `;
 
-export const Menu_Content = styled.div`
+export const MenuContent = styled.div`
   width: 100%;
 `;
 
@@ -98,7 +98,7 @@ export const OpenMenu = styled.div`
   font-size: 1.8rem;
 `;
 
-export const Menu_Icon = styled.div`
+export const MenuIcon = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
@@ -106,7 +106,7 @@ cursor: pointer;
 position: relative;
 `
 
-export const Side_Menu_Overlay = styled.div`
+export const SideMenuOverlay = styled.div`
 height: 100vh;
 position: fixed;
 right: 0;
