@@ -1,13 +1,16 @@
 import {
   Col,
   Row,
-  HomeContainer,
-  Hero,
-  Herotext,
-  HeroHeading,
-  HeroButton,
+  HomeSection,
+  HeroSection,
+  HeroSectionBg,
+  HeroImg,
+  HeroHeadingContainer,
+  HeroSectionOverlay,
+  HeroHeadingh1,
+  HeroHeadingh4,
+  HeroTextContainer,
   Button,
-  Btncontainer,
   Text,
   Links,
   AboutCon,
@@ -28,10 +31,12 @@ import {
   PatnerList,
   PatnerHeading,
   PatnerListcon,
-  
+  HGTCon,
+  HGTText,
+  HGTTextCon,
 } from './styles';
+import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import Card from '../../Component/Card/Card';
-import Sample from '../../Image/NewExperince/image-sample.jpg';
 import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
 import KleverKid from '../../Image/Patner/KleverKid.png';
@@ -71,17 +76,37 @@ function Home() {
 
   return (
     <>
-      <HomeContainer>
+      <HomeSection>
         {/* Hero */}
-        <Hero>
-          <Herotext>
+        <HeroSection>
+          <HeroSectionBg>
+            <HeroImg src={Hero_IMG} alt="" />
+          </HeroSectionBg>
+
+          <HeroSectionOverlay></HeroSectionOverlay>
+
+          <HeroHeadingContainer>
+            <HeroHeadingh1>
+              Multi Chain
+              <br />
+              Racing Game
+            </HeroHeadingh1>
+            <HeroHeadingh4>
+              Redefing Web3 Gaming Experince
+            </HeroHeadingh4>
+          </HeroHeadingContainer>
+
+          <HeroTextContainer>Hello</HeroTextContainer>
+          <div className="hero_btn"></div>
+
+          {/* <Herotext>
             <HeroHeading>
               Multi Chain
               <br />
               Racing Game
             </HeroHeading>
             <HeroHeading heroh4>
-              Redefing Web3 Gaming Experince
+             
             </HeroHeading>
             <Text>
               {' '}
@@ -99,8 +124,8 @@ function Home() {
                 Buy NFT
               </HeroButton>
             </Btncontainer>
-          </Herotext>
-        </Hero>
+          </Herotext> */}
+        </HeroSection>
 
         {/* About FlamingWheelz Section */}
         <AboutCon>
@@ -186,8 +211,14 @@ function Home() {
             </PatnerListcon>
           </PatnerCon>
         </Patner>
-       
-      </HomeContainer>
+        {/* HGT Token */}
+        <HGTCon>
+          <HGTTextCon>
+            {' '}
+            <HGTText> WHY HGT?</HGTText>
+          </HGTTextCon>
+        </HGTCon>
+      </HomeSection>
     </>
   );
 }

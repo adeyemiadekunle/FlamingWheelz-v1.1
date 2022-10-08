@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import HeroImage from '../../Image/Hero/Hero-img.jpg';
 import PlayNFT from '../../Image/PlayNFT/Play-NFT.jpg';
+import HGTToken from '../../Image/HGT/HGT.png';
 
 // Flexbox Styling
 export const Row = styled.div`
@@ -19,44 +19,97 @@ export const Col = styled.div`
   gap: 30px;
 `;
 
-export const HomeContainer = styled.div``;
+
+
+// Home Section
+export const HomeSection = styled.div`
+  margin: auto;
+`;
 
 // Hero Section
-export const Hero = styled.div`
-  height: 700px;
-  width: 100%;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url(${HeroImage});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+export const HeroSection = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  overflow: hidden;
   position: relative;
+  min-height: 100vh;
 `;
 
-export const Herotext = styled.div`
-  max-width: 1200px;
+export const HeroSectionBg = styled.div`
+  height: 100%;
+  left: 0;
+  position: absolute;
   width: 100%;
-  margin: 0 auto;
-  padding: 150px 20px;
+  z-index: -1;
 `;
 
-export const HeroHeading = styled.h1`
+export const HeroImg = styled.img`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-style: none;
+  object-fit: cover;
+  object-position: center;
+`;
+
+export const HeroSectionOverlay = styled.div`
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.47);
+`;
+
+export const HeroHeadingContainer = styled.div`
+  z-index: 1;
+  max-width: 1300px;
+  margin: auto;
+  border: 1px solid red;
+  width: 100%;
+  padding: 20px 0px;
+`;
+
+export const HeroHeadingh1 = styled.h1`
   font-size: 4rem;
   text-align: left;
   font-weight: bold;
   color: white;
+  padding-bottom: 20px;
+`;
 
-  ${(props) =>
-    props.heroh4 &&
-    css`
-      padding-top: 20px;
-      font-size: 1.5rem;
-      padding-left: 2px;
-      padding-bottom: 10px;
-    `}
+export const HeroHeadingh4 = styled.h4`
+  font-size: 1.5rem;
+  color: #33aaf5;
+`;
+
+export const HeroTextContainer = styled.div`
+  z-index: 1;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  padding: 20px 0px;
+`;
+
+
+
+
+
+
+
+
+export const Text = styled.p`
+  margin-top: 5px;
+  width: 600px;
+  text-align: left;
+  line-height: 1.4rem;
+  color: white;
+  padding-left: 3px;
+  font-size: 1.2rem;
 `;
 
 export const HeroButton = styled.button`
@@ -66,6 +119,7 @@ export const HeroButton = styled.button`
   color: white;
   padding: 1em 1.5em;
   width: 150px;
+  text-align: center;
 
   &:hover {
     border: 2px solid white;
@@ -120,16 +174,6 @@ export const Btncontainer = styled.div`
   padding-left: 3px;
 `;
 
-export const Text = styled.p`
-  margin-top: 5px;
-  width: 600px;
-  text-align: left;
-  line-height: 1.4rem;
-  color: white;
-  padding-left: 3px;
-  font-size: 1.2rem;
-`;
-
 export const Links = styled.a`
   color: orange;
   font-weight: bold;
@@ -174,8 +218,7 @@ export const NFTContainer = styled.div`
       rgba(0, 0, 0, 0)
     ),
     url(${PlayNFT});
-  /* background-color: white; */
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -229,16 +272,14 @@ export const CommunityH5 = styled.h5`
   font-size: 1rem;
 `;
 
-
 // The Patner
 export const Patner = styled.div`
   width: 100%;
-  height: 400px;
+  height: 500px;
   background: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
 `;
 
 export const PatnerCon = styled.div`
@@ -267,4 +308,28 @@ export const PatnerListcon = styled.div`
 export const PatnerHeading = styled.h5`
   color: #ff0033;
   font-size: 1rem;
+`;
+
+// HGT Token
+
+export const HGTCon = styled.div`
+  width: 100%;
+  height: 500px;
+  background-image: url(${HGTToken});
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+`;
+export const HGTTextCon = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: right;
+  padding: 140px 20px;
+`;
+
+export const HGTText = styled.h2`
+  font-size: 3rem;
+  color: black;
 `;

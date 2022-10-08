@@ -5,28 +5,29 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
   }
 
-  @media (max-width: 1080px) {
+   @media (max-width: 1080px) {
     html {
-      font-size: 93.75%;
+      font-size: 90.75%;
     }
   }
 
   @media (max-width: 720px) {
     html {
-      font-size: 87.5%;
+      font-size: 82.5%;
     }
-  }
+  } 
 
   body {
     background: #f3f3f3;
+    
       
   }
 
   body, input, textarea, button {
     font: 500 1rem Montserrat, sans-serif;
+    
    
   }
 
