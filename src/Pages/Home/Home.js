@@ -15,8 +15,6 @@ import {
   HeroLink,
   HeroBtnContainer,
   HeroButton,
-
- 
   Text,
   Links,
   AboutContainer,
@@ -26,12 +24,16 @@ import {
   AboutText,
   AboutRow,
   AboutColumn,
-
-  NFTContainer,
-  NFTHeading,
-  NFTTextCon,
+  NFTSection,
+  NFTSectionbg,
+  NFTSectionOverlay,
+  NFTImg,
+  NFTHeadingContainer,
+  NFTHeadingh2,
+  NFTTextContainer,
   NFTText,
   KleverNFT,
+  NFTLink,
   Community,
   CommunityHead,
   CommunityH5,
@@ -43,9 +45,11 @@ import {
   HGTCon,
   HGTText,
   HGTTextCon,
+  NFTBtnContainer,
 } from './styles';
 
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
+import NFTIMG from '../../Image/PlayNFT/Play-NFT.jpg';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
@@ -105,7 +109,7 @@ function Home() {
               Redefing Web3 Gaming Experince
             </HeroHeadingh4>
           </HeroHeadingContainer>
-  
+
           <HeroTextContainer>
             <HeroText>
               A Hyper Realistic Racing Games developed by{' '}
@@ -117,7 +121,7 @@ function Home() {
             </HeroText>
           </HeroTextContainer>
           <HeroBtnContainer>
-               <HeroButton>BUY NFT</HeroButton>
+            <HeroButton>BUY NFT</HeroButton>
           </HeroBtnContainer>
         </HeroSection>
         {/* End of Hero */}
@@ -151,26 +155,38 @@ function Home() {
         {/* End of About */}
 
         {/* NFT Section */}
-        <NFTContainer>
-          <NFTTextCon>
-            <NFTHeading>PLAY WITH YOUR NFTS</NFTHeading>
+        <NFTSection>
+          <NFTSectionbg>
+            <NFTImg src={NFTIMG} alt="A man Playing Racing Game" />
+          </NFTSectionbg>
+          <NFTSectionOverlay></NFTSectionOverlay>
+
+          <NFTHeadingContainer>
+            <NFTHeadingh2>PLAY WITH YOUR NFTS</NFTHeadingh2>
+          </NFTHeadingContainer>
+          <NFTTextContainer>
             <NFTText>
               Over 4K NFTs are available at the moment to play.
               <br />
-              Check out our <Links as="a">
-                Genesis Collection
-              </Links>{' '}
-              on Klever<KleverNFT>NFT </KleverNFT>
+              Check out our{' '}
+              <NFTLink as="a">Genesis Collection</NFTLink> on Klever
+              <KleverNFT>NFT </KleverNFT>
               and turn your NFT in life.
             </NFTText>
+          </NFTTextContainer>
+          <NFTBtnContainer className="btn">
             <Button
               as="a"
               href="https://www.klevernft.com/launchpad/FWZ-COMING"
             >
               Explore NFT Collections
             </Button>
-          </NFTTextCon>
-        </NFTContainer>
+          </NFTBtnContainer>
+        </NFTSection>
+
+    
+
+        {/* End of NFT */}
 
         {/*  The Community New */}
         <Community>

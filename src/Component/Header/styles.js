@@ -26,11 +26,7 @@ export const Head = styled.div`
   margin: 0 auto;
 `;
 
-<<<<<<< HEAD
-export const Top_Header = styled.div`
-=======
 export const TopHeader = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,11 +49,7 @@ export const ImgCon = styled.div`
 `;
 
 // The Side Menu
-<<<<<<< HEAD
-export const Side_Menu_Container = styled.div`
-=======
 export const SideMenuContainer = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   display: flex;
   flex-flow: column nowrap;
   transition: all 0.25s linear;
@@ -75,11 +67,7 @@ export const SideMenuContainer = styled.div`
   pointer-events: none;
 `;
 
-<<<<<<< HEAD
-export const Side_Menu_Header = styled.div`
-=======
 export const SideMenuHeader = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   display: flex;
   align-items: center;
   height: 4rem;
@@ -90,11 +78,7 @@ export const SideMenuHeader = styled.div`
  
 `;
 
-<<<<<<< HEAD
-export const Side_Menu_Wrapper = styled.div`
-=======
 export const SideMenuWrapper = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -106,11 +90,7 @@ export const SideMenuWrapper = styled.div`
   pointer-events: all;
 `;
 
-<<<<<<< HEAD
-export const Menu_Content = styled.div`
-=======
 export const MenuContent = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   width: 100%;
 `;
 
@@ -118,11 +98,7 @@ export const OpenMenu = styled.div`
   font-size: 1.8rem;
 `;
 
-<<<<<<< HEAD
-export const Menu_Icon = styled.div`
-=======
 export const MenuIcon = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
 display: flex;
 justify-content: center;
 align-items: center;
@@ -130,11 +106,7 @@ cursor: pointer;
 position: relative;
 `
 
-<<<<<<< HEAD
-export const Side_Menu_Overlay = styled.div`
-=======
 export const SideMenuOverlay = styled.div`
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
 height: 100vh;
 position: fixed;
 right: 0;

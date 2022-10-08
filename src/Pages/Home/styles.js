@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import PlayNFT from '../../Image/PlayNFT/Play-NFT.jpg';
 import HGTToken from '../../Image/HGT/HGT.png';
 
 // Global Style
@@ -81,8 +80,7 @@ export const HeroHeadingContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding:  0 10px;
-
+  padding: 0 10px;
 `;
 
 export const HeroHeadingh1 = styled.h1`
@@ -91,9 +89,6 @@ export const HeroHeadingh1 = styled.h1`
   font-weight: bold;
   color: white;
   padding-bottom: 10px;
- 
-
-
 `;
 
 export const HeroHeadingh4 = styled.h4`
@@ -106,13 +101,12 @@ export const HeroTextContainer = styled.div`
   z-index: 1;
   max-width: 1200px;
   padding: 0 10px;
-  margin:  0 auto;
+  margin: 0 auto;
   width: 100%;
   /* padding: 20px 0px; */
-
 `;
 
-export const HeroText = styled.div`
+export const HeroText = styled.p`
   line-height: 1.5rem;
   width: 50%;
   color: white;
@@ -123,15 +117,14 @@ export const HeroLink = styled.span`
   font-weight: bold;
 `;
 
-
 export const HeroBtnContainer = styled.div`
   z-index: 1;
   max-width: 1200px;
-  margin:  0 auto;
+  margin: 0 auto;
   width: 100%;
   padding: 0 10px;
   padding-top: 40px;
-`
+`;
 
 export const HeroButton = styled.button`
   background: red;
@@ -166,27 +159,6 @@ export const HeroButton = styled.button`
 
 
 
-export const Text = styled.p`
-  margin-top: 5px;
-  width: 600px;
-  text-align: left;
-  line-height: 1.4rem;
-  color: white;
-  padding-left: 3px;
-  font-size: 1.2rem;
-`;
-
-
-
-
-export const Links = styled.a`
-  color: orange;
-  font-weight: bold;
-`;
-
-
-
-
 // About FlamingWheelz Section
 export const AboutContainer = styled.div`
   padding: 40px 20px;
@@ -214,13 +186,12 @@ export const AboutText = styled.p`
   padding-bottom: 30px;
 `;
 
-
 export const AboutRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-`
+`;
 
 export const AboutColumn = styled.div`
   display: flex;
@@ -230,53 +201,99 @@ export const AboutColumn = styled.div`
   gap: 30px;
 `;
 
-
 // End of About Section
-
-
 
 // Play with your NFT Section
 
-export const NFTContainer = styled.div`
-  height: 600px;
-  background: black;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-    ),
-    url(${PlayNFT});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+export const NFTSection = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  overflow: hidden;
   position: relative;
-  margin-bottom: 50px;
+  min-height: 100vh;
 `;
 
-export const NFTHeading = styled.h2`
-  padding-top: 20px;
-  font-size: 3rem;
+export const NFTSectionbg = styled.div`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+`;
+
+export const NFTImg = styled.img`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-style: none;
+  object-fit: cover;
+  object-position: center;
+`;
+
+
+export const NFTSectionOverlay = styled.div`
+height: 100%;
+left: 0;
+top: 0;
+width: 100%;
+position: absolute;
+z-index: -1;
+background: rgba(0, 0, 0, 0.77);
+`
+
+export const NFTHeadingContainer = styled.div`
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+
+`
+
+export const NFTHeadingh2 = styled.h2`
+  font-size: 3.5rem;
+  text-align: left;
+  font-weight: bold;
   color: white;
-`;
+  padding-bottom: 10px;
 
-export const NFTTextCon = styled.div`
+`
+
+export const NFTTextContainer = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 140px 20px;
+  z-index: 1;
+  padding: 0 10px;
 `;
 
-export const NFTText = styled(Text)`
-  width: 500px;
-  padding: 10px 0;
-  line-height: 1.8rem;
-  margin-bottom: 20px;
+export const NFTText = styled.p`
+  line-height: 1.5rem;
+  width: 50%;
+  color: white;
 `;
 
 export const KleverNFT = styled.span`
   color: rgb(160, 57, 194);
 `;
+
+export const NFTLink = styled.div`
+color: orange;
+font-weight: bold;
+cursor: pointer;
+
+`
+export const NFTBtnContainer = styled.div`
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 0 10px;
+  padding-top: 30px;
+`
 
 // The Cummunity
 export const Community = styled.div`
