@@ -11,8 +11,14 @@ import {
   Allrightreserved,
   SocialLink,
   FooterLogo,
+  LogoText,
+  FootHeading,
+  Row,
+  Text,
   Hr,
 } from './Styles';
+
+import Logo from '../../Image/Header/New_Logo_red.png';
 
 function Footer() {
   return (
@@ -34,13 +40,38 @@ function Footer() {
           </JoinCommunity>
 
           <FooterNavbar>
-            <FooterLogo>
-              <img src="" alt="" />
-            </FooterLogo>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <FooterLogo src={Logo} alt="" />
+              <LogoText> Developed by Hypatia Studio</LogoText>
+            </div>
+
+            <Row>
+              <div>
+                <Text as='a'>About Us</Text>
+                <Text as='a'>Team</Text>
+                <Text as='a'>Market</Text>
+                <Text as='a'>Whitepaper</Text>
+              </div>
+              <div>
+                <Text as='a'>Roadmap</Text>
+                <Text as='a'>News</Text>
+                <Text as='a'>Download</Text>
+                <Text as='a'>Terms of use</Text>
+              </div>
+              <div>
+                <Text as='a'>FAQ</Text>
+                <Text as='a'>Career</Text>
+                <Text as='a'>License</Text>
+                <Text as='a'>Private Policy</Text>
+              </div>
+            </Row>
+
+            <div>
+              <FootHeading>CONTACT US</FootHeading>
+              <Text>hello@hypatiagames.net</Text>
+            </div>
           </FooterNavbar>
+
           <Hr></Hr>
         </FooterContainer>
         <FooterUnder>

@@ -13,12 +13,10 @@ export const FooterContainer = styled.div`
 // Join the Community
 export const JoinCommunity = styled.div`
   width: 100%;
-  margin-top: 40px;
   height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
 `;
 
 export const JoinUsHeading = styled.h1`
@@ -39,14 +37,47 @@ export const Social = styled.span`
   color: white;
 `;
 
+export const Row = styled.div`
+display: flex;
+gap: 80px;
+`
+
 export const FooterNavbar = styled.div`
+  max-width: 1300px;
+  margin: 0 auto;
   width: 100%;
-  height: 300px;
-  /* border: 1px solid red; */
+  height: 200px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+ 
+
 `;
 
-export const FooterLogo = styled.div``;
+export const FooterLogo = styled.img`
+width: 200px;
+`;
 
+
+export const FootHeading = styled.h4`
+color: white;
+`
+
+export const Text = styled.p`
+color: white;
+display: block;
+padding: 10px 0px;
+font-size: 0.9rem;
+`
+export const LogoText = styled.p`
+color: white;
+font-size: 0.6rem;
+font-style: italic;
+padding-left: 20px;
+margin-top: -5px;
+`
+
+// Under
 export const FooterUnder = styled.div`
   max-width: 1400px;
   margin: 0 auto;
