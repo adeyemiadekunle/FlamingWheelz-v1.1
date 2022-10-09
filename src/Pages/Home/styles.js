@@ -211,7 +211,7 @@ export const NFTSection = styled.div`
   justify-content: center;
   overflow: hidden;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 `;
 
 export const NFTSectionbg = styled.div`
@@ -296,27 +296,40 @@ export const NFTBtnContainer = styled.div`
 `
 
 // The Cummunity
-export const Community = styled.div`
+export const CommunityContainer = styled.div`
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 60px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding: 0 10px;
+
 `;
 
-export const CommunityHead = styled.div`
+export const CommunityHeadingContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   line-height: 2rem;
 `;
 
-export const CommunityH5 = styled.h5`
+export const CommunityHeadingh5 = styled.h5`
   color: #ff0033;
   font-size: 1rem;
 `;
+
+export const CommunityRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 70px;
+  border: 1px solid red;
+
+`
 
 // The Patner
 export const Patner = styled.div`
@@ -352,11 +365,52 @@ export const PatnerListcon = styled.div`
 `;
 
 export const PatnerHeading = styled.h5`
-  color: #ff0033;
-  font-size: 1rem;
+  color: #33aaf5;
+  font-size: 1.2rem;
 `;
 
+
+
 // HGT Token
+
+
+export const HGTContainer = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  min-height: 90vh;
+`
+export const HGTSectionbg = styled.div`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+`
+
+export const HGTImg = styled.img`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-style: none;
+  object-fit: cover;
+  object-position: center;
+
+`
+export const HGTSectionOverlay = styled.div`
+height: 100%;
+left: 0;
+top: 0;
+width: 100%;
+position: absolute;
+z-index: -1;
+background: rgba(0, 0, 0, 0.27);
+`
 
 export const HGTCon = styled.div`
   width: 100%;
@@ -380,19 +434,3 @@ export const HGTText = styled.h2`
   color: black;
 `;
 
-// Flexbox Styling
-export const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-
-  /* flex-wrap: wrap; */
-`;
-export const Col = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-`;

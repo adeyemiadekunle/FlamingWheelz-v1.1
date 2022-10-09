@@ -32,24 +32,29 @@ import {
   NFTHeadingh2,
   NFTTextContainer,
   NFTText,
+  NFTBtnContainer,
   KleverNFT,
   NFTLink,
-  Community,
-  CommunityHead,
-  CommunityH5,
+  CommunityContainer,
+  CommunityHeadingContainer,
+  CommunityHeadingh5,
+  CommunityRow,
   Patner,
   PatnerCon,
   PatnerList,
   PatnerHeading,
   PatnerListcon,
-  HGTCon,
-  HGTText,
-  HGTTextCon,
-  NFTBtnContainer,
+  HGTContainer,
+  HGTSectionbg,
+  HGTImg,
+  HGTSectionOverlay,
+  
+  
 } from './styles';
 
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import NFTIMG from '../../Image/PlayNFT/Play-NFT.jpg';
+import HGTIMG from '../../Image/HGT/HGT.png'
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
@@ -183,28 +188,26 @@ function Home() {
             </Button>
           </NFTBtnContainer>
         </NFTSection>
-
-    
-
         {/* End of NFT */}
 
         {/*  The Community New */}
-        <Community>
-          <CommunityHead>
+        <CommunityContainer>
+          <CommunityHeadingContainer>
             <div>
-              <CommunityH5>COMMUNITY</CommunityH5>
+              <CommunityHeadingh5>COMMUNITY</CommunityHeadingh5>
               <h2>LATEST NEWS</h2>
             </div>
             <div>
               <div>Read more</div>
             </div>
-          </CommunityHead>
-          <Row>
+          </CommunityHeadingContainer>
+          <CommunityRow>
             <NewsCard></NewsCard>
             <NewsCard></NewsCard>
             <NewsCard></NewsCard>
-          </Row>
-        </Community>
+          </CommunityRow>
+        </CommunityContainer>
+        {/* End of Community */}
 
         {/* The Patner */}
         <Patner>
@@ -223,13 +226,25 @@ function Home() {
             </PatnerListcon>
           </PatnerCon>
         </Patner>
+        {/* End of Patner */}
+
+
         {/* HGT Token */}
-        <HGTCon>
-          <HGTTextCon>
-            {' '}
-            <HGTText> WHY HGT?</HGTText>
-          </HGTTextCon>
-        </HGTCon>
+          <HGTContainer>
+            <HGTSectionbg>
+              <HGTImg src={HGTIMG} alt="Box full of Coins" />
+            </HGTSectionbg>
+            <HGTSectionOverlay></HGTSectionOverlay>
+            <div className='headingCon'>
+              <h2></h2>
+            </div>
+            <div className='HGT-text'>
+              <p></p>
+            </div>
+          </HGTContainer>
+
+
+
       </HomeSection>
     </>
   );
