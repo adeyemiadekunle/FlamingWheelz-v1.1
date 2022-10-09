@@ -5,16 +5,6 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
-  }
-    
-
-  @media (max-width: 1200px){
-    html {
-      font-size: 94.75%;
-    }
-=======
->>>>>>> 5103ede531c9f19efeb94c7e7a4dab138db24081
   }
 
    @media (max-width: 1080px) {

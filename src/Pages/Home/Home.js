@@ -133,6 +133,7 @@ function Home() {
               <HeroButton>BUY NFT</HeroButton>
             </HeroBtnContainer>
           </HeroContentContainer>
+          
           <HeroDownloadContainer>
             <div>Download latest version</div>
             <HeroDownloadLinkCon>

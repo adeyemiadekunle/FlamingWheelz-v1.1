@@ -45,7 +45,7 @@ export const HeroSection = styled.div`
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  min-height: 100vh;
+  /* height: 100vh; */
 `;
 
 export const HeroSectionBg = styled.div`
@@ -165,6 +165,11 @@ background: rgba(0,0,0,0.5);
 color: white;
 gap: 20px;
 
+
+@media screen and (max-width: 480px) {
+  flex-flow: column; 
+}
+
 `
 
 export const HeroDownloadLinkCon= styled.div`
@@ -172,6 +177,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 20px;
+
 `
 
 export const HeroContentContainer = styled.div`
@@ -184,14 +190,22 @@ margin-top: 5rem;
 
 
 // About FlamingWheelz Section
-export const AboutContainer = styled.div`
+  export const AboutContainer = styled.div`
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+
 `;
 
 export const AboutTextCon = styled.div`
   width: 50%;
+  
+
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 export const AboutHeading = styled.h2`
@@ -199,6 +213,7 @@ export const AboutHeading = styled.h2`
   font-size: 3rem;
   color: black;
 `;
+
 export const AboutHeadingh5 = styled.h5`
   color: #ff0033;
   font-size: 1rem;
@@ -215,6 +230,12 @@ export const AboutRow = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+
+  @media screen  and (max-width: 900px) {
+    flex-flow: column;
+  };
+
+
 `;
 
 export const AboutColumn = styled.div`
@@ -330,7 +351,6 @@ export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
@@ -368,6 +388,7 @@ export const Patner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 80vh;
 `;
 
 export const PatnerCon = styled.div`
@@ -409,6 +430,7 @@ export const HGTContainer = styled.div`
   overflow: hidden;
   position: relative;
   min-height: 90vh;
+
   
 `
 export const HGTSectionbg = styled.div`
@@ -438,7 +460,7 @@ top: 0;
 width: 100%;
 position: absolute;
 z-index: -1;
-/* background: rgba(0, 0, 0, 0.47); */
+background: rgba(0, 0, 0, 0.42);
 `
 
 export const HGTContentContainer = styled.div`

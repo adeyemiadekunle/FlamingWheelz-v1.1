@@ -14,16 +14,20 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+
 // Header
 export const HeaderContainer = styled.header`
   height: 4rem;
-  /* box-shadow: 0 4px 4px rgb(0 0 0 /25%); */
+  box-shadow: 0 4px 4px rgba(0 0 0 /25%);
+
+
 `;
 
 export const Head = styled.div`
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+
 `;
 
 export const TopHeader = styled.div`
@@ -47,6 +51,9 @@ export const Img = styled.img`
 export const ImgCon = styled.div`
   /* padding-left: 10px; */
 `;
+
+
+
 
 // The Side Menu
 export const SideMenuContainer = styled.div`

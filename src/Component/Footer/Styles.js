@@ -3,21 +3,39 @@ import styled from 'styled-components';
 export const StyledFooter = styled.footer`
   background: black;
   color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 `;
 
 export const FooterContainer = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 0px 20px;
+  height: 100vh;
+ 
 `;
 
 // Join the Community
 export const JoinCommunity = styled.div`
+  max-width: 1300px;
+  margin: 0 auto;
   width: 100%;
-  height: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 30vh;
+  margin-top: 2rem ;
+  padding-top: 50px 0px;
+ 
+
+  @media screen and (max-width: 756px){
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  }
 `;
 
 export const JoinUsHeading = styled.h1`
@@ -32,6 +50,11 @@ export const JoinUsText = styled.p`
   font-size: 1.1rem;
   line-height: 1.5rem;
   color: white;
+
+  @media screen and (max-width: 756px) {
+    width: 350px;
+    padding-bottom: 20px;
+  }
 `;
 
 export const Social = styled.span`
@@ -40,23 +63,35 @@ export const Social = styled.span`
 
 export const Row = styled.div`
 display: flex;
-gap: 80px;
+gap: 50px;
+
+@media screen and (max-width: 756px) {
+ justify-content: flex-start;
+ align-items: center;
+ padding-top: 20px;
+ padding-bottom: 40px;
+}
 `
 
 export const FooterNavbar = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  height: 200px;
-  padding-top: 20px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
- 
+  height: 50vh;
 
+
+  @media screen  and (max-width: 756px){
+     flex-flow: column; 
+  }
+ 
 `;
 
 export const FooterLogo = styled.img`
 width: 200px;
+margin-left: -10px;
 `;
 
 
@@ -74,20 +109,34 @@ export const LogoText = styled.p`
 color: white;
 font-size: 0.6rem;
 font-style: italic;
-padding-left: 20px;
-margin-top: -5px;
+margin-top: -10px;
 `
 
 // Under
 export const FooterUnder = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
+   max-width: 1300px;
+   width: 100%;
+   margin: 0 auto;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
+
+ 
+ 
+
+  @media screen and (max-width: 765px) {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
 `;
 
 export const Hr = styled.div`
+  margin-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 `;
 

@@ -65,15 +65,15 @@ function Footer() {
                 <Text as='a'>Private Policy</Text>
               </div>
             </Row>
-
             <div>
               <FootHeading>CONTACT US</FootHeading>
               <Text>hello@hypatiagames.net</Text>
+              <Text>hello@hypatiagames.net</Text>
             </div>
           </FooterNavbar>
-
           <Hr></Hr>
         </FooterContainer>
+
         <FooterUnder>
           <Copyright>
             @2022 FlamingWheelz | Powered by Hypatia Games Studio

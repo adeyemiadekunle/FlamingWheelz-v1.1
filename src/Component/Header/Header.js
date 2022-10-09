@@ -70,7 +70,6 @@ function Header() {
 
           <div className="sticky_i=Icon"></div>
 
-          {/* <div>{!isOpen && (<Side_Menu_Overlay></Side_Menu_Overlay>)}</div> */}
           <div>
             {isOpen && (
               <SideMenuContainer>
