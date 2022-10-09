@@ -88,10 +88,12 @@ export const SideMenuWrapper = styled.div`
   overflow-y: auto;
   height: 100%;
   pointer-events: all;
+  color: white;
 `;
 
 export const MenuContent = styled.div`
   width: 100%;
+
 `;
 
 export const OpenMenu = styled.div`
@@ -114,5 +116,21 @@ top: 0;
 left: 0;
 z-index: 9;
 background: rgba(0,0,0,0.8);
+`
+export const FindUsContainer = styled.div`
+padding: 40px;
+display: flex;
+flex-flow: column;
+background: rgba(255,255,255,0.1);
+border-radius: 8px;
+font-size: 80%;
+justify-content: center;
+align-items: center;
+`
+
+export const FindUsLinkCon = styled.div`
+display: flex;
+gap: 5px;
+padding-top: 20px;
 
 `

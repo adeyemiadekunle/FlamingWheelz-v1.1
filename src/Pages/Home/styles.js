@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import HGTToken from '../../Image/HGT/HGT.png';
 
 // Global Style
 
@@ -7,7 +6,7 @@ import HGTToken from '../../Image/HGT/HGT.png';
 export const Button = styled.button`
   margin-top: 10px;
   padding: 10px 50px;
-  background: red;
+  background: #ff0033;
   border-radius: 20px;
   border: #ff0033;
   color: white;
@@ -20,11 +19,14 @@ export const Button = styled.button`
     props.primary &&
     css`
       background: transparent;
-      color: red;
+      color: white;
       border: 2px solid #ff0033;
 
       &:hover {
-        opacity: 0.8;
+      background: white;
+      color: #000;
+      border: 2px solid white;
+      transition: all  0.5s;
       }
     `}
 `;
@@ -40,7 +42,7 @@ export const HomeSection = styled.div`
 export const HeroSection = styled.div`
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
   position: relative;
   min-height: 100vh;
@@ -154,6 +156,28 @@ export const HeroButton = styled.button`
     `}
 `;
 
+export const HeroDownloadContainer = styled.div`
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(0,0,0,0.5);
+color: white;
+gap: 20px;
+
+`
+
+export const HeroDownloadLinkCon= styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+`
+
+export const HeroContentContainer = styled.div`
+margin-top: 5rem;
+
+`
 // End of Hero
 
 
@@ -197,9 +221,15 @@ export const AboutColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 30px;
 `;
+
+export const AboutFeature = styled.h3`
+/* color: #33aaf5; */
+color:#ff0033 ;
+text-decoration: underline;
+`
 
 // End of About Section
 
@@ -327,7 +357,6 @@ export const CommunityRow = styled.div`
   align-items: center;
   gap: 15px;
   margin-bottom: 70px;
-  border: 1px solid red;
 
 `
 
@@ -373,14 +402,14 @@ export const PatnerHeading = styled.h5`
 
 // HGT Token
 
-
 export const HGTContainer = styled.div`
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
   overflow: hidden;
   position: relative;
   min-height: 90vh;
+  
 `
 export const HGTSectionbg = styled.div`
   height: 100%;
@@ -409,28 +438,50 @@ top: 0;
 width: 100%;
 position: absolute;
 z-index: -1;
-background: rgba(0, 0, 0, 0.27);
+/* background: rgba(0, 0, 0, 0.47); */
 `
 
-export const HGTCon = styled.div`
-  width: 100%;
-  height: 500px;
-  background-image: url(${HGTToken});
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-`;
-export const HGTTextCon = styled.div`
+export const HGTContentContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  text-align: right;
-  padding: 140px 20px;
-`;
+  padding: 20px;
 
-export const HGTText = styled.h2`
+`
+
+export const HGTTextContainer = styled.div`
+  z-index: 1;
+  width: 50%;
+  padding: 50px 10px;
+  background: rgba(0,0,0, 0.8);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+
+`
+
+export const HGTHeadingh2 = styled.h2`
   font-size: 3rem;
-  color: black;
+  text-align: center;
+  font-weight: bold;
+  color: #33aaf5;
+  padding-bottom: 10px;
+
+`
+
+export const HGTText = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
 `;
 
+export const HGTbtnContainer = styled.div`
+display: flex;
+justify-content: center;
+padding-top: 30px;
+
+`
+// End of HGT Token

@@ -1,6 +1,4 @@
 import {
-  Col,
-  Row,
   Button,
   HomeSection,
   HeroSection,
@@ -15,8 +13,9 @@ import {
   HeroLink,
   HeroBtnContainer,
   HeroButton,
-  Text,
-  Links,
+  HeroDownloadContainer,
+  HeroContentContainer,
+  HeroDownloadLinkCon,
   AboutContainer,
   AboutTextCon,
   AboutHeading,
@@ -24,6 +23,7 @@ import {
   AboutText,
   AboutRow,
   AboutColumn,
+  AboutFeature,
   NFTSection,
   NFTSectionbg,
   NFTSectionOverlay,
@@ -48,13 +48,16 @@ import {
   HGTSectionbg,
   HGTImg,
   HGTSectionOverlay,
-  
-  
+  HGTContentContainer,
+  HGTTextContainer,
+  HGTHeadingh2,
+  HGTText,
+  HGTbtnContainer,
 } from './styles';
 
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import NFTIMG from '../../Image/PlayNFT/Play-NFT.jpg';
-import HGTIMG from '../../Image/HGT/HGT.png'
+import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
@@ -68,7 +71,7 @@ function Home() {
   const Abouts = [
     {
       id: 1,
-      title: ' A Fantasy RPG Mixed',
+      title: 'A Fantasy RPG Mixed',
       text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
     },
     {
@@ -103,31 +106,41 @@ function Home() {
           </HeroSectionBg>
 
           <HeroSectionOverlay></HeroSectionOverlay>
+          <HeroContentContainer>
+            <HeroHeadingContainer>
+              <HeroHeadingh1>
+                Multi Chain
+                <br />
+                Racing Game
+              </HeroHeadingh1>
+              <HeroHeadingh4>
+                Redefing Web3 Gaming Experince
+              </HeroHeadingh4>
+            </HeroHeadingContainer>
 
-          <HeroHeadingContainer>
-            <HeroHeadingh1>
-              Multi Chain
-              <br />
-              Racing Game
-            </HeroHeadingh1>
-            <HeroHeadingh4>
-              Redefing Web3 Gaming Experince
-            </HeroHeadingh4>
-          </HeroHeadingContainer>
-
-          <HeroTextContainer>
-            <HeroText>
-              A Hyper Realistic Racing Games developed by{' '}
-              <HeroLink as="a" href="">
-                Hypatia Games,
-              </HeroLink>{' '}
-              graced with tournament, challenge and best of all{' '}
-              <HeroLink>PLAY</HeroLink> and <HeroLink>EARN.</HeroLink>
-            </HeroText>
-          </HeroTextContainer>
-          <HeroBtnContainer>
-            <HeroButton>BUY NFT</HeroButton>
-          </HeroBtnContainer>
+            <HeroTextContainer>
+              <HeroText>
+                A Hyper Realistic Racing Games developed by{' '}
+                <HeroLink as="a" href="">
+                  Hypatia Games,
+                </HeroLink>{' '}
+                graced with tournament, challenge and best of all{' '}
+                <HeroLink>PLAY</HeroLink> and{' '}
+                <HeroLink>EARN.</HeroLink>
+              </HeroText>
+            </HeroTextContainer>
+            <HeroBtnContainer>
+              <HeroButton>BUY NFT</HeroButton>
+            </HeroBtnContainer>
+          </HeroContentContainer>
+          <HeroDownloadContainer>
+            <div>Download latest version</div>
+            <HeroDownloadLinkCon>
+              <div>Google Play</div>
+              <div>App Store</div>
+              <div>Windows</div>
+            </HeroDownloadLinkCon>
+          </HeroDownloadContainer>
         </HeroSection>
         {/* End of Hero */}
 
@@ -147,6 +160,7 @@ function Home() {
               <Button>Join Us</Button>
             </AboutTextCon>
             <AboutColumn>
+              <AboutFeature>Key Features</AboutFeature>
               {Abouts.map((about) => (
                 <Card
                   key={about.id}
@@ -228,23 +242,28 @@ function Home() {
         </Patner>
         {/* End of Patner */}
 
-
         {/* HGT Token */}
-          <HGTContainer>
-            <HGTSectionbg>
-              <HGTImg src={HGTIMG} alt="Box full of Coins" />
-            </HGTSectionbg>
-            <HGTSectionOverlay></HGTSectionOverlay>
-            <div className='headingCon'>
-              <h2></h2>
-            </div>
-            <div className='HGT-text'>
-              <p></p>
-            </div>
-          </HGTContainer>
+        <HGTContainer>
+          <HGTSectionbg>
+            <HGTImg src={HGTIMG} alt="Box full of Coins" />
+          </HGTSectionbg>
+          <HGTSectionOverlay></HGTSectionOverlay>
 
-
-
+          <HGTContentContainer>
+            <HGTTextContainer className="headingCon">
+              <HGTHeadingh2>WHY HGT?</HGTHeadingh2>
+              <HGTText>
+                $HGT is our main utility token that allow you to EARN,
+                BUY and SELL Assets in our Ecosystem.
+              </HGTText>
+              <HGTbtnContainer>
+                <Button primary as="">
+                  Buy Now
+                </Button>
+              </HGTbtnContainer>
+            </HGTTextContainer>
+          </HGTContentContainer>
+        </HGTContainer>
       </HomeSection>
     </>
   );
