@@ -12,7 +12,8 @@ import {
   SocialLink,
   FooterLogo,
   LogoText,
-  FootHeading,
+  ContactHeading,
+  ContactText,
   Row,
   Text,
   Hr,
@@ -42,7 +43,7 @@ function Footer() {
           <FooterNavbar>
             <div>
               <FooterLogo src={Logo} alt="" />
-              <LogoText> Developed by Hypatia Studio</LogoText>
+              <LogoText> Developed by Hypatia Games</LogoText>
             </div>
 
             <Row>
@@ -66,9 +67,9 @@ function Footer() {
               </div>
             </Row>
             <div>
-              <FootHeading>CONTACT US</FootHeading>
-              <Text>hello@hypatiagames.net</Text>
-              <Text>hello@hypatiagames.net</Text>
+              <ContactHeading>CONTACT US</ContactHeading>
+              <ContactText>hello@hypatiagames.net</ContactText>
+              
             </div>
           </FooterNavbar>
           <Hr></Hr>
@@ -76,14 +77,13 @@ function Footer() {
 
         <FooterUnder>
           <Copyright>
-            @2022 FlamingWheelz | Powered by Hypatia Games Studio
+            @2022 FlamingWheelz | Powered by Hypatia Games 
           </Copyright>
           <Allrightreserved>
-            All Rights Reserved
+             All Rights Reserved
             <SocialLink as="a">Twitter</SocialLink>
             <SocialLink as="a">Discord</SocialLink>
             <SocialLink as="a">Telegram</SocialLink>
-            <SocialLink as="a">Youtube</SocialLink>
           </Allrightreserved>
         </FooterUnder>
       </StyledFooter>

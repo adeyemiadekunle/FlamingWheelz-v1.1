@@ -6,13 +6,11 @@ import {
   HeroImg,
   HeroHeadingContainer,
   HeroSectionOverlay,
+  HeroHeading,
   HeroHeadingh1,
-  HeroHeadingh4,
   HeroTextContainer,
   HeroText,
   HeroLink,
-  HeroBtnContainer,
-  HeroButton,
   HeroDownloadContainer,
   HeroContentContainer,
   HeroDownloadLinkCon,
@@ -39,6 +37,9 @@ import {
   CommunityHeadingContainer,
   CommunityHeadingh5,
   CommunityRow,
+  CommunityReadMore,
+  CommunityReadMoreBtn,
+  CommBtnContainer,
   Patner,
   PatnerCon,
   PatnerList,
@@ -108,14 +109,14 @@ function Home() {
           <HeroSectionOverlay></HeroSectionOverlay>
           <HeroContentContainer>
             <HeroHeadingContainer>
-              <HeroHeadingh1>
+              <HeroHeading>
                 Multi Chain
                 <br />
                 Racing Game
+              </HeroHeading>
+              <HeroHeadingh1>
+                Redefing Web3 Gaming Experience
               </HeroHeadingh1>
-              <HeroHeadingh4>
-                Redefing Web3 Gaming Experince
-              </HeroHeadingh4>
             </HeroHeadingContainer>
 
             <HeroTextContainer>
@@ -129,11 +130,9 @@ function Home() {
                 <HeroLink>EARN.</HeroLink>
               </HeroText>
             </HeroTextContainer>
-            <HeroBtnContainer>
-              <HeroButton>BUY NFT</HeroButton>
-            </HeroBtnContainer>
+            
           </HeroContentContainer>
-          
+
           <HeroDownloadContainer>
             <div>Download latest version</div>
             <HeroDownloadLinkCon>
@@ -182,12 +181,12 @@ function Home() {
           <NFTSectionOverlay></NFTSectionOverlay>
 
           <NFTHeadingContainer>
-            <NFTHeadingh2>PLAY WITH YOUR NFTS</NFTHeadingh2>
+            <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
           </NFTHeadingContainer>
           <NFTTextContainer>
             <NFTText>
               Over 4K NFTs are available at the moment to play.
-              <br />
+             
               Check out our{' '}
               <NFTLink as="a">Genesis Collection</NFTLink> on Klever
               <KleverNFT>NFT </KleverNFT>
@@ -202,6 +201,7 @@ function Home() {
               Explore NFT Collections
             </Button>
           </NFTBtnContainer>
+
         </NFTSection>
         {/* End of NFT */}
 
@@ -213,7 +213,7 @@ function Home() {
               <h2>LATEST NEWS</h2>
             </div>
             <div>
-              <div>Read more</div>
+              <CommunityReadMore>Read more</CommunityReadMore>
             </div>
           </CommunityHeadingContainer>
           <CommunityRow>
@@ -221,6 +221,9 @@ function Home() {
             <NewsCard></NewsCard>
             <NewsCard></NewsCard>
           </CommunityRow>
+              <CommBtnContainer>
+                <CommunityReadMoreBtn>Read More</CommunityReadMoreBtn>
+              </CommBtnContainer>
         </CommunityContainer>
         {/* End of Community */}
 

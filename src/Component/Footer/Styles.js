@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledFooter = styled.footer`
   background: black;
   color: white;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ export const StyledFooter = styled.footer`
 
 export const FooterContainer = styled.div`
   padding: 0px 20px;
-  height: 100vh;
+  /* height: 50vh; */
  
 `;
 
@@ -25,7 +25,7 @@ export const JoinCommunity = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30vh;
+  /* height: 30vh; */
   margin-top: 2rem ;
   padding-top: 50px 0px;
  
@@ -43,7 +43,12 @@ export const JoinUsHeading = styled.h1`
   font-size: 4rem;
   text-align: left;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
 `;
+
 export const JoinUsText = styled.p`
   text-align: left;
   width: 500px;
@@ -51,9 +56,10 @@ export const JoinUsText = styled.p`
   line-height: 1.5rem;
   color: white;
 
-  @media screen and (max-width: 756px) {
-    width: 350px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
     padding-bottom: 20px;
+    font-size: 0.9rem;
   }
 `;
 
@@ -80,11 +86,12 @@ export const FooterNavbar = styled.div`
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
-  height: 50vh;
+  /* height: 45vh; */
 
 
   @media screen  and (max-width: 756px){
      flex-flow: column; 
+     
   }
  
 `;
@@ -95,9 +102,15 @@ margin-left: -10px;
 `;
 
 
-export const FootHeading = styled.h4`
+export const ContactHeading = styled.h5`
 color: white;
+font-size: 90%;
+padding-bottom: 10px;
 `
+export const ContactText = styled.p`
+font-size: 80%;
+`
+
 
 export const Text = styled.p`
 color: white;
@@ -131,7 +144,6 @@ export const FooterUnder = styled.div`
     justify-content: center;
     align-items: center;
 
-    
   }
 `;
 

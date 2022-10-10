@@ -5,7 +5,9 @@ import {
   NewsTextCon,
   NewsTagCon,
   NewsHeading,
-  NewsCategory
+  NewsCategory,
+  NewsPara,
+ 
 } from './styles';
 
 function NewsCard( ) {
@@ -16,10 +18,10 @@ function NewsCard( ) {
         <NewsTextCon>
           <NewsTagCon>
             <NewsCategory>Blockchain</NewsCategory>
-            <p>Oct 6, 2022</p>
+            <div><p>Oct 6, 2022</p></div>
           </NewsTagCon>
           <NewsHeading> Article Heading</NewsHeading>
-          <p>
+          <NewsPara>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus in cumque dignissimos dicta atque optio
             odio esse quidem placeat ut.
@@ -27,7 +29,7 @@ function NewsCard( ) {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus in cumque dignissimos dicta atque optio
             odio esse quidem placeat ut.
-          </p>
+          </NewsPara>
         </NewsTextCon>
       </StyleCard>
     </>

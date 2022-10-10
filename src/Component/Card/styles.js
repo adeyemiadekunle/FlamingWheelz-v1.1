@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const StyledCard = styled.div`
 width: 550px;
-height: 100%;
+height: 200px;
 background: #ffffff;
-/* outline: 1px solid whitesmoke; */
 padding: 20px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -36,4 +35,5 @@ color: #ff0033;
 `
 export const CardText = styled.p`
 color: black;
+
 `
