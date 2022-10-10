@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const StyledFooter = styled.footer`
   background: black;
@@ -8,13 +9,11 @@ export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 `;
 
 export const FooterContainer = styled.div`
   padding: 0px 20px;
   /* height: 50vh; */
- 
 `;
 
 // Join the Community
@@ -25,16 +24,12 @@ export const JoinCommunity = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 30vh; */
-  margin-top: 2rem ;
+  margin-top: 2rem;
   padding-top: 50px 0px;
- 
 
-  @media screen and (max-width: 756px){
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
+  @media screen and (max-width: 756px) {
+    flex-flow: column;
+    justify-content: center;
   }
 `;
 
@@ -63,21 +58,39 @@ export const JoinUsText = styled.p`
   }
 `;
 
-export const Social = styled.span`
-  color: white;
+export const Social = styled.div`
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
 `;
 
-export const Row = styled.div`
-display: flex;
-gap: 50px;
+export const StyledSocialLink = styled(FontAwesomeIcon)`
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
 
-@media screen and (max-width: 756px) {
- justify-content: flex-start;
- align-items: center;
- padding-top: 20px;
- padding-bottom: 40px;
-}
-`
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+`;
+export const SocialLinkCon = styled.div``;
+
+export const Row = styled.div`
+  display: flex;
+  gap: 50px;
+
+  @media screen and (max-width: 756px) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+`;
 
 export const FooterNavbar = styled.div`
   max-width: 1300px;
@@ -88,54 +101,46 @@ export const FooterNavbar = styled.div`
   justify-content: space-between;
   /* height: 45vh; */
 
-
-  @media screen  and (max-width: 756px){
-     flex-flow: column; 
-     
+  @media screen and (max-width: 756px) {
+    flex-flow: column;
   }
- 
 `;
 
 export const FooterLogo = styled.img`
-width: 200px;
-margin-left: -10px;
+  width: 200px;
+  margin-left: -10px;
 `;
 
-
 export const ContactHeading = styled.h5`
-color: white;
-font-size: 90%;
-padding-bottom: 10px;
-`
+  color: white;
+  font-size: 90%;
+  padding-bottom: 10px;
+`;
 export const ContactText = styled.p`
-font-size: 80%;
-`
-
+  font-size: 80%;
+`;
 
 export const Text = styled.p`
-color: white;
-display: block;
-padding: 10px 0px;
-font-size: 0.9rem;
-`
+  color: white;
+  display: block;
+  padding: 10px 0px;
+  font-size: 0.9rem;
+`;
 export const LogoText = styled.p`
-color: white;
-font-size: 0.6rem;
-font-style: italic;
-margin-top: -10px;
-`
+  color: white;
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-top: -10px;
+`;
 
 // Under
 export const FooterUnder = styled.div`
-   max-width: 1300px;
-   width: 100%;
-   margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
-
- 
- 
 
   @media screen and (max-width: 765px) {
     display: flex;
@@ -143,7 +148,6 @@ export const FooterUnder = styled.div`
     gap: 10px;
     justify-content: center;
     align-items: center;
-
   }
 `;
 

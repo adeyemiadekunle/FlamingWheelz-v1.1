@@ -5,6 +5,8 @@ import {
   JoinUsText,
   FooterContainer,
   Social,
+  StyledSocialLink,
+  SocialLinkCon,
   FooterNavbar,
   FooterUnder,
   Copyright,
@@ -20,6 +22,12 @@ import {
 } from './Styles';
 
 import Logo from '../../Image/Header/New_Logo_red.png';
+import {
+  faTwitter,
+  faDiscord,
+  faTelegram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -35,9 +43,21 @@ function Footer() {
                 FlamingWheelz team is working on.
               </JoinUsText>
             </div>
-            <div>
-              <Social>Icon Icon Icon</Social>
-            </div>
+
+            <Social>
+              <SocialLinkCon as="a" href="https://twitter.com">
+                <StyledSocialLink icon={faTwitter} />
+              </SocialLinkCon>
+              <SocialLinkCon as="a" href="">
+                <StyledSocialLink icon={faDiscord} />
+              </SocialLinkCon>
+              <SocialLinkCon as="a" href="">
+                <StyledSocialLink icon={faTelegram} />
+              </SocialLinkCon>
+              <SocialLinkCon as="a" href="">
+                <StyledSocialLink icon={faYoutube} />
+              </SocialLinkCon>
+            </Social>
           </JoinCommunity>
 
           <FooterNavbar>
@@ -48,28 +68,27 @@ function Footer() {
 
             <Row>
               <div>
-                <Text as='a'>About Us</Text>
-                <Text as='a'>Team</Text>
-                <Text as='a'>Market</Text>
-                <Text as='a'>Whitepaper</Text>
+                <Text as="a">About Us</Text>
+                <Text as="a">Team</Text>
+                <Text as="a">Market</Text>
+                <Text as="a">Whitepaper</Text>
               </div>
               <div>
-                <Text as='a'>Roadmap</Text>
-                <Text as='a'>News</Text>
-                <Text as='a'>Download</Text>
-                <Text as='a'>Terms of use</Text>
+                <Text as="a">Roadmap</Text>
+                <Text as="a">News</Text>
+                <Text as="a">Download</Text>
+                <Text as="a">Terms of use</Text>
               </div>
               <div>
-                <Text as='a'>FAQ</Text>
-                <Text as='a'>Career</Text>
-                <Text as='a'>License</Text>
-                <Text as='a'>Private Policy</Text>
+                <Text as="a">FAQ</Text>
+                <Text as="a">Career</Text>
+                <Text as="a">License</Text>
+                <Text as="a">Private Policy</Text>
               </div>
             </Row>
             <div>
               <ContactHeading>CONTACT US</ContactHeading>
               <ContactText>hello@hypatiagames.net</ContactText>
-              
             </div>
           </FooterNavbar>
           <Hr></Hr>
@@ -77,10 +96,10 @@ function Footer() {
 
         <FooterUnder>
           <Copyright>
-            @2022 FlamingWheelz | Powered by Hypatia Games 
+            @2022 FlamingWheelz | Powered by Hypatia Games
           </Copyright>
           <Allrightreserved>
-             All Rights Reserved
+            All Rights Reserved
             <SocialLink as="a">Twitter</SocialLink>
             <SocialLink as="a">Discord</SocialLink>
             <SocialLink as="a">Telegram</SocialLink>

@@ -12,7 +12,7 @@ export default createGlobalStyle`
     background: #f3f3f3;
     margin: 0;
     padding: 0;
-    line-height: 1.4rem;
+    line-height: 1.4;
     -webkit-text-size-adjust: 100%;
     
       

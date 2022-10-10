@@ -5,9 +5,9 @@ import styled, { css } from 'styled-components';
 // Button
 export const Button = styled.button`
   margin-top: 10px;
-  padding: 10px 50px;
+  padding: 15px 50px;
   background: #ff0033;
-  border-radius: 20px;
+  border-radius: 25px;
   border: #ff0033;
   color: white;
   font-weight: bold;
@@ -360,6 +360,7 @@ export const NFTTextContainer = styled.div`
 export const NFTText = styled.p`
   width: 50%;
   color: white;
+  line-height: 1.5;
 
   @media screen and (max-width: 480px) {
     width: 100%;

@@ -57,7 +57,7 @@ import {
 } from './styles';
 
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
-import NFTIMG from '../../Image/PlayNFT/Play-NFT.jpg';
+import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
 import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';

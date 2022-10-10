@@ -12,13 +12,22 @@ import {
   ImgCon,
   OpenMenu,
   MenuContent,
-  MenuIcon,
+  CloseMenu,
   FindUsContainer,
   FindUsLinkCon,
+  StyledSocialLink,
+  SocialLinkCon,
 } from './styles';
 import { Link } from 'react-router-dom';
 import Logo from '../../Image/Header/New_Logo_red.png';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faTwitter,
+  faDiscord,
+  faTelegram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 
 const Menu = () => {
   return (
@@ -64,20 +73,20 @@ function Header() {
               </Link>
             </ImgCon>
             <OpenMenu onClick={menuOpen}>
-              <FaBars />
+              <FontAwesomeIcon icon={faBars} />
             </OpenMenu>
           </TopHeader>
 
-          <div className="sticky_i=Icon"></div>
+          <div className="sticky_Icon"></div>
 
           <div>
             {isOpen && (
               <SideMenuContainer>
                 <SideMenuHeader>
-                  <MenuIcon onClick={closeMenu}>
+                  <CloseMenu onClick={closeMenu}>
                     {' '}
-                    <FaTimes />
-                  </MenuIcon>
+                    <FontAwesomeIcon icon={faTimes} />
+                  </CloseMenu>
                 </SideMenuHeader>
 
                 <SideMenuWrapper>
@@ -87,10 +96,18 @@ function Header() {
                   <FindUsContainer>
                     <div>Find us on</div>
                     <FindUsLinkCon>
-                      <div>Youtube</div>
-                      <div>Discord</div>
-                      <div>Twitter</div>
-                      <div>Telegram</div>
+                      <SocialLinkCon as="a" href='https://twitter.com'>
+                        <StyledSocialLink icon={faTwitter} />
+                      </SocialLinkCon>
+                      <SocialLinkCon as="a"  href=''>
+                        <StyledSocialLink icon={faDiscord} />
+                      </SocialLinkCon>
+                      <SocialLinkCon as="a"   href=''>
+                        <StyledSocialLink icon={faTelegram} />
+                      </SocialLinkCon>
+                      <SocialLinkCon as="a" href=''>
+                        <StyledSocialLink icon={faYoutube} />
+                      </SocialLinkCon>
                     </FindUsLinkCon>
                   </FindUsContainer>
                 </SideMenuWrapper>

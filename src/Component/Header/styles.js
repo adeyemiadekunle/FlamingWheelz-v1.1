@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export const StyledLink = styled(Link)`
   color: white;
   display: block;
   margin: 1.3rem 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   &:hover {
     transition: all 0.1s;
@@ -42,6 +44,10 @@ export const TopHeader = styled.div`
   padding: 0 2rem;
   width: 100%;
   height: 4rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const Img = styled.img`
@@ -50,6 +56,10 @@ export const Img = styled.img`
 
 export const ImgCon = styled.div`
   /* padding-left: 10px; */
+
+  @media screen and (max-width: 480px) {
+    margin-left: -10px;
+  }
 `;
 
 
@@ -82,6 +92,10 @@ export const SideMenuHeader = styled.div`
   color: white;
   font-size: 1.8rem;
   padding: 16px 2rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
  
 `;
 
@@ -104,15 +118,17 @@ export const MenuContent = styled.div`
 `;
 
 export const OpenMenu = styled.div`
-  font-size: 1.8rem;
+  font-size: 2rem;
+ 
 `;
 
-export const MenuIcon = styled.div`
+export const CloseMenu = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
 position: relative;
+font-size: 2rem;
 `
 
 export const SideMenuOverlay = styled.div`
@@ -137,7 +153,17 @@ align-items: center;
 
 export const FindUsLinkCon = styled.div`
 display: flex;
-gap: 5px;
 padding-top: 20px;
+gap: 20px;
+
+`
+
+export const StyledSocialLink = styled(FontAwesomeIcon)`
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+`
+
+export const SocialLinkCon = styled.div`
 
 `
