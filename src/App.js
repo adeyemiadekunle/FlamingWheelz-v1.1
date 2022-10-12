@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import Header from './Component/Header/Header';
 import GlobalStyles from './Styles/GlobalStyles';
 import Footer from './Component/Footer/Footer';
+import Loader from './Component/Loader/Loader';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Suspense fallback={<div>Loading....</div>}>
+      <Suspense fallback={<Loader/>}>
       <GlobalStyles />
       <Header />
       <Routes>
