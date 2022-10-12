@@ -4,15 +4,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export const StyledLink = styled(Link)`
-  color: white;
-  display: block;
-  margin: 1.3rem 0;
+  color: #0b0d17;
   font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  margin-left: 1.3rem;
 
   &:hover {
     transition: all 0.1s;
-    font-weight: bold;
     color: #33aaf5;
+  }
+
+  @media screen and (max-width: 768px) {
+    color: white;
+    display: block;
+    margin: 1.3rem 0;
   }
 `;
 
@@ -20,15 +26,16 @@ export const StyledLink = styled(Link)`
 // Header
 export const HeaderContainer = styled.header`
   height: 4rem;
-  box-shadow: 0 4px 4px rgba(0 0 0 /25%);
-
-
+  background: red;
+  
+  
 `;
 
 export const Head = styled.div`
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+ 
 
 `;
 
@@ -44,6 +51,10 @@ export const TopHeader = styled.div`
   padding: 0 2rem;
   width: 100%;
   height: 4rem;
+  -webkit-box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  -moz-box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
@@ -62,6 +73,17 @@ export const ImgCon = styled.div`
   }
 `;
 
+export const DesktopContent = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+@media screen and (max-width: 768px) {
+  display: none;
+}
+`
+
 
 
 
@@ -78,10 +100,13 @@ export const SideMenuContainer = styled.div`
   top: 0;
   right: 0;
   z-index: 10;
-  background-color: transparent;
   user-select: none;
-  background-color: black;
+  background-color: rgba(11,13,23);
   pointer-events: none;
+
+  @media screen and (min-width:768px) {
+    display: none;
+  }
 `;
 
 export const SideMenuHeader = styled.div`
@@ -110,6 +135,7 @@ export const SideMenuWrapper = styled.div`
   height: 100%;
   pointer-events: all;
   color: white;
+
 `;
 
 export const MenuContent = styled.div`
@@ -118,8 +144,14 @@ export const MenuContent = styled.div`
 `;
 
 export const OpenMenu = styled.div`
+
+display: none;
+@media screen and (max-width: 768px) {
+  display: contents;
   font-size: 2rem;
- 
+  color: #0b0d17;
+}
+  
 `;
 
 export const CloseMenu = styled.div`
@@ -137,9 +169,11 @@ position: fixed;
 right: 0;
 top: 0;
 left: 0;
-z-index: 9;
-background: rgba(0,0,0,0.8);
+z-index: -1;
+background: rgba(0,0,0,0.85);
 `
+
+
 export const FindUsContainer = styled.div`
 padding: 40px;
 display: flex;

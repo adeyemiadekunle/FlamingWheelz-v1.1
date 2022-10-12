@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import {
   Head,
   TopHeader,
+  DesktopContent,
   SideMenuContainer,
   SideMenuHeader,
   SideMenuWrapper,
+  SideMenuOverlay,
   Img,
   StyledLink,
   HeaderContainer,
-  SideMenuOverlay,
   ImgCon,
   OpenMenu,
   MenuContent,
@@ -29,31 +30,31 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
-const Menu = () => {
-  return (
-    <>
-      <StyledLink to="/" end>
-        <span></span>Home
-      </StyledLink>
-      <StyledLink to="/nft">
-        {' '}
-        <span></span> NFT
-      </StyledLink>
-      <StyledLink to="/about">
-        {' '}
-        <span></span>About
-      </StyledLink>
-      <StyledLink to="/marketplace">
-        <span></span>Market
-      </StyledLink>
-      <StyledLink to="/ecosystem">
-        <span></span>Ecosystem
-      </StyledLink>
-    </>
-  );
-};
-
 function Header() {
+  const Menu = () => {
+    return (
+      <div>
+        <StyledLink  onClick={closeMenu} to="/" >
+          <span></span>HOME
+        </StyledLink>
+        <StyledLink  onClick={closeMenu} to="/nft" >
+          {' '}
+          <span></span> NFT
+        </StyledLink>
+        <StyledLink   onClick={closeMenu} to="/about">
+          {' '}
+          <span></span>ABOUT
+        </StyledLink>
+        <StyledLink  onClick={closeMenu} to="/marketplace" >
+          <span></span>MARKET
+        </StyledLink>
+        <StyledLink onClick={closeMenu}  to="/ecosystem" >
+          <span></span>ECOSYSTEM
+        </StyledLink>
+      </div>
+    );
+  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   //  To Toggle Menu and Close it
@@ -65,6 +66,7 @@ function Header() {
       <HeaderContainer>
         <Head>
           <TopHeader>
+            {/* Logo */}
             <ImgCon>
               <Link to="/">
                 <span>
@@ -72,23 +74,27 @@ function Header() {
                 </span>
               </Link>
             </ImgCon>
+            {/* Nav Links */}
+            <DesktopContent>
+              <Menu />
+            </DesktopContent>
+            {/* Menubar */}
             <OpenMenu onClick={menuOpen}>
               <FontAwesomeIcon icon={faBars} />
             </OpenMenu>
           </TopHeader>
 
-          <div className="sticky_Icon"></div>
+          {/* <div className="sticky_Icon"></div> */}
 
           <div>
             {isOpen && (
               <SideMenuContainer>
+                <SideMenuOverlay />
                 <SideMenuHeader>
                   <CloseMenu onClick={closeMenu}>
-                    {' '}
                     <FontAwesomeIcon icon={faTimes} />
                   </CloseMenu>
                 </SideMenuHeader>
-
                 <SideMenuWrapper>
                   <MenuContent>
                     <Menu />
@@ -96,16 +102,19 @@ function Header() {
                   <FindUsContainer>
                     <div>Find us on</div>
                     <FindUsLinkCon>
-                      <SocialLinkCon as="a" href='https://twitter.com'>
+                      <SocialLinkCon
+                        as="a"
+                        href="https://twitter.com"
+                      >
                         <StyledSocialLink icon={faTwitter} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a"  href=''>
+                      <SocialLinkCon as="a" href="">
                         <StyledSocialLink icon={faDiscord} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a"   href=''>
+                      <SocialLinkCon as="a" href="">
                         <StyledSocialLink icon={faTelegram} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a" href=''>
+                      <SocialLinkCon as="a" href="">
                         <StyledSocialLink icon={faYoutube} />
                       </SocialLinkCon>
                     </FindUsLinkCon>

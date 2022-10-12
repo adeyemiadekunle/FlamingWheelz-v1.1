@@ -4,11 +4,16 @@
 
 red color: #FF0033
 white color: #FFFFFF
-offwhite color: #F3F3F3
+blue color: #33aaf5
 
- # Background
+ # Background Color
+ primary color:   #0b0d17   rgb = 11, 13, 23
+ Secondary color: #d0d6f9   rgb = 208, 214 , 249
+ Third color: #ffffff   rgb = 255, 255, 255
 
- blue color: #33aaf5
+
+
+
 
 
 # The Font Family

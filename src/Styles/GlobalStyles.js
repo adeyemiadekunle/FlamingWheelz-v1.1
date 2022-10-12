@@ -9,7 +9,7 @@ export default createGlobalStyle`
  
 
   body {
-    background: #f3f3f3;
+    background: linear-gradient(to bottom right, #ff0033 0%, #0b0d17 60%);
     margin: 0;
     padding: 0;
     line-height: 1.4;
@@ -20,6 +20,7 @@ export default createGlobalStyle`
 
   body, input, textarea, button {
     font: 500 1rem Montserrat, sans-serif;
+   
     
    
   }

@@ -14,22 +14,38 @@ export const Button = styled.button`
 
   :hover {
     opacity: 0.8;
+    border-radius: 25px;
   }
 
   ${(props) =>
     props.primary &&
     css`
       background: transparent;
-      color: white;
-      border: 2px solid #ff0033;
+      color: white ;
+      border: 2px solid #ffffff;
 
       &:hover {
         background: white;
-        color: #000;
+        color: #0b0d17;
         border: 2px solid white;
-        transition: all 0.5s;
+        transition: all 0.2s;
+      }
+    `};
+
+    ${(props) =>
+    props.normal &&
+    css`
+      background: white;
+      color: #ff0033;
+      border: 2px solid white;
+
+      &:hover {
+        transition: 0.2s;
+        color: #0b0d17;
+      
       }
     `}
+
 `;
 
 // End of Global
@@ -79,7 +95,7 @@ export const HeroSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.47);
+  background: rgba(11, 13, 23, 0.470);
 `;
 
 export const HeroHeadingContainer = styled.div`
@@ -182,7 +198,8 @@ export const HeroButton = styled.button`
       &:hover {
         border: 2px solid #ff0033;
       }
-    `}
+    `};
+
 `;
 
 export const HeroDownloadContainer = styled.div`
@@ -190,7 +207,7 @@ export const HeroDownloadContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(11, 13, 23, 0.5);
   color: white;
   gap: 20px;
 
@@ -216,6 +233,8 @@ export const AboutContainer = styled.div`
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  color: white;
+
 `;
 
 export const AboutTextCon = styled.div`
@@ -229,7 +248,8 @@ export const AboutTextCon = styled.div`
 export const AboutHeading = styled.h1`
   padding-top: 20px;
   font-size: 3rem;
-  color: #33aaf5;
+  /* color: #33aaf5; */
+  color: #fff;
   font-weight: bold;
 
   @media screen and (max-width: 480px) {
@@ -238,7 +258,7 @@ export const AboutHeading = styled.h1`
 `;
 
 export const AboutHeadingh5 = styled.h5`
-  color: #ff0033;
+  color: #fff;
   font-size: 1rem;
 `;
 
@@ -271,7 +291,7 @@ export const AboutColumn = styled.div`
 `;
 
 export const AboutFeature = styled.h3`
-  color: #ff0033;
+  color: #fff;
   text-decoration: underline;
 
   @media screen and (max-width: 480px) {
@@ -285,12 +305,13 @@ export const AboutFeature = styled.h3`
 
 export const NFTSection = styled.div`
   display: flex;
-  flex-flow: column;
-  justify-content: center;
   overflow: hidden;
   position: relative;
   height: 90vh;
-  gap: 10px;
+
+  justify-content: right;
+  align-items: right;
+  
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -325,20 +346,30 @@ export const NFTSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.77);
+  background: rgba(11, 13, 23, 0.60);
 `;
 
+
+export const NFTContentCon = styled.div`
+z-index: 1;
+display: flex;
+flex-flow: column;
+justify-content: center;
+max-width: 1200px;
+margin: 0 auto;
+text-align: right;
+width: 100%;
+
+`
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
-  max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
   padding: 0 20px;
 `;
 
 export const NFTHeadingh2 = styled.h2`
   font-size: 3.5rem;
-  text-align: left;
+  /* text-align: left; */
   font-weight: bold;
   color: white;
   padding-bottom: 10px;
@@ -350,20 +381,19 @@ export const NFTHeadingh2 = styled.h2`
 `;
 
 export const NFTTextContainer = styled.div`
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
   z-index: 1;
   padding: 0 20px;
 `;
 
 export const NFTText = styled.p`
-  width: 50%;
   color: white;
   line-height: 1.5;
+  text-align: right;
 
   @media screen and (max-width: 480px) {
     width: 100%;
+    text-align: center;
   }
 `;
 
@@ -377,15 +407,22 @@ export const NFTLink = styled.div`
   cursor: pointer;
 `;
 export const NFTBtnContainer = styled.div`
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
   z-index: 1;
   padding: 0 10px;
   padding-top: 30px;
 `;
 
+
+
+
 // The Cummunity
+
+export const Community = styled.div`
+background: white ;
+
+`
+
 export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
@@ -393,6 +430,7 @@ export const CommunityContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+
 `;
 
 export const CommunityHeadingContainer = styled.div`
@@ -424,13 +462,13 @@ export const CommunityRow = styled.div`
 `;
 
 export const CommunityReadMore = styled.p`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const CommunityReadMoreBtn = styled.button`
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
   
     padding: 15px 40px;
     background: #ff0033;
@@ -446,7 +484,7 @@ export const CommunityReadMoreBtn = styled.button`
     }
   }
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 `;
@@ -460,18 +498,19 @@ margin-bottom: 30px;
 `
 // End of Community
 
+
+
 // The Patner
 export const Patner = styled.div`
   width: 100%;
   height: 500px;
-  background: black;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80vh;
 
   @media screen and (max-width: 480px) {
-   height: 70vh;
+  
   }
 `;
 
@@ -546,7 +585,7 @@ export const HGTSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.42);
+
 `;
 
 export const HGTContentContainer = styled.div`
@@ -561,9 +600,9 @@ export const HGTContentContainer = styled.div`
 
 export const HGTTextContainer = styled.div`
   z-index: 1;
-  width: 50%;
+  width: 100%;
   padding: 50px 10px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(11, 13, 23, 0.7);
   border-radius: 8px;
   display: flex;
   flex-flow: column;
@@ -575,7 +614,7 @@ export const HGTTextContainer = styled.div`
 
 export const HGTHeadingh2 = styled.h2`
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   color: #33aaf5;
   padding-bottom: 10px;
@@ -588,7 +627,7 @@ export const HGTHeadingh2 = styled.h2`
 export const HGTText = styled.p`
   font-size: 1.2rem;
   color: #fff;
-  text-align: center;
+  text-align: left;
 
   @media screen and (max-width: 480px) {
     font-size: 1rem;
@@ -597,7 +636,7 @@ export const HGTText = styled.p`
 
 export const HGTbtnContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding-top: 30px;
 `;
 // End of HGT Token

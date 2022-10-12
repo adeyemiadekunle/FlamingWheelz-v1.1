@@ -26,6 +26,7 @@ import {
   NFTSectionbg,
   NFTSectionOverlay,
   NFTImg,
+  NFTContentCon,
   NFTHeadingContainer,
   NFTHeadingh2,
   NFTTextContainer,
@@ -33,6 +34,7 @@ import {
   NFTBtnContainer,
   KleverNFT,
   NFTLink,
+  Community,
   CommunityContainer,
   CommunityHeadingContainer,
   CommunityHeadingh5,
@@ -130,7 +132,6 @@ function Home() {
                 <HeroLink>EARN.</HeroLink>
               </HeroText>
             </HeroTextContainer>
-            
           </HeroContentContainer>
 
           <HeroDownloadContainer>
@@ -157,7 +158,7 @@ function Home() {
                 saepe harum illum, distinctio, dolores repudiandae
                 voluptas iusto architecto.
               </AboutText>
-              <Button>Join Us</Button>
+              <Button normal>Join Us</Button>
             </AboutTextCon>
             <AboutColumn>
               <AboutFeature>Key Features</AboutFeature>
@@ -179,52 +180,55 @@ function Home() {
             <NFTImg src={NFTIMG} alt="A man Playing Racing Game" />
           </NFTSectionbg>
           <NFTSectionOverlay></NFTSectionOverlay>
-
-          <NFTHeadingContainer>
-            <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
-          </NFTHeadingContainer>
-          <NFTTextContainer>
-            <NFTText>
-              Over 4K NFTs are available at the moment to play.
-             
-              Check out our{' '}
-              <NFTLink as="a">Genesis Collection</NFTLink> on Klever
-              <KleverNFT>NFT </KleverNFT>
-              and turn your NFT in life.
-            </NFTText>
-          </NFTTextContainer>
-          <NFTBtnContainer className="btn">
-            <Button
-              as="a"
-              href="https://www.klevernft.com/launchpad/FWZ-COMING"
-            >
-              Explore NFT Collections
-            </Button>
-          </NFTBtnContainer>
-
+          <NFTContentCon>
+            <NFTHeadingContainer>
+              <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
+            </NFTHeadingContainer>
+            <NFTTextContainer>
+              <NFTText>
+                Over 4K NFTs are available at the moment to play.
+                <br></br>
+                Check out our{' '}
+                <NFTLink as="a">Genesis Collection</NFTLink> on Klever
+                <KleverNFT>NFT </KleverNFT>
+                and turn your NFT in life.
+              </NFTText>
+            </NFTTextContainer>
+            <NFTBtnContainer className="btn">
+              <Button
+                as="a"
+                href="https://www.klevernft.com/launchpad/FWZ-COMING"
+              >
+                Explore NFT Collections
+              </Button>
+            </NFTBtnContainer>
+          </NFTContentCon>
         </NFTSection>
         {/* End of NFT */}
 
         {/*  The Community New */}
-        <CommunityContainer>
-          <CommunityHeadingContainer>
-            <div>
-              <CommunityHeadingh5>COMMUNITY</CommunityHeadingh5>
-              <h2>LATEST NEWS</h2>
-            </div>
-            <div>
-              <CommunityReadMore>Read more</CommunityReadMore>
-            </div>
-          </CommunityHeadingContainer>
-          <CommunityRow>
-            <NewsCard></NewsCard>
-            <NewsCard></NewsCard>
-            <NewsCard></NewsCard>
-          </CommunityRow>
-              <CommBtnContainer>
-                <CommunityReadMoreBtn>Read More</CommunityReadMoreBtn>
-              </CommBtnContainer>
-        </CommunityContainer>
+
+        <Community>
+          <CommunityContainer>
+            <CommunityHeadingContainer>
+              <div>
+                <CommunityHeadingh5>COMMUNITY</CommunityHeadingh5>
+                <h2>LATEST NEWS</h2>
+              </div>
+              <div>
+                <CommunityReadMore>Read more</CommunityReadMore>
+              </div>
+            </CommunityHeadingContainer>
+            <CommunityRow>
+              <NewsCard></NewsCard>
+              <NewsCard></NewsCard>
+              <NewsCard></NewsCard>
+            </CommunityRow>
+            <CommBtnContainer>
+              <CommunityReadMoreBtn>Read More</CommunityReadMoreBtn>
+            </CommBtnContainer>
+          </CommunityContainer>
+        </Community>
         {/* End of Community */}
 
         {/* The Patner */}
@@ -255,14 +259,22 @@ function Home() {
 
           <HGTContentContainer>
             <HGTTextContainer className="headingCon">
-              <HGTHeadingh2>WHY HGT?</HGTHeadingh2>
+              <HGTHeadingh2>HYPATIA GAMES AND HGT TOKEN</HGTHeadingh2>
               <HGTText>
-                $HGT is our main utility token that allow you to EARN,
-                BUY and SELL Assets in our Ecosystem.
+                Hypatia Games is the ecosystem for racing blockchain
+                games developed by Hypatia Studio, currently including
+                FlamingWheelz. All Hypatia games are connected by the
+                utility token HGT, which serves as the primary
+                currency of purchase, utility, and action across all
+                the games. HGT is designed for use across multiple
+                connected products. Most importantly, HGT powers true
+                digital ownership of your in-game assets, allowing you
+                complete freedom and control over your NFT game items
+                - sell them or trade them as you wish!
               </HGTText>
               <HGTbtnContainer>
                 <Button primary as="">
-                  Buy Now
+                  Get your HGT Token
                 </Button>
               </HGTbtnContainer>
             </HGTTextContainer>
