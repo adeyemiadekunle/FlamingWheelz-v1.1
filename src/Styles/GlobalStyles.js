@@ -12,7 +12,7 @@ export default createGlobalStyle`
     background: linear-gradient(to bottom right, #ff0033 0%, #0b0d17 60%);
     margin: 0;
     padding: 0;
-    line-height: 1.4;
+    line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     
       

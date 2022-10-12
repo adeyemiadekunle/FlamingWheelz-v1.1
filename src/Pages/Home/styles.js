@@ -48,6 +48,13 @@ export const Button = styled.button`
 
 `;
 
+
+export const TextUnderline = styled.span`
+color: orange ;
+text-decoration: underline;
+font-weight: 600;
+
+`
 // End of Global
 
 // Home Section
@@ -100,7 +107,7 @@ export const HeroSectionOverlay = styled.div`
 
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -132,7 +139,7 @@ export const HeroHeadingh1 = styled.h1`
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
@@ -160,7 +167,7 @@ export const HeroLink = styled.span`
 
 export const HeroBtnContainer = styled.div`
   z-index: 1;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -231,7 +238,7 @@ export const HeroContentContainer = styled.div`
 // About FlamingWheelz Section
 export const AboutContainer = styled.div`
   padding: 40px 20px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   color: white;
 
@@ -355,7 +362,7 @@ z-index: 1;
 display: flex;
 flex-flow: column;
 justify-content: center;
-max-width: 1200px;
+max-width: 1300px;
 margin: 0 auto;
 text-align: right;
 width: 100%;
@@ -399,6 +406,7 @@ export const NFTText = styled.p`
 
 export const KleverNFT = styled.span`
   color: rgb(160, 57, 194);
+  
 `;
 
 export const NFTLink = styled.div`
@@ -427,7 +435,7 @@ export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
 
@@ -515,7 +523,7 @@ export const Patner = styled.div`
 `;
 
 export const PatnerCon = styled.div`
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 10px;
   display: flex;
@@ -549,11 +557,12 @@ export const PatnerHeading = styled.h5`
 // HGT Token
 export const HGTContainer = styled.div`
   display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
+  flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 90vh;
+  height: 100vh;
+  background-color: black;
+
 
   @media screen and (max-width: 480px) {
     justify-content: center;
@@ -592,35 +601,36 @@ export const HGTContentContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   z-index: 1;
-  max-width: 1200px;
+  align-items: center;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding: 20px;
+  height: 100%;
 `;
 
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 50px 10px;
-  background: rgba(11, 13, 23, 0.7);
-  border-radius: 8px;
   display: flex;
   flex-flow: column;
+  width: 50%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 
 export const HGTHeadingh2 = styled.h2`
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: left;
   font-weight: bold;
   color: #33aaf5;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+ 
 
-  @media screen and (max-width: 480px) {
-    font-size: 2.5rem;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
   }
 `;
 
@@ -628,8 +638,9 @@ export const HGTText = styled.p`
   font-size: 1.2rem;
   color: #fff;
   text-align: left;
+  line-height: 1.4;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
 `;

@@ -1,5 +1,6 @@
 import {
   Button,
+  TextUnderline,
   HomeSection,
   HeroSection,
   HeroSectionBg,
@@ -10,7 +11,6 @@ import {
   HeroHeadingh1,
   HeroTextContainer,
   HeroText,
-  HeroLink,
   HeroDownloadContainer,
   HeroContentContainer,
   HeroDownloadLinkCon,
@@ -33,7 +33,6 @@ import {
   NFTText,
   NFTBtnContainer,
   KleverNFT,
-  NFTLink,
   Community,
   CommunityContainer,
   CommunityHeadingContainer,
@@ -60,7 +59,7 @@ import {
 
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
-import HGTIMG from '../../Image/HGT/HGT.png';
+// import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
@@ -124,12 +123,12 @@ function Home() {
             <HeroTextContainer>
               <HeroText>
                 A Hyper Realistic Racing Games developed by{' '}
-                <HeroLink as="a" href="">
+                <TextUnderline as="a" href="">
                   Hypatia Games,
-                </HeroLink>{' '}
+                </TextUnderline>{' '}
                 graced with tournament, challenge and best of all{' '}
-                <HeroLink>PLAY</HeroLink> and{' '}
-                <HeroLink>EARN.</HeroLink>
+                <TextUnderline>PLAY</TextUnderline> and{' '}
+                <TextUnderline>EARN.</TextUnderline>
               </HeroText>
             </HeroTextContainer>
           </HeroContentContainer>
@@ -189,7 +188,10 @@ function Home() {
                 Over 4K NFTs are available at the moment to play.
                 <br></br>
                 Check out our{' '}
-                <NFTLink as="a">Genesis Collection</NFTLink> on Klever
+                <TextUnderline as="a">
+                  Genesis Collection
+                </TextUnderline>{' '}
+                on Klever
                 <KleverNFT>NFT </KleverNFT>
                 and turn your NFT in life.
               </NFTText>
@@ -253,7 +255,7 @@ function Home() {
         {/* HGT Token */}
         <HGTContainer>
           <HGTSectionbg>
-            <HGTImg src={HGTIMG} alt="Box full of Coins" />
+            <HGTImg alt="Box full of Coins" />
           </HGTSectionbg>
           <HGTSectionOverlay></HGTSectionOverlay>
 
@@ -261,16 +263,26 @@ function Home() {
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>HYPATIA GAMES AND HGT TOKEN</HGTHeadingh2>
               <HGTText>
-                Hypatia Games is the ecosystem for racing blockchain
-                games developed by Hypatia Studio, currently including
-                FlamingWheelz. All Hypatia games are connected by the
-                utility token HGT, which serves as the primary
+                <TextUnderline>Hypatia Games</TextUnderline> is the
+                ecosystem for racing blockchain games developed by
+                Hypatia Games Studio, currently including
+               <TextUnderline> FlamingWheelz</TextUnderline> and more yet to come.
+                <div>
+                  <br></br>
+                </div>
+                All Hypatia Games are connected by the utility
+                governance token <TextUnderline>HGT</TextUnderline>, which serves as the primary
                 currency of purchase, utility, and action across all
                 the games. HGT is designed for use across multiple
-                connected products. Most importantly, HGT powers true
-                digital ownership of your in-game assets, allowing you
-                complete freedom and control over your NFT game items
-                - sell them or trade them as you wish!
+                connected products.
+                <div>
+                  <br></br>
+                </div>
+                Most importantly, HGT powers true digital ownership of
+                your in-game assets, allowing you complete freedom and
+                control over your NFT game items, and can be exchange
+                with other crytocurrencies in the real world and
+                eventaully be exchange using fiat currency.
               </HGTText>
               <HGTbtnContainer>
                 <Button primary as="">
