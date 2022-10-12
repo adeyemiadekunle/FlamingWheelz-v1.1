@@ -21,7 +21,7 @@ export const Button = styled.button`
     props.primary &&
     css`
       background: transparent;
-      color: white ;
+      color: white;
       border: 2px solid #ffffff;
 
       &:hover {
@@ -32,7 +32,7 @@ export const Button = styled.button`
       }
     `};
 
-    ${(props) =>
+  ${(props) =>
     props.normal &&
     css`
       background: white;
@@ -42,19 +42,15 @@ export const Button = styled.button`
       &:hover {
         transition: 0.2s;
         color: #0b0d17;
-      
       }
     `}
-
 `;
 
-
 export const TextUnderline = styled.span`
-color: orange ;
-text-decoration: underline;
-font-weight: 600;
-
-`
+  color: orange;
+  text-decoration: underline;
+  font-weight: 600;
+`;
 // End of Global
 
 // Home Section
@@ -102,7 +98,7 @@ export const HeroSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: rgba(11, 13, 23, 0.470);
+  background: rgba(11, 13, 23, 0.47);
 `;
 
 export const HeroHeadingContainer = styled.div`
@@ -144,7 +140,7 @@ export const HeroTextContainer = styled.div`
   margin: 0 auto;
   width: 100%;
 
-  @media screen and (max-width:480px) {
+  @media screen and (max-width: 480px) {
     padding: 0 22px;
   }
 `;
@@ -206,7 +202,6 @@ export const HeroButton = styled.button`
         border: 2px solid #ff0033;
       }
     `};
-
 `;
 
 export const HeroDownloadContainer = styled.div`
@@ -241,7 +236,6 @@ export const AboutContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   color: white;
-
 `;
 
 export const AboutTextCon = styled.div`
@@ -318,7 +312,6 @@ export const NFTSection = styled.div`
 
   justify-content: right;
   align-items: right;
-  
 
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -353,30 +346,26 @@ export const NFTSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: rgba(11, 13, 23, 0.60);
+  background: rgba(11, 13, 23, 0.6);
 `;
 
-
 export const NFTContentCon = styled.div`
-z-index: 1;
-display: flex;
-flex-flow: column;
-justify-content: center;
-max-width: 1300px;
-margin: 0 auto;
-text-align: right;
-width: 100%;
-
-`
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+`;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
 `;
 
 export const NFTHeadingh2 = styled.h2`
   font-size: 3.5rem;
-  /* text-align: left; */
   font-weight: bold;
   color: white;
   padding-bottom: 10px;
@@ -388,15 +377,22 @@ export const NFTHeadingh2 = styled.h2`
 `;
 
 export const NFTTextContainer = styled.div`
+  display: flex;
+  flex-flow: column;
   width: 100%;
   z-index: 1;
-  padding: 0 20px;
+  padding: 50px 20px;
+  width: 60%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
-export const NFTText = styled.p`
+export const NFTTextRap = styled.div`
   color: white;
   line-height: 1.5;
-  text-align: right;
+  text-align: left;
 
   @media screen and (max-width: 480px) {
     width: 100%;
@@ -404,9 +400,12 @@ export const NFTText = styled.p`
   }
 `;
 
+export const NFTText = styled.p`
+  font-size: 1.2rem;
+`;
+
 export const KleverNFT = styled.span`
   color: rgb(160, 57, 194);
-  
 `;
 
 export const NFTLink = styled.div`
@@ -417,19 +416,14 @@ export const NFTLink = styled.div`
 export const NFTBtnContainer = styled.div`
   width: 100%;
   z-index: 1;
-  padding: 0 10px;
   padding-top: 30px;
 `;
-
-
-
 
 // The Cummunity
 
 export const Community = styled.div`
-background: white ;
-
-`
+  background: white;
+`;
 
 export const CommunityContainer = styled.div`
   display: flex;
@@ -437,8 +431,7 @@ export const CommunityContainer = styled.div`
   overflow: hidden;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 10px;
-
+  padding: 0 20px;
 `;
 
 export const CommunityHeadingContainer = styled.div`
@@ -477,15 +470,12 @@ export const CommunityReadMore = styled.p`
 
 export const CommunityReadMoreBtn = styled.button`
   @media screen and (max-width: 768px) {
-  
     padding: 15px 40px;
     background: #ff0033;
     border-radius: 8px;
     border: #ff0033;
     color: white;
     font-weight: bold;
-    
-  
 
     :hover {
       opacity: 0.8;
@@ -498,15 +488,13 @@ export const CommunityReadMoreBtn = styled.button`
 `;
 
 export const CommBtnContainer = styled.div`
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 30px;
-`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+`;
 // End of Community
-
-
 
 // The Patner
 export const Patner = styled.div`
@@ -518,14 +506,13 @@ export const Patner = styled.div`
   height: 80vh;
 
   @media screen and (max-width: 480px) {
-  
   }
 `;
 
 export const PatnerCon = styled.div`
   max-width: 1300px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -563,10 +550,9 @@ export const HGTContainer = styled.div`
   height: 100vh;
   background-color: black;
 
-
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
   }
 `;
 export const HGTSectionbg = styled.div`
@@ -594,7 +580,6 @@ export const HGTSectionOverlay = styled.div`
   width: 100%;
   position: absolute;
   z-index: -1;
-
 `;
 
 export const HGTContentContainer = styled.div`
@@ -611,7 +596,7 @@ export const HGTContentContainer = styled.div`
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 10px;
+  padding: 50px 20px;
   display: flex;
   flex-flow: column;
   width: 50%;
@@ -627,7 +612,6 @@ export const HGTHeadingh2 = styled.h2`
   font-weight: bold;
   color: #33aaf5;
   padding-bottom: 15px;
- 
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;

@@ -30,6 +30,7 @@ import {
   NFTHeadingContainer,
   NFTHeadingh2,
   NFTTextContainer,
+  NFTTextRap,
   NFTText,
   NFTBtnContainer,
   KleverNFT,
@@ -179,31 +180,32 @@ function Home() {
             <NFTImg src={NFTIMG} alt="A man Playing Racing Game" />
           </NFTSectionbg>
           <NFTSectionOverlay></NFTSectionOverlay>
+
           <NFTContentCon>
-            <NFTHeadingContainer>
-              <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
-            </NFTHeadingContainer>
             <NFTTextContainer>
-              <NFTText>
-                Over 4K NFTs are available at the moment to play.
-                <br></br>
-                Check out our{' '}
-                <TextUnderline as="a">
-                  Genesis Collection
-                </TextUnderline>{' '}
-                on Klever
-                <KleverNFT>NFT </KleverNFT>
-                and turn your NFT in life.
-              </NFTText>
+              <NFTHeadingContainer>
+                <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
+              </NFTHeadingContainer>
+
+              <NFTTextRap>
+                <NFTText>
+                  Over 4K NFTs are available at the moment to play.
+                  Check out our <TextUnderline as="a"> Genesis Collection </TextUnderline>{' '}
+                  on Klever
+                  <KleverNFT>NFT </KleverNFT>
+                  and turn your NFT in life.
+                </NFTText>
+              </NFTTextRap>
+
+              <NFTBtnContainer className="btn">
+                <Button
+                  as="a"
+                  href="https://www.klevernft.com/launchpad/FWZ-COMING"
+                >
+                  Explore NFT Collections
+                </Button>
+              </NFTBtnContainer>
             </NFTTextContainer>
-            <NFTBtnContainer className="btn">
-              <Button
-                as="a"
-                href="https://www.klevernft.com/launchpad/FWZ-COMING"
-              >
-                Explore NFT Collections
-              </Button>
-            </NFTBtnContainer>
           </NFTContentCon>
         </NFTSection>
         {/* End of NFT */}
@@ -266,15 +268,16 @@ function Home() {
                 <TextUnderline>Hypatia Games</TextUnderline> is the
                 ecosystem for racing blockchain games developed by
                 Hypatia Games Studio, currently including
-               <TextUnderline> FlamingWheelz</TextUnderline> and more yet to come.
+                <TextUnderline> FlamingWheelz</TextUnderline> and more
+                yet to come.
                 <div>
                   <br></br>
                 </div>
                 All Hypatia Games are connected by the utility
-                governance token <TextUnderline>HGT</TextUnderline>, which serves as the primary
-                currency of purchase, utility, and action across all
-                the games. HGT is designed for use across multiple
-                connected products.
+                governance token <TextUnderline>HGT</TextUnderline>,
+                which serves as the primary currency of purchase,
+                utility, and action across all the games. HGT is
+                designed for use across multiple connected products.
                 <div>
                   <br></br>
                 </div>
