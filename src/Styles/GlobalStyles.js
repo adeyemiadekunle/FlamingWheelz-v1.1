@@ -19,7 +19,7 @@ export default createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font: 500 1rem Montserrat, sans-serif;
+    font: 500 1rem 'Montserrat', sans-serif;
    
     
    

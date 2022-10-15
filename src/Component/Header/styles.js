@@ -23,6 +23,26 @@ export const StyledLink = styled(Link)`
 `;
 
 
+export const StyledA = styled.a`
+ color: #0b0d17;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  margin-left: 1.3rem;
+
+  &:hover {
+    transition: all 0.1s;
+    color: #33aaf5;
+  }
+
+  @media screen and (max-width: 768px) {
+    color: white;
+    display: block;
+    margin: 1.3rem 0;
+  }
+
+`
+
 // Header
 export const HeaderContainer = styled.header`
   height: 4rem;

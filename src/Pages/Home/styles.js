@@ -1,4 +1,7 @@
 import styled, { css } from 'styled-components';
+import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
+import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
+
 
 // Global Style
 
@@ -65,14 +68,18 @@ export const HeroSection = styled.div`
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  height: 90vh;
+  height: 100vh;
 
   @media screen and (max-width: 480px) {
-    height: 80vh;
+    height: 90vh;
   }
 `;
 
 export const HeroSectionBg = styled.div`
+  background-image: linear-gradient( to left, rgba(11,13,23,0), rgba(11,13,23,80)), url(${Hero_IMG}) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   left: 0;
   position: absolute;
@@ -80,26 +87,8 @@ export const HeroSectionBg = styled.div`
   z-index: -1;
 `;
 
-export const HeroImg = styled.img`
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  border-style: none;
-  object-fit: cover;
-  object-position: center;
-`;
 
-export const HeroSectionOverlay = styled.div`
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  background: rgba(11, 13, 23, 0.47);
-`;
+
 
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
@@ -112,13 +101,13 @@ export const HeroHeadingContainer = styled.div`
 export const HeroHeading = styled.h1`
   font-size: 5rem;
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   padding-bottom: 10px;
 
   @media screen and (max-width: 480px) {
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 `;
 
@@ -127,7 +116,7 @@ export const HeroHeadingh1 = styled.h1`
   color: #33aaf5;
   padding-bottom: 10px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 1.5rem;
   }
@@ -140,19 +129,23 @@ export const HeroTextContainer = styled.div`
   margin: 0 auto;
   width: 100%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding: 0 22px;
   }
 `;
 
 export const HeroText = styled.p`
+  font-size: 1.5rem;
   width: 50%;
   color: white;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
     text-align: center;
     width: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 `;
 
@@ -321,6 +314,10 @@ export const NFTSection = styled.div`
 `;
 
 export const NFTSectionbg = styled.div`
+  background-image: linear-gradient( to right, rgba(11,13,23,0), rgba(11,13,23,90)), url(${NFTIMG}) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   left: 0;
   position: absolute;
@@ -328,26 +325,7 @@ export const NFTSectionbg = styled.div`
   z-index: -1;
 `;
 
-export const NFTImg = styled.img`
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  border-style: none;
-  object-fit: cover;
-  object-position: center;
-`;
 
-export const NFTSectionOverlay = styled.div`
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  background: rgba(11, 13, 23, 0.6);
-`;
 
 export const NFTContentCon = styled.div`
   z-index: 1;

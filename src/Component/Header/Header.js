@@ -9,6 +9,7 @@ import {
   SideMenuOverlay,
   Img,
   StyledLink,
+  StyledA,
   HeaderContainer,
   ImgCon,
   OpenMenu,
@@ -34,23 +35,14 @@ function Header() {
   const Menu = () => {
     return (
       <div>
-        <StyledLink  onClick={closeMenu} to="/" >
-          <span></span>HOME
-        </StyledLink>
-        <StyledLink  onClick={closeMenu} to="/nft" >
-          {' '}
-          <span></span> NFT
-        </StyledLink>
-        <StyledLink   onClick={closeMenu} to="/about">
-          {' '}
-          <span></span>ABOUT
-        </StyledLink>
-        <StyledLink  onClick={closeMenu} to="/marketplace" >
-          <span></span>MARKET
-        </StyledLink>
-        <StyledLink onClick={closeMenu}  to="/ecosystem" >
-          <span></span>ECOSYSTEM
-        </StyledLink>
+        <StyledLink onClick={closeMenu} to="/">HOME</StyledLink>
+        <StyledLink onClick={closeMenu} to="/about">ABOUT</StyledLink>
+        <StyledLink onClick={closeMenu} to="/event">EVENTS</StyledLink>
+        <StyledA onClick={closeMenu}
+          href="https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1"
+          target="_blank"
+          rel="noopener noreferrer">MARKET</StyledA>
+        <StyledLink onClick={closeMenu} to="/roadmap">ROADMAP</StyledLink>
       </div>
     );
   };

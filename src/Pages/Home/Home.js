@@ -4,11 +4,8 @@ import {
   HomeSection,
   HeroSection,
   HeroSectionBg,
-  HeroImg,
   HeroHeadingContainer,
-  HeroSectionOverlay,
   HeroHeading,
-  HeroHeadingh1,
   HeroTextContainer,
   HeroText,
   HeroDownloadContainer,
@@ -24,8 +21,6 @@ import {
   AboutFeature,
   NFTSection,
   NFTSectionbg,
-  NFTSectionOverlay,
-  NFTImg,
   NFTContentCon,
   NFTHeadingContainer,
   NFTHeadingh2,
@@ -58,8 +53,7 @@ import {
   HGTbtnContainer,
 } from './styles';
 
-import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
-import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
+
 // import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
 import NewsCard from '../../Component/News/NewCard';
@@ -104,21 +98,18 @@ function Home() {
       <HomeSection>
         {/* Hero */}
         <HeroSection>
-          <HeroSectionBg>
-            <HeroImg src={Hero_IMG} alt="" />
-          </HeroSectionBg>
-
-          <HeroSectionOverlay></HeroSectionOverlay>
+          <HeroSectionBg></HeroSectionBg>
+          {/* <HeroSectionOverlay></HeroSectionOverlay> */}
           <HeroContentContainer>
             <HeroHeadingContainer>
               <HeroHeading>
-                Multi Chain
+                A Fantasy
                 <br />
                 Racing Game
               </HeroHeading>
-              <HeroHeadingh1>
+              {/* <HeroHeadingh1>
                 Redefing Web3 Gaming Experience
-              </HeroHeadingh1>
+              </HeroHeadingh1> */}
             </HeroHeadingContainer>
 
             <HeroTextContainer>
@@ -177,10 +168,7 @@ function Home() {
         {/* NFT Section */}
         <NFTSection>
           <NFTSectionbg>
-            <NFTImg src={NFTIMG} alt="A man Playing Racing Game" />
           </NFTSectionbg>
-          <NFTSectionOverlay></NFTSectionOverlay>
-
           <NFTContentCon>
             <NFTTextContainer>
               <NFTHeadingContainer>
@@ -284,7 +272,7 @@ function Home() {
                 Most importantly, HGT powers true digital ownership of
                 your in-game assets, allowing you complete freedom and
                 control over your NFT game items, and can be exchange
-                with other crytocurrencies in the real world and
+                with other cryptocurrencies in the real world and
                 eventaully be exchange using fiat currency.
               </HGTText>
               <HGTbtnContainer>

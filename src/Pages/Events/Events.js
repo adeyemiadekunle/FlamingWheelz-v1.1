@@ -1,6 +1,6 @@
 import { StyledNFT } from './styles';
 
-function NFT() {
+function Events() {
   return (
     <>
     <StyledNFT>
@@ -10,4 +10,4 @@ function NFT() {
   );
 }
 
-export default NFT;
+export default Events;

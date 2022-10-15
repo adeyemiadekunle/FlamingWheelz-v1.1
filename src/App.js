@@ -9,10 +9,9 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const Home = lazy(() => import('./Pages/Home/Home'));
-  const NFT = lazy(() => import('./Pages/NFTs/NFT'));
+  const Event = lazy(() => import('./Pages/Events/Events'));
   const About = lazy(() => import('./Pages/AboutUs/AboutUs'));
   const RoadMaps = lazy(() => import('./Pages/RoadMaps/RoadMaps'));
-  const Ecosystem = lazy(() => import('./Pages/Ecosystem/Ecosystem'));
 
   return (
     <React.Fragment>
@@ -21,10 +20,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="nft" element={<NFT/>} />
+        <Route path="event" element={<Event/>} />
         <Route path="about" element={<About/>} />
         <Route path="roadmap" element={<RoadMaps/>} />
-        <Route path="ecosystem" element={<Ecosystem/>} />
       </Routes>
       <Footer />
       </Suspense>
