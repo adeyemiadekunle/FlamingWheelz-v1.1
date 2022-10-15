@@ -1,4 +1,5 @@
 import { Button } from '../Home/styles';
+import  {Team}  from '../../Component/Team/Team';
 import {
   StyledAbout,
   FlamingContainer,
@@ -22,6 +23,9 @@ import {
   FeatureText,
   FeatureLists,
   FlamingbtnContainer,
+  StyledTeam,
+  TeamContainer,
+  TeamList,
 } from './styles';
 
 function AboutUs() {
@@ -150,6 +154,19 @@ function AboutUs() {
             </HypatiaTextContainer>
           </HypatiaContentContainer>
         </HypatiaContainer>
+
+        <StyledTeam>
+          <TeamContainer>
+            <TeamList>
+           <Team/>
+           <Team/>
+           <Team/>
+           <Team/>
+           <Team/>
+           <Team/>
+            </TeamList>
+          </TeamContainer>
+        </StyledTeam>
       </StyledAbout>
     </>
   );
