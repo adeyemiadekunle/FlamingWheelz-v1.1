@@ -525,12 +525,12 @@ export const HGTContainer = styled.div`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: 120vh;
   background-color: black;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 90vh;
+    height: 110vh;
   }
 `;
 export const HGTSectionbg = styled.div`
