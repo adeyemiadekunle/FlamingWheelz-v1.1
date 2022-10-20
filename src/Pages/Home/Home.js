@@ -12,6 +12,8 @@ import {
   HeroDownloadContainer,
   HeroContentContainer,
   HeroDownloadLinkCon,
+  HeroBtnContainer,
+  HeroButton,
   AboutContainer,
   AboutTextCon,
   AboutHeading,
@@ -52,8 +54,16 @@ import {
   HGTHeadingh2,
   HGTText,
   HGTbtnContainer,
-  HeroBtnContainer,
-  HeroButton,
+  RoadMap,
+  RoadMapContainer,
+  RoadMapRow1,
+  RoadMapRow2,
+  RoadMapDivide,
+  RoadMapText,
+  RoadMapYear,
+  ViewDetailRoadmap,
+  RoadmapTerms,
+  RoadMapHeading,
 } from './styles';
 
 // import HGTIMG from '../../Image/HGT/HGT.png';
@@ -182,7 +192,9 @@ function Home() {
               <NFTTextRap>
                 <NFTText>
                   A Genesis Collection of 4K NFTs that can really play
-                  a role in FlamingWheelz, Check out on Klever
+                  a role in{' '}
+                  <TextUnderline>FlamingWheelz</TextUnderline>, Check
+                  out on Klever
                   <KleverNFT>NFT </KleverNFT>
                   and turn your NFTs to life.
                 </NFTText>
@@ -270,6 +282,82 @@ function Home() {
             </HGTTextContainer>
           </HGTContentContainer>
         </HGTContainer>
+        {/*  End HGT Token */}
+
+        {/* RoadMap */}
+        <RoadMap>
+          <RoadMapHeading>RoadMap</RoadMapHeading>
+          <RoadMapContainer>
+            <RoadMapRow1 right>
+              <RoadMapYear>
+                <p>2021</p>
+                <p>Q3</p>
+              </RoadMapYear>
+
+              <RoadMapText>
+                <p>Game development kick off</p>
+                <p>
+                  Preparing the In depth of game description of game
+                  development
+                </p>
+              </RoadMapText>
+              <RoadMapYear>
+                <p>2022</p>
+                <p>Q4</p>
+              </RoadMapYear>
+              <RoadMapText morepadding>
+                <p>
+                  FlamingWheelz Phase 2 and Release of full version
+                </p>
+                <p>
+                  FlamingWheelz main content: Tournament (Arena
+                  mode/PVP), Community League e.t.c
+                </p>
+              </RoadMapText>
+            </RoadMapRow1>
+            <RoadMapDivide></RoadMapDivide>
+            <RoadMapRow2>
+              <RoadMapText>
+                <p>Project Preparation</p>
+                <p>Recruitment of Developers</p>
+              </RoadMapText>
+              <RoadMapYear>
+                <p>Q3</p>
+                <p>2022</p>
+              </RoadMapYear>
+              <RoadMapText>
+                <p>Hypatia Games Token (HGT) Private and Pre-Sale</p>
+                <p>
+                  FlamingWheelz Genesis Edition NFT Inital NFT
+                  Offering on KleverNFT Launchpad
+                </p>
+                <p>
+                  Buy and Sell of Genesis Edition NFT on KleverNFT
+                  Marketplace
+                </p>
+                <p>
+                  FlamingWheelz Phase 1 and Release of Demo Version
+                  (coming soon)
+                </p>
+                <p>
+                  Player can start training and upgrading their NFTs
+                  for future Phases
+                </p>
+              </RoadMapText>
+              <RoadMapYear>
+                <p>Q2</p>
+                <p>2023</p>
+              </RoadMapYear>
+            </RoadMapRow2>
+          </RoadMapContainer>
+          <ViewDetailRoadmap as="a" href="">
+            View detailed roadmaps
+          </ViewDetailRoadmap>
+          <RoadmapTerms>
+            Terms and Conditions apply, adjustments to this roadmap
+            will be made when required
+          </RoadmapTerms>
+        </RoadMap>
       </HomeSection>
     </>
   );

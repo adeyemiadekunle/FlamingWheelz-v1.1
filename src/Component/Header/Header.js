@@ -42,7 +42,6 @@ function Header() {
           href="https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1"
           target="_blank"
           rel="noopener noreferrer">MARKET</StyledA>
-        <StyledLink onClick={closeMenu} to="/roadmap">ROADMAP</StyledLink>
       </div>
     );
   };

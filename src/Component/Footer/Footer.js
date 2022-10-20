@@ -21,7 +21,7 @@ import {
   Hr,
 } from './Styles';
 
-import Logo from '../../Image/Header/New_Logo_red.png';
+import Logo from '../../Image/Header/New_Logo.png';
 import {
   faTwitter,
   faDiscord,

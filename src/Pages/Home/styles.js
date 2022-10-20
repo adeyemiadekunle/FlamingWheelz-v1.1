@@ -52,12 +52,12 @@ export const Button = styled.button`
 export const TextUnderline = styled.span`
   color: orange;
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: bold;
 `;
 // End of Global
 
 // Home Section
-export const HomeSection = styled.div`
+export const HomeSection = styled.section`
   margin: auto;
 `;
 
@@ -77,7 +77,6 @@ export const HeroSection = styled.div`
 
 export const HeroSectionBg = styled.div`
   background-image: linear-gradient(
-      to left,
       rgba(11, 13, 23, 0),
       rgba(11, 13, 23, 80)
     ),
@@ -208,7 +207,7 @@ export const HeroContentContainer = styled.div`
 // End of Hero
 
 // About FlamingWheelz Section
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   padding: 40px 20px;
   max-width: 1300px;
   margin: 0 auto;
@@ -281,7 +280,7 @@ export const AboutFeature = styled.h3`
 
 // Play with your NFT Section
 
-export const NFTSection = styled.div`
+export const NFTSection = styled.section`
   display: flex;
   overflow: hidden;
   position: relative;
@@ -369,7 +368,7 @@ export const NFTText = styled.p`
   font-weight: bold;
   line-height: 1.6;
 
-  @media screen and (max-width:480px) {
+  @media screen and (max-width: 480px) {
     font-size: 2rem;
     line-height: 1.5;
   }
@@ -389,7 +388,6 @@ export const NFTBtnContainer = styled.div`
   z-index: 1;
   padding-top: 30px;
 `;
-
 
 // The Cummunity
 export const Community = styled.div`
@@ -468,7 +466,7 @@ export const CommBtnContainer = styled.div`
 // End of Community
 
 // The Patner
-export const Patner = styled.div`
+export const Patner = styled.section`
   width: 100%;
   height: 500px;
   display: flex;
@@ -513,17 +511,17 @@ export const PatnerHeading = styled.h5`
 `;
 
 // HGT Token
-export const HGTContainer = styled.div`
+export const HGTContainer = styled.section`
   display: flex;
   flex-flow: column;
   overflow: hidden;
   position: relative;
   height: 90vh;
-  background-color: black;
+  background-color: #0b0d17;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 110vh;
+    height: 80vh;
   }
 `;
 export const HGTSectionbg = styled.div`
@@ -604,6 +602,98 @@ export const HGTbtnContainer = styled.div`
   display: flex;
   justify-content: left;
   padding-top: 30px;
- 
 `;
 // End of HGT Token
+
+// RoadMap
+export const RoadMap = styled.section`
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 60px 0;
+`;
+
+export const RoadMapHeading =styled.h3`
+ font-size: 1.5rem;
+ font-weight: bold;
+`
+export const RoadMapContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  height: 100%;
+`;
+export const RoadMapRow1 = styled.div`
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  padding: 60px 20px;
+  gap: 60px;
+
+  align-items: flex-end;
+
+  ${(props) =>
+    props.right &&
+    css`
+      text-align: right;
+    `}
+`;
+
+export const RoadMapRow2 = styled.div`
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  padding: 50px 20px;
+  gap: 60px;
+`;
+
+export const RoadMapDivide = styled.hr`
+  margin: 2rem 0;
+`;
+
+export const RoadMapYear = styled.div`
+  text-align: left;
+  display: flex;
+  gap: 10px;
+
+  padding: 10px;
+
+  ${(props) =>
+    props.right &&
+    css`
+      text-align: right;
+    `}
+`;
+
+export const RoadMapText = styled.div`
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+
+  ${(props) =>
+    props.morepadding &&
+    css`
+      padding-top: 150px;
+    `}
+`;
+
+export const ViewDetailRoadmap = styled.h2`
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+`;
+
+export const RoadmapTerms = styled.p`
+  opacity: 0.8;
+`;
