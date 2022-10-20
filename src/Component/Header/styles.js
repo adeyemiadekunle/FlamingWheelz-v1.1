@@ -82,7 +82,9 @@ export const TopHeader = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 150px;
+  width: 160px;
+
+ 
 `;
 
 export const ImgCon = styled.div`

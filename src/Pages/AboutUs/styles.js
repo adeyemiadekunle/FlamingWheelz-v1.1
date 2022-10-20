@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import FlamingIMG from '../../Image/About_Page/About_Flaming.jpg';
 import HypatiaIMG from '../../Image/About_Page/Hypatia.jpg';
 
@@ -12,11 +12,11 @@ export const FlamingContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 130vh;
+  height: 120vh;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 125vh;
+    height: 100vh;
   }
 `;
 
@@ -98,11 +98,11 @@ export const HypatiaContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 120vh;
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
   }
 `;
 
@@ -190,11 +190,11 @@ export const FlamingFeatureContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 120vh;
+  height: 110vh;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
-    height: 120vh;
+    height: 100vh;
   }
 `;
 
@@ -264,37 +264,127 @@ export const FeatureLists = styled.li`
 `;
 // End of Features
 
-// The Team
-export const StyledTeam = styled.div`
-  margin: 0 auto;
+// HGT Token
+export const HGTContainer = styled.div`
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 200vh;
+  height: 120vh;
+  background-color: black;
 
   @media screen and (max-width: 768px) {
-
+    justify-content: center;
+    height: 110vh;
   }
+`;
+export const HGTSectionbg = styled.div`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+`;
 
-`
-export const TeamContainer = styled.div`
-  max-width: 1400px;
+export const HGTImg = styled.img`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-style: none;
+  object-fit: cover;
+  object-position: center;
+`;
+export const HGTSectionOverlay = styled.div`
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+`;
+
+export const HGTContentContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  align-items: center;
+  max-width: 1300px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  border: 1px solid white;
+`;
+
+export const HGTTextContainer = styled.div`
+  z-index: 1;
+  width: 100%;
+  padding: 50px 20px;
   display: flex;
   flex-flow: column;
+  width: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const HGTHeadingh2 = styled.h2`
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 15px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+`;
+
+export const HGTText = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+  line-height: 1.4;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+// End of HGT Token
+
+// The Team
+export const StyledTeam = styled.div`
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 768px) {
+  }
+`;
+
+export const TeamContainer = styled.div``;
+
+export const TeamListCon = styled.div`
+  margin: 20px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+`;
 
-`
-
-export const TeamList = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-gap: 30px;
-border: 1px solid red;
-
-`
+export const TeamHeadingCon = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+`;
+export const TeamHeadingh3 = styled.h3`
+  color: white;
+  font-size: 1.5rem;
+`;

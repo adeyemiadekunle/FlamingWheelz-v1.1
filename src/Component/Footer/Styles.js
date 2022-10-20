@@ -34,12 +34,12 @@ export const JoinCommunity = styled.div`
 
 export const JoinUsHeading = styled.h1`
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: left;
   padding-bottom: 20px;
 
   @media screen and (max-width: 480px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 `;
 

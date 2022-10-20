@@ -6,6 +6,7 @@ import {
   HeroSectionBg,
   HeroHeadingContainer,
   HeroHeading,
+  HeroHeadingh1,
   HeroTextContainer,
   HeroText,
   HeroDownloadContainer,
@@ -51,8 +52,9 @@ import {
   HGTHeadingh2,
   HGTText,
   HGTbtnContainer,
+  HeroBtnContainer,
+  HeroButton,
 } from './styles';
-
 
 // import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
@@ -102,14 +104,14 @@ function Home() {
           {/* <HeroSectionOverlay></HeroSectionOverlay> */}
           <HeroContentContainer>
             <HeroHeadingContainer>
-              <HeroHeading>
-                A Fantasy
-                <br />
-                Racing Game
-              </HeroHeading>
-              {/* <HeroHeadingh1>
+              <HeroHeadingh1>
                 Redefing Web3 Gaming Experience
-              </HeroHeadingh1> */}
+              </HeroHeadingh1>
+              <HeroHeading>
+                A Multi Chain
+                <br />
+                Fantasy Racing Game
+              </HeroHeading>
             </HeroHeadingContainer>
 
             <HeroTextContainer>
@@ -123,6 +125,9 @@ function Home() {
                 <TextUnderline>EARN.</TextUnderline>
               </HeroText>
             </HeroTextContainer>
+            <HeroBtnContainer>
+              <HeroButton as="">Whitepaper</HeroButton>
+            </HeroBtnContainer>
           </HeroContentContainer>
 
           <HeroDownloadContainer>
@@ -167,21 +172,19 @@ function Home() {
 
         {/* NFT Section */}
         <NFTSection>
-          <NFTSectionbg>
-          </NFTSectionbg>
+          <NFTSectionbg></NFTSectionbg>
           <NFTContentCon>
             <NFTTextContainer>
               <NFTHeadingContainer>
-                <NFTHeadingh2>PLAY WITH YOUR NFTs</NFTHeadingh2>
+                <NFTHeadingh2>Play and Earn with NFTs</NFTHeadingh2>
               </NFTHeadingContainer>
 
               <NFTTextRap>
                 <NFTText>
-                  Over 4K NFTs are available at the moment to play.
-                  Check out our <TextUnderline as="a"> Genesis Collection </TextUnderline>{' '}
-                  on Klever
+                  A Genesis Collection of 4K NFTs that can really play
+                  a role in FlamingWheelz, Check out on Klever
                   <KleverNFT>NFT </KleverNFT>
-                  and turn your NFT in life.
+                  and turn your NFTs to life.
                 </NFTText>
               </NFTTextRap>
 
@@ -251,33 +254,17 @@ function Home() {
 
           <HGTContentContainer>
             <HGTTextContainer className="headingCon">
-              <HGTHeadingh2>HYPATIA GAMES AND HGT TOKEN</HGTHeadingh2>
+              <HGTHeadingh2>
+                Utility and Governance <img src="" alt="" /> HGT Token{' '}
+              </HGTHeadingh2>
               <HGTText>
-                <TextUnderline>Hypatia Games</TextUnderline> is the
-                ecosystem for racing blockchain games developed by
-                Hypatia Games Studio, currently including
-                <TextUnderline> FlamingWheelz</TextUnderline> and more
-                yet to come.
-                <div>
-                  <br></br>
-                </div>
-                All Hypatia Games are connected by the utility
-                governance token <TextUnderline>HGT</TextUnderline>,
-                which serves as the primary currency of purchase,
-                utility, and action across all the games. HGT is
-                designed for use across multiple connected products.
-                <div>
-                  <br></br>
-                </div>
-                Most importantly, HGT powers true digital ownership of
-                your in-game assets, allowing you complete freedom and
-                control over your NFT game items, and can be exchange
-                with other cryptocurrencies in the real world and
-                eventaully be exchange using fiat currency.
+                HGT is the utility and governance token in Hypatia
+                Games platform, providing sustainable economic model
+                for Hypatia ecosystem.
               </HGTText>
               <HGTbtnContainer>
                 <Button primary as="">
-                  Get your HGT Token
+                  Token Economics
                 </Button>
               </HGTbtnContainer>
             </HGTTextContainer>

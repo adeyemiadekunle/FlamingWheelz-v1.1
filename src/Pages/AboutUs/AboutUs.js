@@ -1,5 +1,5 @@
 import { Button } from '../Home/styles';
-import  {Team}  from '../../Component/Team/Team';
+import { Team } from '../../Component/Team/Team';
 import {
   StyledAbout,
   FlamingContainer,
@@ -25,10 +25,87 @@ import {
   FlamingbtnContainer,
   StyledTeam,
   TeamContainer,
-  TeamList,
+  TeamListCon,
+  TeamHeadingCon,
+  TeamHeadingh3,
 } from './styles';
 
 function AboutUs() {
+  const TeamData = [
+    {
+      id: 0,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+    {
+      id: 1,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+    {
+      id: 2,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+    {
+      id: 3,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+    {
+      id: 4,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+    {
+      id: 5,
+      ImgUrl: '',
+      full_name: '',
+      Job: '',
+      Social: {
+        twitter: '',
+        instagram: '',
+        linkedIn: '',
+        facebook: '',
+      },
+    },
+  ];
+
   return (
     <>
       <StyledAbout>
@@ -39,11 +116,12 @@ function AboutUs() {
               <FlamingHeadingh2>About FlamingWheelz</FlamingHeadingh2>
               <FlamingText>
                 FlamingWheelz is a fantasy RPG mixed with racing for
-                anyone who's ever daydreamed about, fantasy creatures and more with your
-                driving expertise, smashing the car in front of them
-                in traffic, speeding away from cops, getting
-                into a racing arena to prove your skills at the
-                grandest stage and all of it is fueled by HGT tokens.
+                anyone who's ever daydreamed about, fantasy creatures
+                and more with your driving expertise, smashing the car
+                in front of them in traffic, speeding away from cops,
+                getting into a racing arena to prove your skills at
+                the grandest stage and all of it is fueled by HGT
+                tokens.
                 <div>
                   <br />
                 </div>
@@ -58,8 +136,9 @@ function AboutUs() {
                 </div>
                 Hypatia Games Token (HGT) is the governance token of
                 our ecosystem and utility token used as the main
-                currency of Heat.  HGT is a cryptocurrency that may be exchanged with other
-                cryptocurrencies and fiat currency.
+                currency of Heat. HGT is a cryptocurrency that may be
+                exchanged with other cryptocurrencies and fiat
+                currency.
               </FlamingText>
               <FlamingbtnContainer>
                 <Button as="">Read the Whitepaper </Button>
@@ -155,16 +234,23 @@ function AboutUs() {
           </HypatiaContentContainer>
         </HypatiaContainer>
 
+       
+
         <StyledTeam>
+          <TeamHeadingCon>
+            <TeamHeadingh3>
+              Meet the Team Behind Hypatia Games
+            </TeamHeadingh3>
+          </TeamHeadingCon>
           <TeamContainer>
-            <TeamList>
-           <Team/>
-           <Team/>
-           <Team/>
-           <Team/>
-           <Team/>
-           <Team/>
-            </TeamList>
+            <TeamListCon>
+              <Team />
+              <Team />
+              <Team />
+              <Team />
+              <Team />
+              <Team />
+            </TeamListCon>
           </TeamContainer>
         </StyledTeam>
       </StyledAbout>

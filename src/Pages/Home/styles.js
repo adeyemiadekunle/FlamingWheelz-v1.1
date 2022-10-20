@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
 
-
 // Global Style
 
 // Button
@@ -10,7 +9,7 @@ export const Button = styled.button`
   margin-top: 10px;
   padding: 15px 50px;
   background: #ff0033;
-  border-radius: 25px;
+  border-radius: 100px;
   border: #ff0033;
   color: white;
   font-weight: bold;
@@ -26,6 +25,7 @@ export const Button = styled.button`
       background: transparent;
       color: white;
       border: 2px solid #ffffff;
+      font-size: 1.5rem;
 
       &:hover {
         background: white;
@@ -76,7 +76,12 @@ export const HeroSection = styled.div`
 `;
 
 export const HeroSectionBg = styled.div`
-  background-image: linear-gradient( to left, rgba(11,13,23,0), rgba(11,13,23,80)), url(${Hero_IMG}) ;
+  background-image: linear-gradient(
+      to left,
+      rgba(11, 13, 23, 0),
+      rgba(11, 13, 23, 80)
+    ),
+    url(${Hero_IMG});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,9 +91,6 @@ export const HeroSectionBg = styled.div`
   width: 100%;
   z-index: -1;
 `;
-
-
-
 
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
@@ -100,13 +102,13 @@ export const HeroHeadingContainer = styled.div`
 
 export const HeroHeading = styled.h1`
   font-size: 5rem;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 480px) {
-    text-align: center;
+    /* text-align: center; */
     font-size: 3rem;
   }
 `;
@@ -115,16 +117,17 @@ export const HeroHeadingh1 = styled.h1`
   font-size: 1.8rem;
   color: #33aaf5;
   padding-bottom: 10px;
+  text-align: center;
+  font-weight: 400;
 
   @media screen and (max-width: 768px) {
-    text-align: center;
     font-size: 1.5rem;
   }
 `;
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
-  max-width: 1300px;
+  max-width: 1000px;
   padding: 0 20px;
   margin: 0 auto;
   width: 100%;
@@ -136,14 +139,13 @@ export const HeroTextContainer = styled.div`
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
-  width: 50%;
   color: white;
   line-height: 2.5rem;
+  text-align: center;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     padding-top: 30px;
-    text-align: center;
-    width: 100%;
     font-size: 1.4rem;
     line-height: 2rem;
   }
@@ -155,46 +157,24 @@ export const HeroLink = styled.span`
 `;
 
 export const HeroBtnContainer = styled.div`
-  z-index: 1;
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 10px;
-  padding-top: 40px;
-  display: flex;
-
-  @media screen and (max-width: 480px) {
-    justify-content: center;
-  }
+  margin-top: 40px;
 `;
 
 export const HeroButton = styled.button`
-  background: red;
-  border-radius: 6px;
-  border: 2px solid #ff0033;
+  border-radius: 100px;
+  padding: 1.2rem 2.5rem;
   color: white;
-  padding: 1em 1.5em;
-  width: 150px;
   text-align: center;
   font-weight: bold;
+  font-size: 1.5rem;
+  background: transparent;
+  border: 1px solid #33aaf5;
 
   &:hover {
-    border: 2px solid white;
     transition: 0s;
     cursor: pointer;
+    color: #33aaf5;
   }
-
-  ${(props) =>
-    props.primary &&
-    css`
-      background: transparent;
-      color: white;
-      border: 2px solid white;
-
-      &:hover {
-        border: 2px solid #ff0033;
-      }
-    `};
 `;
 
 export const HeroDownloadContainer = styled.div`
@@ -219,7 +199,11 @@ export const HeroDownloadLinkCon = styled.div`
 `;
 
 export const HeroContentContainer = styled.div`
-  margin-top: 8rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 `;
 // End of Hero
 
@@ -314,7 +298,12 @@ export const NFTSection = styled.div`
 `;
 
 export const NFTSectionbg = styled.div`
-  background-image: linear-gradient( to right, rgba(11,13,23,0), rgba(11,13,23,90)), url(${NFTIMG}) ;
+  background-image: linear-gradient(
+      to right,
+      rgba(11, 13, 23, 0),
+      rgba(11, 13, 23, 90)
+    ),
+    url(${NFTIMG});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -324,8 +313,6 @@ export const NFTSectionbg = styled.div`
   width: 100%;
   z-index: -1;
 `;
-
-
 
 export const NFTContentCon = styled.div`
   z-index: 1;
@@ -343,13 +330,12 @@ export const NFTHeadingContainer = styled.div`
 `;
 
 export const NFTHeadingh2 = styled.h2`
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: white;
   padding-bottom: 10px;
 
   @media screen and (max-width: 480px) {
-    font-size: 3rem;
     text-align: center;
   }
 `;
@@ -379,7 +365,14 @@ export const NFTTextRap = styled.div`
 `;
 
 export const NFTText = styled.p`
-  font-size: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.6;
+
+  @media screen and (max-width:480px) {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
 `;
 
 export const KleverNFT = styled.span`
@@ -397,8 +390,8 @@ export const NFTBtnContainer = styled.div`
   padding-top: 30px;
 `;
 
-// The Cummunity
 
+// The Cummunity
 export const Community = styled.div`
   background: white;
 `;
@@ -525,7 +518,7 @@ export const HGTContainer = styled.div`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 120vh;
+  height: 90vh;
   background-color: black;
 
   @media screen and (max-width: 768px) {
@@ -562,7 +555,7 @@ export const HGTSectionOverlay = styled.div`
 
 export const HGTContentContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   z-index: 1;
   align-items: center;
   max-width: 1300px;
@@ -577,18 +570,18 @@ export const HGTTextContainer = styled.div`
   padding: 50px 20px;
   display: flex;
   flex-flow: column;
-  width: 50%;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 
-export const HGTHeadingh2 = styled.h2`
-  font-size: 2.5rem;
+export const HGTHeadingh2 = styled.h4`
+  font-size: 1.5rem;
   text-align: left;
-  font-weight: bold;
-  color: #33aaf5;
+  font-weight: 300;
+  color: #fff;
   padding-bottom: 15px;
 
   @media screen and (max-width: 768px) {
@@ -597,10 +590,10 @@ export const HGTHeadingh2 = styled.h2`
 `;
 
 export const HGTText = styled.p`
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   color: #fff;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.6;
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
@@ -611,5 +604,6 @@ export const HGTbtnContainer = styled.div`
   display: flex;
   justify-content: left;
   padding-top: 30px;
+ 
 `;
 // End of HGT Token

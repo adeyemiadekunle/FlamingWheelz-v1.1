@@ -1,4 +1,10 @@
 import {
+  faTwitter,
+  faInstagram,
+  faLinkedinIn,
+  faFacebook
+} from '@fortawesome/free-brands-svg-icons';
+import {
   TeamCard,
   TeamInfo,
   TeamDesc,
@@ -6,7 +12,9 @@ import {
   ImgHolder,
   IMG,
   TeamSocial,
+  SocialListCon,
   SocialList,
+  Social,
 } from './Styles';
 import CardSampleIMG from '../../Image/About_Page/TeamSample.jpg';
 
@@ -23,11 +31,12 @@ export const Team = () => {
         </div>
       </TeamInfo>
       <TeamSocial>
-        <SocialList>
-          <li>Twiter</li>
-          <li>Linkedin</li>
-          <li>Instagram</li>
-        </SocialList>
+        <SocialListCon>
+          <SocialList as=''><Social icon={faTwitter}/></SocialList>
+          <SocialList as=''><Social icon={faInstagram}/></SocialList>
+          <SocialList as=''><Social icon={faLinkedinIn}/></SocialList>
+          <SocialList as=''><Social icon={faFacebook}/></SocialList>
+        </SocialListCon>
       </TeamSocial>
     </TeamCard>
   );
