@@ -13,6 +13,11 @@ export const StyleCard = styled.div`
     transition: all 0.3s;
   }
 
+  @media screen and (max-width: 900px) {
+    width: 650px;
+    height: 400%;
+  }
+
   @media screen and (max-width: 480px) {
     width: 350px;
     height: 400%;
@@ -23,9 +28,9 @@ export const NewsImage = styled.img`
   width: 100%;
   height: 200px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     display: none;
-  }
+  } ;
 `;
 
 export const NewsTextCon = styled.div`

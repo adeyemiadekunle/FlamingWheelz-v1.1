@@ -30,27 +30,35 @@ import {
   TeamHeadingh3,
 } from './styles';
 
+import CEO from '../../Image/Team/CEO.jpg'
+import GameDeveloper from '../../Image/Team/Game Developer.jpg'
+import ProjectManager from '../../Image/Team/Project Manager.jpg'
+import Advisor from '../../Image/Team/Advisor.jpg'
+import FrontEndDeveloper from '../../Image/Team/Software Developer.jpg'
+import GraphicDesigner from '../../Image/Team/Graphic Designer.jpg'
+import SocialManager from '../../Image/Team/Social Manager.jpg'
+
 function AboutUs() {
-  const TeamData = [
+  const TeamDatas = [
     {
       id: 0,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: CEO,
+      full_name: 'Samuel Dechi',
+      Job: 'Founder and CEO',
       Social: {
-        twitter: '',
+        twitter: 'https://twitter.com/SamTheKleverian',
         instagram: '',
-        linkedIn: '',
+        linkedIn: 'https://www.linkedin.com/in/nanadechi',
         facebook: '',
       },
     },
     {
       id: 1,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: GameDeveloper,
+      full_name: 'Adam Harimeche',
+      Job: 'Co-Founder & Game Developer',
       Social: {
-        twitter: '',
+        twitter: 'https://twitter.com/thealoneadam',
         instagram: '',
         linkedIn: '',
         facebook: '',
@@ -58,9 +66,9 @@ function AboutUs() {
     },
     {
       id: 2,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: ProjectManager,
+      full_name: 'Gideon Uchechukwu',
+      Job: 'Co-Founder & Project Manager',
       Social: {
         twitter: '',
         instagram: '',
@@ -70,37 +78,49 @@ function AboutUs() {
     },
     {
       id: 3,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: Advisor,
+      full_name: 'Fred Blake',
+      Job: 'Advisor',
       Social: {
         twitter: '',
         instagram: '',
-        linkedIn: '',
+        linkedIn: 'https://www.linkedin.com/in/samuel-fred-58935329',
         facebook: '',
       },
     },
     {
       id: 4,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: FrontEndDeveloper,
+      full_name: 'Adeyemi Adekunle',
+      Job: 'Software Developer',
       Social: {
-        twitter: '',
+        twitter: 'https://twitter.com/iamadeyemidev',
         instagram: '',
-        linkedIn: '',
+        linkedIn: 'https://www.linkedin.com/in/adeyemi-adekunle-38361b114/',
         facebook: '',
       },
     },
     {
       id: 5,
-      ImgUrl: '',
-      full_name: '',
-      Job: '',
+      ImgUrl: GraphicDesigner,
+      full_name: 'Kay Amire',
+      Job: 'Graphic Designer',
       Social: {
         twitter: '',
         instagram: '',
-        linkedIn: '',
+        linkedIn: 'https://www.linkedin.com/in/kay-amire-14a994249',
+        facebook: '',
+      },
+    },
+    {
+      id: 6,
+      ImgUrl: SocialManager,
+      full_name: 'Benamba B. Victor',
+      Job: 'Social Manager',
+      Social: {
+        twitter: 'https://twitter.com/bossbouncy',
+        instagram: '',
+        linkedIn: 'https://www.linkedin.com/in/victor-benamba-409883246',
         facebook: '',
       },
     },
@@ -244,12 +264,18 @@ function AboutUs() {
           </TeamHeadingCon>
           <TeamContainer>
             <TeamListCon>
-              <Team />
-              <Team />
-              <Team />
-              <Team />
-              <Team />
-              <Team />
+              {TeamDatas.map((TeamData) =>(
+              <Team 
+               key={TeamData.id}
+               ImgUrl={TeamData.ImgUrl}
+               FullName={TeamData.full_name}
+               Job={TeamData.Job}
+               Twitter={TeamData.Social.twitter}
+               Facebook={TeamData.Social.facebook}
+               LinkedIn={TeamData.Social.linkedIn}
+               Instagram={TeamData.Social.instagram}
+              />
+              ))}
             </TeamListCon>
           </TeamContainer>
         </StyledTeam>

@@ -14,10 +14,17 @@ export const FlamingContainer = styled.section`
   position: relative;
   height: 120vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
+  };
+
+  @media screen and (max-width: 768px) {
+    justify-content: center; 
+    height: 120vh;
   }
+
+ 
 `;
 
 export const FlamingSectionbg = styled.div`
@@ -36,6 +43,15 @@ export const FlamingSectionbg = styled.div`
   position: absolute;
   width: 100%;
   z-index: -1;
+
+  @media screen and (max-width: 480px) {
+    background-image: linear-gradient(
+      rgba(11, 13, 23, 0.5),
+      rgba(11, 13, 23, 0.9),
+      rgba(11, 13, 23, 20)
+    ),
+    url(${FlamingIMG});
+  }
 `;
 
 export const FlamingContentContainer = styled.div`
@@ -43,24 +59,29 @@ export const FlamingContentContainer = styled.div`
   justify-content: flex-end;
   z-index: 1;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   padding: 0 20px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 10px;
+  }
 `;
 
 export const FlamingTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 20px;
+  padding: 60px 10px;
   display: flex;
   flex-flow: column;
   width: 60%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
   }
+
 `;
 
 export const FlamingHeadingh2 = styled.h2`
@@ -79,7 +100,7 @@ export const FlamingText = styled.p`
   font-size: 1.2rem;
   color: #fff;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.5;
 
   @media screen and (max-width: 768px) {
     font-size: 1rem;
@@ -101,7 +122,11 @@ export const HypatiaContainer = styled.section`
   position: relative;
   height: 100vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    height: 80vh;
+  }
+  @media screen and (max-width: 480px) {
     justify-content: center;
     height: 90vh;
   }
@@ -124,6 +149,17 @@ export const HypatiaSectionbg = styled.div`
   position: absolute;
   width: 100%;
   z-index: -1;
+
+  @media screen and (max-width:900px) {
+   background-size: cover; 
+   background-image: linear-gradient(
+      
+      rgba(11, 13, 23, 0),
+      rgba(11, 13, 23, 1)
+    ),
+    url(${HypatiaIMG});
+
+  }
 `;
 
 export const HypatiaContentContainer = styled.div`
@@ -136,19 +172,25 @@ export const HypatiaContentContainer = styled.div`
   width: 100%;
   height: 100%;
   padding: 0 20px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 10px;
+  }
 `;
 
 export const HypatiaTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 20px;
+  padding: 50px 10px;
   display: flex;
   flex-flow: column;
   width: 60%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
   }
+
+
 `;
 
 export const HypatiaHeadingh3 = styled.h3`
@@ -178,9 +220,9 @@ export const HypatiaText = styled.p`
   font-size: 1.2rem;
   color: #fff;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.5;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
 `;
@@ -194,10 +236,15 @@ export const FlamingFeatureContainer = styled.section`
   position: relative;
   height: 110vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+    height: 80vh;
+  }
+  @media screen and (max-width: 480px) {
     justify-content: center;
     height: 100vh;
   }
+  
 `;
 
 export const FeatureSectionbg = styled.div`
@@ -213,24 +260,31 @@ export const FeatureContentContainer = styled.div`
   justify-content: flex-start;
   z-index: 1;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   padding: 0 20px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 10px;
+  }
 `;
 
 export const FeatureTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 20px;
+  padding: 50px 10px;
   display: flex;
   flex-flow: column;
   width: 60%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
+
   }
+ 
+
 `;
 
 export const FeatureHeadingh2 = styled.h2`
@@ -249,9 +303,9 @@ export const FeatureText = styled.p`
   font-size: 1.2rem;
   color: #fff;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.5;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
 `;
@@ -269,7 +323,8 @@ export const StyledTeam = styled.div`
   margin-bottom: 80px;
   padding: 0 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
+    padding: 0 10px;
   }
 `;
 
@@ -285,6 +340,8 @@ export const TeamListCon = styled.div`
   gap: 40px;
   padding: 20px 0;
   margin-bottom: 40px;
+
+  
 `;
 
 export const TeamHeadingCon = styled.div`
@@ -298,4 +355,8 @@ export const TeamHeadingCon = styled.div`
 export const TeamHeadingh3 = styled.h3`
   color: white;
   font-size: 1.5rem;
+ 
+  @media screen and (max-width: 768px) {
+   text-align: center;
+ }
 `;

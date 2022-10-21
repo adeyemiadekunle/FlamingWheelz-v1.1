@@ -10,10 +10,11 @@ import {
   HeroTextContainer,
   HeroText,
   HeroDownloadContainer,
+  DownloadIcon,
+  AppContainer,
+  AppHeading,
   HeroContentContainer,
   HeroDownloadLinkCon,
-  HeroBtnContainer,
-  HeroButton,
   AboutContainer,
   AboutTextCon,
   AboutHeading,
@@ -65,6 +66,11 @@ import {
   RoadmapTerms,
   RoadMapHeading,
 } from './styles';
+import {
+  faGooglePlay,
+  faWindows,
+  faAppStore,
+} from '@fortawesome/free-brands-svg-icons';
 
 // import HGTIMG from '../../Image/HGT/HGT.png';
 import Card from '../../Component/Card/Card';
@@ -81,18 +87,18 @@ function Home() {
     {
       id: 1,
       title: 'A Fantasy RPG Mixed',
-      text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+      text: '  This is RPG mixed with racing, evading dragons or warload, smashing  cars in front of them in traffic, speeding away from cops, or driving up a half finished building at a construction site and much more...',
     },
     {
       id: 2,
       title: 'Genesis Edition',
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+      text: 'The Genesis Edition of characters, that is unique, comes with royalties such as VIP access and priority access to future products and services.',
     },
 
     {
       id: 3,
       title: 'Commemoratic Tournament',
-      text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quis!',
+      text: 'There will be bi-monthly zonal tournament where players who win participate in quarterly global tournaments where players compete for an ultimate prize.',
     },
   ];
 
@@ -111,7 +117,6 @@ function Home() {
         {/* Hero */}
         <HeroSection>
           <HeroSectionBg></HeroSectionBg>
-          {/* <HeroSectionOverlay></HeroSectionOverlay> */}
           <HeroContentContainer>
             <HeroHeadingContainer>
               <HeroHeadingh1>
@@ -135,17 +140,33 @@ function Home() {
                 <TextUnderline>EARN.</TextUnderline>
               </HeroText>
             </HeroTextContainer>
-            <HeroBtnContainer>
-              <HeroButton as="">Whitepaper</HeroButton>
-            </HeroBtnContainer>
           </HeroContentContainer>
 
           <HeroDownloadContainer>
             <div>Download latest version</div>
             <HeroDownloadLinkCon>
-              <div>Google Play</div>
-              <div>App Store</div>
-              <div>Windows</div>
+              <DownloadIcon />
+              <AppContainer>
+                <DownloadIcon icon={faGooglePlay} google />
+                <div>
+                  <AppHeading>Get it on</AppHeading>
+                  <p>GooglePlay</p>
+                </div>
+              </AppContainer>
+              <AppContainer>
+                <DownloadIcon icon={faAppStore} apple />
+                <div>
+                  <AppHeading>Download on the</AppHeading>
+                  <p>AppStore</p>
+                </div>
+              </AppContainer>
+              <AppContainer>
+                <DownloadIcon icon={faWindows} window />
+                <div>
+                  <AppHeading>Get it for</AppHeading>
+                  <p>Windows</p>
+                </div>
+              </AppContainer>
             </HeroDownloadLinkCon>
           </HeroDownloadContainer>
         </HeroSection>
@@ -159,11 +180,13 @@ function Home() {
               <AboutHeading>What is FlamingWheelz?</AboutHeading>
               <AboutText>
                 FlamingWheelz is a fantasy RPG mixed with racing for
-                anyone who's ever daydreamed about, fantasy creatures
-                and more with your driving expertise, and all of it is
+                anyone who's ever think about fantasy creatures and
+                more with your driving expertise, and all of it is
                 fueled by HGT tokens.
               </AboutText>
-              <Button normal>Join Us</Button>
+              <Button normal as="">
+                Read More
+              </Button>
             </AboutTextCon>
             <AboutColumn>
               <AboutFeature>Key Features</AboutFeature>
@@ -192,7 +215,7 @@ function Home() {
                 <NFTText>
                   A Genesis Collection of 4K NFTs that can really play
                   a role in{' '}
-                  <TextUnderline>FlamingWheelz</TextUnderline>, Check
+                  <TextUnderline>FlamingWheelz,</TextUnderline> Check
                   out on Klever
                   <KleverNFT>NFT </KleverNFT>
                   and turn your NFTs to life.
@@ -305,9 +328,7 @@ function Home() {
                 <p>Q4</p>
               </RoadMapYear>
               <RoadMapText morepadding>
-                <p>
-                  FlamingWheelz Phase 2 and Release of full version
-                </p>
+                <p>Phase 2 and Release of full version</p>
                 <p>
                   FlamingWheelz main content: Tournament (Arena
                   mode/PVP), Community League e.t.c
@@ -318,30 +339,20 @@ function Home() {
             <RoadMapRow2>
               <RoadMapText>
                 <p>Project Preparation</p>
-                <p>Recruitment of Developers</p>
+                <p>Recruitment of Game Developers</p>
               </RoadMapText>
               <RoadMapYear>
                 <p>Q3</p>
                 <p>2022</p>
               </RoadMapYear>
               <RoadMapText>
-                <p>Hypatia Games Token (HGT) Private and Pre-Sale</p>
+                <p> Private Sales of HGT Token</p>
                 <p>
-                  FlamingWheelz Genesis Edition NFT Inital NFT
-                  Offering on KleverNFT Launchpad
+                  Genesis Edition NFT Inital NFT Offering on KleverNFT
+                  Launchpad
                 </p>
-                <p>
-                  Buy and Sell of Genesis Edition NFT on KleverNFT
-                  Marketplace
-                </p>
-                <p>
-                  FlamingWheelz Phase 1 and Release of Demo Version
-                  (coming soon)
-                </p>
-                <p>
-                  Player can start training and upgrading their NFTs
-                  for future Phases
-                </p>
+                <p>Genesis Edition NFT on KleverNFT Marketplace</p>
+                <p>Phase 1 and Release of Demo Version</p>
               </RoadMapText>
               <RoadMapYear>
                 <p>Q2</p>

@@ -41,6 +41,8 @@ export const TeamName = styled.h3`
   padding: 0;
   font-size: 22px;
   font-weight: 500px;
+  /* white-space: nowrap; */
+ 
 `;
 
 export const TeamDesc = styled.h4`

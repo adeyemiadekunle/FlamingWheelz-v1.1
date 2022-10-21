@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
 import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Global Style
 
@@ -32,6 +33,10 @@ export const Button = styled.button`
         color: #0b0d17;
         border: 2px solid white;
         transition: all 0.2s;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 1rem;
+        padding: 15px 40px;
       }
     `};
 
@@ -70,8 +75,12 @@ export const HeroSection = styled.div`
   position: relative;
   height: 100vh;
 
+  @media screen and (max-width: 900px) {
+    height: 80vh;
+  }
+
   @media screen and (max-width: 480px) {
-    height: 90vh;
+    height: 100vh;
   }
 `;
 
@@ -91,6 +100,14 @@ export const HeroSectionBg = styled.div`
   z-index: -1;
 `;
 
+export const HeroContentContainer = styled.div`
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
   max-width: 1300px;
@@ -106,8 +123,11 @@ export const HeroHeading = styled.h1`
   color: white;
   padding-bottom: 20px;
 
+  @media screen and (max-width: 900px) {
+    font-size: 4rem;
+  }
+
   @media screen and (max-width: 480px) {
-    /* text-align: center; */
     font-size: 3rem;
   }
 `;
@@ -122,31 +142,38 @@ export const HeroHeadingh1 = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
   max-width: 1000px;
-  padding: 0 20px;
   margin: 0 auto;
   width: 100%;
 
   @media screen and (max-width: 768px) {
-    padding: 0 22px;
+    /* padding: 0 20px; */
   }
 `;
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
   color: white;
-  line-height: 2.5rem;
+  line-height: 2rem;
   text-align: center;
   width: 100%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     padding-top: 30px;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0px 10px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -156,16 +183,17 @@ export const HeroLink = styled.span`
 `;
 
 export const HeroBtnContainer = styled.div`
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 `;
 
 export const HeroButton = styled.button`
   border-radius: 100px;
-  padding: 1.2rem 2.5rem;
+  padding: 1.2rem 2rem;
   color: white;
   text-align: center;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background: transparent;
   border: 1px solid #33aaf5;
 
@@ -173,6 +201,11 @@ export const HeroButton = styled.button`
     transition: 0s;
     cursor: pointer;
     color: #33aaf5;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
   }
 `;
 
@@ -195,15 +228,45 @@ export const HeroDownloadLinkCon = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
 `;
 
-export const HeroContentContainer = styled.div`
-  margin-top: 6rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+export const DownloadIcon = styled(FontAwesomeIcon)`
+  color: grey;
+  font-size: 30px;
+
+  ${(props) =>
+    props.google &&
+    css`
+      
+    `};
+
+  ${(props) =>
+    props.apple &&
+    css`
+      color: white;
+    `};
+
+  ${(props) =>
+    props.window &&
+    css`
+      color: #00b6ea;
+    `}
 `;
+export const AppContainer = styled.div`
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+`;
+export const AppHeading = styled.p`
+  font-size: 0.6rem;
+`;
+
 // End of Hero
 
 // About FlamingWheelz Section
@@ -212,48 +275,6 @@ export const AboutContainer = styled.section`
   max-width: 1400px;
   margin: 40px auto;
   color: white;
-`;
-
-export const AboutTextCon = styled.div`
-  width: 60%;
-
-  @media screen and (max-width: 900px) {
-    width: 100%;
-  }
-`;
-
-export const AboutHeading = styled.h1`
-  padding-top: 20px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #fff;
-
-  @media screen and (max-width: 480px) {
-    /* font-size: 2.5rem; */
-  }
-`;
-
-export const AboutHeadingh5 = styled.h5`
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 300;
-`;
-
-export const AboutText = styled.p`
-  line-height: 1.6;
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-
-  @media screen and (max-width: 1200px) {
-    font-size: 2rem;
-  };
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
-  }
 `;
 
 export const AboutRow = styled.div`
@@ -267,11 +288,62 @@ export const AboutRow = styled.div`
   } ;
 `;
 
+export const AboutTextCon = styled.div`
+  width: 60%;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+`;
+
+export const AboutHeading = styled.h1`
+  padding-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+`;
+
+export const AboutHeadingh5 = styled.h5`
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+`;
+
+export const AboutText = styled.p`
+  line-height: 1.6;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+`;
+
 export const AboutColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
+  @media screen and (max-width: 900px) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const AboutFeature = styled.h3`
@@ -285,7 +357,6 @@ export const AboutFeature = styled.h3`
 
 // End of About Section
 
-
 // Play with your NFT Section
 
 export const NFTSection = styled.section`
@@ -293,14 +364,12 @@ export const NFTSection = styled.section`
   overflow: hidden;
   position: relative;
   height: 90vh;
-
   justify-content: right;
   align-items: right;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     text-align: center;
-    gap: 20px;
-    height: 80vh;
+    height: 75vh;
   }
 `;
 
@@ -345,6 +414,7 @@ export const NFTHeadingh2 = styled.h2`
 
   @media screen and (max-width: 480px) {
     text-align: center;
+    font-size: 1.2rem;
   }
 `;
 
@@ -356,7 +426,7 @@ export const NFTTextContainer = styled.div`
   padding: 50px 20px;
   width: 60%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
   }
 `;
@@ -365,8 +435,9 @@ export const NFTTextRap = styled.div`
   color: white;
   line-height: 1.5;
   text-align: left;
+  margin-bottom: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
     text-align: center;
   }
@@ -377,10 +448,13 @@ export const NFTText = styled.p`
   font-weight: bold;
   line-height: 1.6;
 
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-    line-height: 1.5;
+  @media screen and (max-width: 900px) {
+    font-size: 2.2rem;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  } ;
 `;
 
 export const KleverNFT = styled.span`
@@ -433,7 +507,7 @@ export const CommunityRow = styled.div`
   gap: 10px;
   margin-bottom: 70px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     flex-flow: column;
     gap: 30px;
     margin-bottom: 40px;
@@ -441,13 +515,13 @@ export const CommunityRow = styled.div`
 `;
 
 export const CommunityReadMore = styled.p`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
 
 export const CommunityReadMoreBtn = styled.button`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     padding: 15px 40px;
     background: #ff0033;
     border-radius: 8px;
@@ -460,7 +534,7 @@ export const CommunityReadMoreBtn = styled.button`
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 901px) {
     display: none;
   }
 `;
@@ -483,7 +557,8 @@ export const Patner = styled.section`
   justify-content: center;
   height: 80vh;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
+    height: 70vh;
   }
 `;
 
@@ -528,8 +603,12 @@ export const HGTContainer = styled.section`
   height: 90vh;
   background-color: #0b0d17;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     justify-content: center;
+    height: 60vh;
+  }
+
+  @media screen and (max-width: 480px) {
     height: 80vh;
   }
 `;
@@ -580,7 +659,7 @@ export const HGTTextContainer = styled.div`
   flex-flow: column;
   width: 60%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
   }
 `;
@@ -588,12 +667,16 @@ export const HGTTextContainer = styled.div`
 export const HGTHeadingh2 = styled.h4`
   font-size: 1.5rem;
   text-align: left;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   padding-bottom: 15px;
 
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -602,9 +685,15 @@ export const HGTText = styled.p`
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: bold;
 
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
+  @media screen and (max-width: 900px) {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
 `;
 
@@ -627,10 +716,10 @@ export const RoadMap = styled.section`
   margin: 60px 0;
 `;
 
-export const RoadMapHeading =styled.h3`
- font-size: 2rem;
- font-weight: bold;
-`
+export const RoadMapHeading = styled.h3`
+  font-size: 2rem;
+  font-weight: bold;
+`;
 export const RoadMapContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -645,7 +734,6 @@ export const RoadMapRow1 = styled.div`
   width: 50%;
   padding: 60px 20px;
   gap: 60px;
-
   align-items: flex-end;
 
   ${(props) =>
@@ -653,6 +741,10 @@ export const RoadMapRow1 = styled.div`
     css`
       text-align: right;
     `}
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding: 50px 10px;
+  }
 `;
 
 export const RoadMapRow2 = styled.div`
@@ -661,6 +753,11 @@ export const RoadMapRow2 = styled.div`
   width: 50%;
   padding: 50px 20px;
   gap: 60px;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding: 50px 10px;
+  }
 `;
 
 export const RoadMapDivide = styled.hr`
@@ -671,8 +768,6 @@ export const RoadMapYear = styled.div`
   text-align: left;
   display: flex;
   gap: 10px;
-
-  padding: 10px;
 
   ${(props) =>
     props.right &&
@@ -686,12 +781,21 @@ export const RoadMapText = styled.div`
   flex-flow: column;
   gap: 10px;
   width: 80%;
-  padding: 10px;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 
   ${(props) =>
     props.morepadding &&
     css`
-      padding-top: 150px;
+      margin-top: 60px;
+      @media screen and (max-width: 900px) {
+        margin-top: 100px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-top: 150px;
+      }
     `}
 `;
 
@@ -706,4 +810,5 @@ export const ViewDetailRoadmap = styled.h2`
 
 export const RoadmapTerms = styled.p`
   opacity: 0.8;
+  text-align: center;
 `;
