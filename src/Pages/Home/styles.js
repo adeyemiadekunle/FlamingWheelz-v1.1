@@ -96,7 +96,7 @@ export const HeroHeadingContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
 `;
 
 export const HeroHeading = styled.h1`
@@ -209,13 +209,13 @@ export const HeroContentContainer = styled.div`
 // About FlamingWheelz Section
 export const AboutContainer = styled.section`
   padding: 40px 20px;
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: 40px auto;
   color: white;
 `;
 
 export const AboutTextCon = styled.div`
-  width: 50%;
+  width: 60%;
 
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -224,28 +224,35 @@ export const AboutTextCon = styled.div`
 
 export const AboutHeading = styled.h1`
   padding-top: 20px;
-  font-size: 3rem;
-  /* color: #33aaf5; */
+  font-size: 1.5rem;
+  font-weight: 300;
   color: #fff;
-  font-weight: bold;
 
   @media screen and (max-width: 480px) {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 `;
 
 export const AboutHeadingh5 = styled.h5`
   color: #fff;
   font-size: 1rem;
+  font-weight: 300;
 `;
 
 export const AboutText = styled.p`
-  /* line-height: 1.5rem; */
+  line-height: 1.6;
+  font-size: 2.5rem;
+  font-weight: bold;
   padding-top: 20px;
   padding-bottom: 20px;
 
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2rem;
+  };
+
   @media screen and (max-width: 480px) {
-    font-size: 90%;
+    font-size: 1.5rem;
   }
 `;
 
@@ -277,6 +284,7 @@ export const AboutFeature = styled.h3`
 `;
 
 // End of About Section
+
 
 // Play with your NFT Section
 
@@ -318,10 +326,11 @@ export const NFTContentCon = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 `;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
@@ -398,7 +407,7 @@ export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
 `;
@@ -419,9 +428,9 @@ export const CommunityHeadingh5 = styled.h5`
 
 export const CommunityRow = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 70px;
 
   @media screen and (max-width: 768px) {
@@ -479,7 +488,7 @@ export const Patner = styled.section`
 `;
 
 export const PatnerCon = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
   display: flex;
@@ -556,16 +565,17 @@ export const HGTContentContainer = styled.div`
   justify-content: flex-start;
   z-index: 1;
   align-items: center;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 `;
 
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 20px;
+  padding-top: 50px;
   display: flex;
   flex-flow: column;
   width: 60%;
@@ -618,7 +628,7 @@ export const RoadMap = styled.section`
 `;
 
 export const RoadMapHeading =styled.h3`
- font-size: 1.5rem;
+ font-size: 2rem;
  font-weight: bold;
 `
 export const RoadMapContainer = styled.div`

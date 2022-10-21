@@ -125,7 +125,7 @@ function AboutUs() {
                 <div>
                   <br />
                 </div>
-                FlamingWheelz and many more games coming is developed
+                FlamingWheelz and many more games coming that is developed
                 by Hypatia Games- a brand-new game studio composed of
                 industry veterans. Each Playable character in
                 FlamingWheelz is a Non-Fungible Token (NFT), which

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const StyledFooter = styled.footer`
   color: white;
-  /* height: 100vh; */
+
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,12 @@ export const StyledFooter = styled.footer`
 
 export const FooterContainer = styled.div`
   padding: 0px 20px;
-  /* height: 50vh; */
+ 
 `;
 
 // Join the Community
 export const JoinCommunity = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -25,6 +25,7 @@ export const JoinCommunity = styled.div`
   align-items: center;
   margin-top: 2rem;
   padding-top: 50px 0px;
+
 
   @media screen and (max-width: 756px) {
     flex-flow: column;
@@ -92,14 +93,14 @@ export const Row = styled.div`
 `;
 
 export const FooterNavbar = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  padding-top: 40px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  /* height: 45vh; */
 
+  
   @media screen and (max-width: 756px) {
     flex-flow: column;
   }
@@ -134,7 +135,7 @@ export const LogoText = styled.p`
 
 // Under
 export const FooterUnder = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 20px 20px;
@@ -150,9 +151,11 @@ export const FooterUnder = styled.div`
   }
 `;
 
-export const Hr = styled.div`
+export const Hr = styled.hr`
+  padding: 0 20px;
   margin-top: 4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.5;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.2);
 `;
 
 export const Copyright = styled.div`

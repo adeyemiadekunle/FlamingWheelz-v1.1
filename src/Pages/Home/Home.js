@@ -158,11 +158,10 @@ function Home() {
               <AboutHeadingh5> OVERVIEW</AboutHeadingh5>
               <AboutHeading>What is FlamingWheelz?</AboutHeading>
               <AboutText>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Repellat, quaerat accusamus fuga ratione
-                expedita cumque id dolorem commodi fugiat porro sunt
-                saepe harum illum, distinctio, dolores repudiandae
-                voluptas iusto architecto.
+                FlamingWheelz is a fantasy RPG mixed with racing for
+                anyone who's ever daydreamed about, fantasy creatures
+                and more with your driving expertise, and all of it is
+                fueled by HGT tokens.
               </AboutText>
               <Button normal>Join Us</Button>
             </AboutTextCon>

@@ -47,6 +47,7 @@ export const FlamingContentContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 `;
 
 export const FlamingTextContainer = styled.div`
@@ -55,7 +56,7 @@ export const FlamingTextContainer = styled.div`
   padding: 50px 20px;
   display: flex;
   flex-flow: column;
-  width: 50%;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -134,6 +135,7 @@ export const HypatiaContentContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 `;
 
 export const HypatiaTextContainer = styled.div`
@@ -142,7 +144,7 @@ export const HypatiaTextContainer = styled.div`
   padding: 50px 20px;
   display: flex;
   flex-flow: column;
-  width: 50%;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -199,10 +201,6 @@ export const FlamingFeatureContainer = styled.section`
 `;
 
 export const FeatureSectionbg = styled.div`
-  /* background-image: linear-gradient( to right, rgba(11,13,23,0), rgba(11,13,23,100)), url() ; */
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
   height: 100%;
   left: 0;
   position: absolute;
@@ -219,6 +217,7 @@ export const FeatureContentContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  padding: 0 20px;
 `;
 
 export const FeatureTextContainer = styled.div`
@@ -227,7 +226,7 @@ export const FeatureTextContainer = styled.div`
   padding: 50px 20px;
   display: flex;
   flex-flow: column;
-  width: 50%;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -264,99 +263,11 @@ export const FeatureLists = styled.li`
 `;
 // End of Features
 
-// HGT Token
-export const HGTContainer = styled.div`
-  display: flex;
-  flex-flow: column;
-  overflow: hidden;
-  position: relative;
-  height: 120vh;
-  background-color: black;
-
-  @media screen and (max-width: 768px) {
-    justify-content: center;
-    height: 110vh;
-  }
-`;
-export const HGTSectionbg = styled.div`
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-`;
-
-export const HGTImg = styled.img`
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  border-style: none;
-  object-fit: cover;
-  object-position: center;
-`;
-export const HGTSectionOverlay = styled.div`
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-`;
-
-export const HGTContentContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  z-index: 1;
-  align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-`;
-
-export const HGTTextContainer = styled.div`
-  z-index: 1;
-  width: 100%;
-  padding: 50px 20px;
-  display: flex;
-  flex-flow: column;
-  width: 50%;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-`;
-
-export const HGTHeadingh2 = styled.h2`
-  font-size: 2.5rem;
-  text-align: left;
-  font-weight: bold;
-  color: #fff;
-  padding-bottom: 15px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 2rem;
-  }
-`;
-
-export const HGTText = styled.p`
-  font-size: 1.2rem;
-  color: #fff;
-  text-align: left;
-  line-height: 1.4;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-// End of HGT Token
 
 // The Team
 export const StyledTeam = styled.div`
   margin-bottom: 80px;
+  padding: 0 20px;
 
   @media screen and (max-width: 768px) {
   }

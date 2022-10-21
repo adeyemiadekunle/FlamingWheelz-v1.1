@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
-width: 550px;
+width: 500px;
 height: 200px;
 background: #ffffff;
 padding: 20px;
@@ -13,7 +13,7 @@ box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(208, 214, 24
 }
 
 @media screen  and (max-width: 900px){
- width: 600px;
+ width: 500px;
     
 }
 
