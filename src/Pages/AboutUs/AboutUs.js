@@ -1,15 +1,20 @@
+import { lazy } from 'react';
 import { Button } from '../Home/styles';
 import { Team } from '../../Component/Team/Team';
 import {
+  SectionBg,
+  SectionOverlay,
+  FlamingSectionIMG,
   StyledAbout,
   FlamingContainer,
-  FlamingSectionbg,
+  // FlamingSectionbg,
   FlamingContentContainer,
   FlamingTextContainer,
   FlamingHeadingh2,
   FlamingText,
   HypatiaContainer,
   HypatiaSectionbg,
+  HypatiaSectionIMG,
   HypatiaContentContainer,
   HypatiaTextContainer,
   HypatiaHeadingh2,
@@ -28,7 +33,19 @@ import {
   TeamListCon,
   TeamHeadingCon,
   TeamHeadingh3,
+  HypatiaSectionOverlay,
 } from './styles';
+
+import Flaming_437 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_437.jpg';
+import Flaming_632 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_632.jpg';
+import Flaming_815 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_815.jpg';
+import Flaming_1013 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_1013.jpg';
+import Flaming_1275 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_1275.jpg';
+import Flaming_1400 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_1400.jpg';
+
+import Hypatia_200 from '../../Image/About_Page/Hypatia_rcvdfg_c_scale,w_200.jpg';
+import Hypatia_793 from '../../Image/About_Page/Hypatia_rcvdfg_c_scale,w_793.jpg';
+import Hypatia_1040 from '../../Image/About_Page/Hypatia_rcvdfg_c_scale,w_1040.jpg';
 
 import CEO from '../../Image/Team/CEO.jpg'
 import GameDeveloper from '../../Image/Team/Game Developer.jpg'
@@ -126,11 +143,19 @@ function AboutUs() {
     },
   ];
 
+
   return (
     <>
       <StyledAbout>
         <FlamingContainer>
-          <FlamingSectionbg></FlamingSectionbg>
+          <SectionBg>
+            <FlamingSectionIMG
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            src={`${Flaming_1400}`}
+            srcSet={`${Flaming_437} 437w, ${Flaming_632} 632w, ${Flaming_815} 815w, ${Flaming_1013} 1013w, ${Flaming_1275} 1275w, ${Flaming_1400} 1400w`}
+            ></FlamingSectionIMG>
+          </SectionBg>
+          <SectionOverlay></SectionOverlay>
           <FlamingContentContainer>
             <FlamingTextContainer>
               <FlamingHeadingh2>About FlamingWheelz</FlamingHeadingh2>
@@ -223,7 +248,16 @@ function AboutUs() {
         </FlamingFeatureContainer>
 
         <HypatiaContainer>
-          <HypatiaSectionbg></HypatiaSectionbg>
+          {/* <HypatiaSectionbg></HypatiaSectionbg> */}
+          <SectionBg>
+            <HypatiaSectionIMG
+            src={`${Hypatia_1040}`}
+            sizes="(max-width: 1040px) 100vw, 1040px"
+            srcSet={`${Hypatia_200} 200w, ${Hypatia_793} 793w, ${Hypatia_1040} 1040w`}  
+            alt="Xbox_Keypad"
+            ></HypatiaSectionIMG>
+          </SectionBg>
+          <HypatiaSectionOverlay></HypatiaSectionOverlay>
           <HypatiaContentContainer>
             <HypatiaTextContainer>
               <HypatiaHeadingh3>About</HypatiaHeadingh3>

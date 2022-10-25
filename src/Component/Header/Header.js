@@ -95,17 +95,24 @@ function Header() {
                     <FindUsLinkCon>
                       <SocialLinkCon
                         as="a"
-                        href="https://twitter.com"
+                        href="https://twitter.com/FlmnWheelzAlpha"
+                        target="_blank"
+          rel="noopener noreferrer"
                       >
                         <StyledSocialLink icon={faTwitter} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a" href="">
+                      <SocialLinkCon as="a" href="https://discord.com/invite/v5R6Cf5NGW" target="_blank"
+          rel="noopener noreferrer">
                         <StyledSocialLink icon={faDiscord} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a" href="">
+                      <SocialLinkCon as="a" href="https://t.me/Hypatiatokenofficial"
+                      target="_blank"
+                      rel="noopener noreferrer">
                         <StyledSocialLink icon={faTelegram} />
                       </SocialLinkCon>
-                      <SocialLinkCon as="a" href="">
+                      <SocialLinkCon as="a" href="#"
+                      target="_blank"
+                      rel="noopener noreferrer">
                         <StyledSocialLink icon={faYoutube} />
                       </SocialLinkCon>
                     </FindUsLinkCon>

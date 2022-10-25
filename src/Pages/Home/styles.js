@@ -1,9 +1,26 @@
 import styled, { css } from 'styled-components';
-import Hero_IMG from '../../Image/Hero/Hero_IMG.webp';
-import NFTIMG from '../../Image/PlayNFT/Play-NFT.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Global Style
+
+// Section Overlay
+export const SectionOverlay = styled.div`
+background: rgba(0,0,0,0.47);
+bottom: 0;
+height: 100%;
+position: absolute;
+width: 100%;
+z-index: -1;
+`
+// SectionIMG Background
+export const SectionIMG = styled.img`
+object-fit: cover;
+object-position: center;
+height: 100%;
+left: 0;
+width: 100%;
+position: absolute;
+`
 
 // Button
 export const Button = styled.button`
@@ -62,43 +79,37 @@ export const TextUnderline = styled.span`
 // End of Global
 
 // Home Section
-export const HomeSection = styled.section`
+export const HomeSection = styled.main`
   margin: auto;
 `;
 
 // Hero Section
-export const HeroSection = styled.div`
+export const HeroSection = styled.section`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
   height: 100vh;
-
   @media screen and (max-width: 900px) {
     height: 80vh;
   }
 
   @media screen and (max-width: 480px) {
-    height: 100vh;
+    height: 90vh;
   }
 `;
 
-export const HeroSectionBg = styled.div`
-  background-image: linear-gradient(
-      rgba(11, 13, 23, 0),
-      rgba(11, 13, 23, 80)
-    ),
-    url(${Hero_IMG});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+export const SectionBg = styled.div`
   height: 100%;
   left: 0;
   position: absolute;
   width: 100%;
   z-index: -1;
+  top: 0;
 `;
+
+
 
 export const HeroContentContainer = styled.div`
   margin-top: 10rem;
@@ -106,6 +117,11 @@ export const HeroContentContainer = styled.div`
   flex-flow: column;
   justify-content: center;
   align-items: center;
+
+
+  @media screen and (max-width: 480px) {
+    margin-top: 5rem;
+  }
 `;
 
 export const HeroHeadingContainer = styled.div`
@@ -161,13 +177,12 @@ export const HeroTextContainer = styled.div`
 export const HeroText = styled.p`
   font-size: 1.5rem;
   color: white;
-  line-height: 2rem;
+  line-height: 1.5;
   text-align: center;
   width: 100%;
 
   @media screen and (max-width: 900px) {
     padding-top: 30px;
-    line-height: 1.5rem;
     padding: 0 20px;
   }
 
@@ -218,8 +233,10 @@ export const HeroDownloadContainer = styled.div`
   color: white;
   gap: 20px;
 
+
   @media screen and (max-width: 480px) {
     flex-flow: column;
+  
   }
 `;
 
@@ -229,12 +246,13 @@ export const HeroDownloadLinkCon = styled.div`
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  cursor: pointer;
 `;
 
 export const DownloadIcon = styled(FontAwesomeIcon)`
   color: grey;
   font-size: 30px;
+
+
 
   ${(props) =>
     props.google &&
@@ -253,7 +271,10 @@ export const DownloadIcon = styled(FontAwesomeIcon)`
     css`
       color: #00b6ea;
     `}
+
 `;
+
+
 export const AppContainer = styled.div`
   display: flex;
   font-size: 1rem;
@@ -262,10 +283,15 @@ export const AppContainer = styled.div`
   padding: 10px;
   gap: 10px;
   border-radius: 10px;
+  cursor: pointer; 
+  color: white;
+
+ 
 `;
 export const AppHeading = styled.p`
   font-size: 0.6rem;
 `;
+
 
 // End of Hero
 
@@ -318,7 +344,7 @@ export const AboutHeadingh5 = styled.h5`
 `;
 
 export const AboutText = styled.p`
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 2.5rem;
   font-weight: bold;
   padding-top: 20px;
@@ -326,6 +352,7 @@ export const AboutText = styled.p`
 
   @media screen and (max-width: 1200px) {
     font-size: 2.2rem;
+
   }
 
   @media screen and (max-width: 480px) {
@@ -357,6 +384,8 @@ export const AboutFeature = styled.h3`
 
 // End of About Section
 
+
+
 // Play with your NFT Section
 
 export const NFTSection = styled.section`
@@ -371,23 +400,6 @@ export const NFTSection = styled.section`
     text-align: center;
     height: 75vh;
   }
-`;
-
-export const NFTSectionbg = styled.div`
-  background-image: linear-gradient(
-      to right,
-      rgba(11, 13, 23, 0),
-      rgba(11, 13, 23, 90)
-    ),
-    url(${NFTIMG});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
 `;
 
 export const NFTContentCon = styled.div`
@@ -446,7 +458,7 @@ export const NFTTextRap = styled.div`
 export const NFTText = styled.p`
   font-size: 2.5rem;
   font-weight: bold;
-  line-height: 1.6;
+  line-height: 1.5;
 
   @media screen and (max-width: 900px) {
     font-size: 2.2rem;
@@ -472,8 +484,9 @@ export const NFTBtnContainer = styled.div`
   padding-top: 30px;
 `;
 
+
 // The Cummunity
-export const Community = styled.div`
+export const Community = styled.section`
   background: white;
 `;
 
@@ -601,7 +614,7 @@ export const HGTContainer = styled.section`
   overflow: hidden;
   position: relative;
   height: 90vh;
-  background-color: #0b0d17;
+ 
 
   @media screen and (max-width: 900px) {
     justify-content: center;
@@ -612,13 +625,7 @@ export const HGTContainer = styled.section`
     height: 80vh;
   }
 `;
-export const HGTSectionbg = styled.div`
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-`;
+
 
 export const HGTImg = styled.img`
   height: 100%;
@@ -630,14 +637,7 @@ export const HGTImg = styled.img`
   object-fit: cover;
   object-position: center;
 `;
-export const HGTSectionOverlay = styled.div`
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-`;
+
 
 export const HGTContentContainer = styled.div`
   display: flex;
@@ -684,7 +684,7 @@ export const HGTText = styled.p`
   font-size: 2.5rem;
   color: #fff;
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: bold;
 
   @media screen and (max-width: 900px) {

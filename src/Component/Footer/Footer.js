@@ -45,16 +45,19 @@ function Footer() {
             </div>
 
             <Social>
-              <SocialLinkCon as="a" href="https://twitter.com">
+              <SocialLinkCon as="a" href="https://twitter.com/FlmnWheelzAlpha" target="_blank"
+          rel="noopener noreferrer">
                 <StyledSocialLink icon={faTwitter} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="">
+              <SocialLinkCon as="a" href="https://discord.com/invite/v5R6Cf5NGW" target="_blank"
+          rel="noopener noreferrer">
                 <StyledSocialLink icon={faDiscord} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="">
+              <SocialLinkCon as="a" href="https://t.me/Hypatiatokenofficial" target="_blank"
+          rel="noopener noreferrer">
                 <StyledSocialLink icon={faTelegram} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="">
+              <SocialLinkCon as="a" href="#">
                 <StyledSocialLink icon={faYoutube} />
               </SocialLinkCon>
             </Social>
@@ -69,20 +72,17 @@ function Footer() {
             <Row>
               <div>
                 <Text as="a">About Us</Text>
-                <Text as="a">Team</Text>
-                <Text as="a">Market</Text>
+                <Text as="a">FAQ</Text>
                 <Text as="a">Whitepaper</Text>
               </div>
               <div>
                 <Text as="a">Roadmap</Text>
-                <Text as="a">News</Text>
                 <Text as="a">Download</Text>
                 <Text as="a">Terms of use</Text>
               </div>
               <div>
-                <Text as="a">FAQ</Text>
+                <Text as="a">Team</Text>
                 <Text as="a">Career</Text>
-                <Text as="a">License</Text>
                 <Text as="a">Private Policy</Text>
               </div>
             </Row>
@@ -100,9 +100,12 @@ function Footer() {
           </Copyright>
           <Allrightreserved>
             All Rights Reserved
-            <SocialLink as="a">Twitter</SocialLink>
-            <SocialLink as="a">Discord</SocialLink>
-            <SocialLink as="a">Telegram</SocialLink>
+            <SocialLink as="a" href='https://twitter.com/FlmnWheelzAlpha' target="_blank"
+          rel="noopener noreferrer">Twitter</SocialLink>
+            <SocialLink as="a" href='https://discord.com/invite/v5R6Cf5NGW' target="_blank"
+          rel="noopener noreferrer">Discord</SocialLink>
+            <SocialLink as="a" href='https://t.me/Hypatiatokenofficial' target="_blank"
+          rel="noopener noreferrer">Telegram</SocialLink>
           </Allrightreserved>
         </FooterUnder>
       </StyledFooter>

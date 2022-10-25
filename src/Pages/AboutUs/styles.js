@@ -2,6 +2,28 @@ import styled from 'styled-components';
 import FlamingIMG from '../../Image/About_Page/About_Flaming.jpg';
 import HypatiaIMG from '../../Image/About_Page/Hypatia.jpg';
 
+
+export const SectionOverlay = styled.div`
+background: rgba(0,0,0,0.8);
+bottom: 0;
+height: 100%;
+position: absolute;
+width: 100%;
+z-index: -1;
+`
+// Section Background
+
+export const SectionBg = styled.div`
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+`;
+
+
+
 export const StyledAbout = styled.main`
   margin: auto;
 `;
@@ -27,32 +49,16 @@ export const FlamingContainer = styled.section`
  
 `;
 
-export const FlamingSectionbg = styled.div`
-  background-image: linear-gradient(
-      to right,
-      rgba(11, 13, 23, 0.5),
-      rgba(11, 13, 23, 0.9),
-      rgba(11, 13, 23, 20)
-    ),
-    url(${FlamingIMG});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
 
-  @media screen and (max-width: 480px) {
-    background-image: linear-gradient(
-      rgba(11, 13, 23, 0.5),
-      rgba(11, 13, 23, 0.9),
-      rgba(11, 13, 23, 20)
-    ),
-    url(${FlamingIMG});
-  }
-`;
+
+export const FlamingSectionIMG = styled.img`
+object-fit: cover;
+object-position: center;
+height: 100%;
+left: 0;
+width: 100%;
+position: absolute;
+`
 
 export const FlamingContentContainer = styled.div`
   display: flex;
@@ -114,6 +120,7 @@ export const FlamingbtnContainer = styled.div`
 `;
 // End of FlamingWheelz
 
+
 // Hypatia Games
 export const HypatiaContainer = styled.section`
   display: flex;
@@ -121,10 +128,12 @@ export const HypatiaContainer = styled.section`
   overflow: hidden;
   position: relative;
   height: 100vh;
+ 
+
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
   }
   @media screen and (max-width: 480px) {
     justify-content: center;
@@ -132,35 +141,42 @@ export const HypatiaContainer = styled.section`
   }
 `;
 
-export const HypatiaSectionbg = styled.div`
-  background-image: linear-gradient(
+
+export const HypatiaSectionOverlay = styled.div`
+background-image: linear-gradient(
       to left,
-      rgba(11, 13, 23, 0),
-      rgba(11, 13, 23, 10),
-      rgba(11, 13, 23, 100)
-    ),
-    url(${HypatiaIMG});
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #0b0d17;
-  background-position: right;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
+       rgba(11, 13, 23, 0.2),
+       rgba(11, 13, 23, 1),
+       rgba(11, 13, 23, 1)
+    );
+bottom: 0;
+height: 100%;
+position: absolute;
+width: 100%;
+z-index: -1;
 
-  @media screen and (max-width:900px) {
-   background-size: cover; 
-   background-image: linear-gradient(
-      
-      rgba(11, 13, 23, 0),
-      rgba(11, 13, 23, 1)
-    ),
-    url(${HypatiaIMG});
+@media screen and (max-width: 900px) {
+  background-image: linear-gradient(rgba(11, 13, 23, 0),
+   rgba(11, 13, 23, 1))
 
-  }
-`;
+}
+`
+export const HypatiaSectionIMG = styled.img`
+object-fit: contain;
+object-position: right;
+height: 100%;
+left: 0;
+width: 100%;
+position: absolute;
+
+   
+@media screen and (max-width: 900px) {
+  object-fit: cover;
+  object-position: center;
+
+}
+
+`
 
 export const HypatiaContentContainer = styled.div`
   display: flex;
@@ -238,7 +254,7 @@ export const FlamingFeatureContainer = styled.section`
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
   }
   @media screen and (max-width: 480px) {
     justify-content: center;

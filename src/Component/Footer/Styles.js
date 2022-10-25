@@ -159,7 +159,7 @@ export const Hr = styled.hr`
 `;
 
 export const Copyright = styled.div`
-  color: grey;
+  color: lightgrey;
   font-size: 80%;
 `;
 

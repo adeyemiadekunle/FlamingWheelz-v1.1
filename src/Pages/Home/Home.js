@@ -1,9 +1,11 @@
 import {
+  SectionBg,
+  SectionIMG,
+  SectionOverlay,
   Button,
   TextUnderline,
   HomeSection,
   HeroSection,
-  HeroSectionBg,
   HeroHeadingContainer,
   HeroHeading,
   HeroHeadingh1,
@@ -24,7 +26,6 @@ import {
   AboutColumn,
   AboutFeature,
   NFTSection,
-  NFTSectionbg,
   NFTContentCon,
   NFTHeadingContainer,
   NFTHeadingh2,
@@ -33,23 +34,20 @@ import {
   NFTText,
   NFTBtnContainer,
   KleverNFT,
-  Community,
-  CommunityContainer,
-  CommunityHeadingContainer,
-  CommunityHeadingh5,
-  CommunityRow,
-  CommunityReadMore,
-  CommunityReadMoreBtn,
-  CommBtnContainer,
+  // Community,
+  // CommunityContainer,
+  // CommunityHeadingContainer,
+  // CommunityHeadingh5,
+  // CommunityRow,
+  // CommunityReadMore,
+  // CommunityReadMoreBtn,
+  // CommBtnContainer,
   Patner,
   PatnerCon,
   PatnerList,
   PatnerHeading,
   PatnerListcon,
   HGTContainer,
-  HGTSectionbg,
-  HGTImg,
-  HGTSectionOverlay,
   HGTContentContainer,
   HGTTextContainer,
   HGTHeadingh2,
@@ -71,10 +69,23 @@ import {
   faWindows,
   faAppStore,
 } from '@fortawesome/free-brands-svg-icons';
+import Hero_IMG_200 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_200.webp';
+import Hero_IMG_661 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_661.webp';
+import Hero_IMG_953 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_953.webp';
+import Hero_IMG_1245 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_1245.webp';
+import Hero_IMG_1335 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_1335.webp';
+import Hero_IMG_1400 from '../../Image/Hero/Hero_IMG_a9ygzv_c_scale,w_1400.webp';
 
-// import HGTIMG from '../../Image/HGT/HGT.png';
+import Play_NFT_200 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_200.webp';
+import Play_NFT_569 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_569.webp';
+import Play_NFT_879 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_879.webp';
+import Play_NFT_968 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_968.webp';
+import Play_NFT_1172 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1172.webp';
+import Play_NFT_1388 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1388.webp';
+import Play_NFT_1400 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1400.webp';
+
 import Card from '../../Component/Card/Card';
-import NewsCard from '../../Component/News/NewCard';
+// import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.png';
 import KleverKid from '../../Image/Patner/KleverKid.png';
 import Unreal from '../../Image/Patner/Unreal.png';
@@ -97,7 +108,7 @@ function Home() {
 
     {
       id: 3,
-      title: 'Commemoratic Tournament',
+      title: 'Commemoration Tournaments',
       text: 'There will be bi-monthly zonal tournament where players who win participate in quarterly global tournaments where players compete for an ultimate prize.',
     },
   ];
@@ -116,7 +127,14 @@ function Home() {
       <HomeSection>
         {/* Hero */}
         <HeroSection>
-          <HeroSectionBg></HeroSectionBg>
+          <SectionBg>
+            <SectionIMG
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              src={`${Hero_IMG_1400}`}
+              srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
+            ></SectionIMG>
+          </SectionBg>
+          <SectionOverlay />
           <HeroContentContainer>
             <HeroHeadingContainer>
               <HeroHeadingh1>
@@ -146,21 +164,21 @@ function Home() {
             <div>Download latest version</div>
             <HeroDownloadLinkCon>
               <DownloadIcon />
-              <AppContainer>
+              <AppContainer as='a' href=''>
                 <DownloadIcon icon={faGooglePlay} google />
                 <div>
                   <AppHeading>Get it on</AppHeading>
                   <p>GooglePlay</p>
                 </div>
               </AppContainer>
-              <AppContainer>
+              <AppContainer  as='a' href=''>
                 <DownloadIcon icon={faAppStore} apple />
                 <div>
                   <AppHeading>Download on the</AppHeading>
                   <p>AppStore</p>
                 </div>
               </AppContainer>
-              <AppContainer>
+              <AppContainer  as='a' href=''>
                 <DownloadIcon icon={faWindows} window />
                 <div>
                   <AppHeading>Get it for</AppHeading>
@@ -204,7 +222,14 @@ function Home() {
 
         {/* NFT Section */}
         <NFTSection>
-          <NFTSectionbg></NFTSectionbg>
+          <SectionBg>
+          <SectionIMG
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              src={`${Play_NFT_1400}`}
+              srcSet={`${Play_NFT_200} 200w, ${Play_NFT_569} 569w, ${Play_NFT_879} 879w, ${Play_NFT_968} 968w, ${Play_NFT_1172} 1172w, ${Play_NFT_1388} 1388w, ${Play_NFT_1400} 1400w`}
+            ></SectionIMG>
+          </SectionBg>
+          <SectionOverlay />
           <NFTContentCon>
             <NFTTextContainer>
               <NFTHeadingContainer>
@@ -237,7 +262,7 @@ function Home() {
 
         {/*  The Community New */}
 
-        <Community>
+        {/* <Community>
           <CommunityContainer>
             <CommunityHeadingContainer>
               <div>
@@ -257,7 +282,7 @@ function Home() {
               <CommunityReadMoreBtn>Read More</CommunityReadMoreBtn>
             </CommBtnContainer>
           </CommunityContainer>
-        </Community>
+        </Community> */}
         {/* End of Community */}
 
         {/* The Patner */}
@@ -281,11 +306,14 @@ function Home() {
 
         {/* HGT Token */}
         <HGTContainer>
-          <HGTSectionbg>
-            <HGTImg alt="Box full of Coins" />
-          </HGTSectionbg>
-          <HGTSectionOverlay></HGTSectionOverlay>
-
+          <SectionBg>
+          <SectionIMG
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              src={`${Hero_IMG_1400}`}
+              srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
+            ></SectionIMG>
+          </SectionBg>
+          <SectionOverlay></SectionOverlay>
           <HGTContentContainer>
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>
