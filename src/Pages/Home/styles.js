@@ -22,19 +22,35 @@ width: 100%;
 position: absolute;
 `
 
+export const Container = styled.section`
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+`;
+
 // Button
 export const Button = styled.button`
   margin-top: 10px;
   padding: 15px 50px;
   background: #ff0033;
-  border-radius: 100px;
+  border-radius: 8px;
   border: #ff0033;
   color: white;
   font-weight: bold;
+  outline-offset: 2px;
 
   :hover {
     opacity: 0.8;
-    border-radius: 25px;
+    border-radius: 8px;
+    background: #fff;
+    color: #ff0033;
   }
 
   ${(props) =>
@@ -46,10 +62,9 @@ export const Button = styled.button`
       font-size: 1.5rem;
 
       &:hover {
-        background: white;
-        color: #0b0d17;
-        border: 2px solid white;
+        border: 2px solid #ff0033;
         transition: all 0.2s;
+        background: transparent;
       }
       @media screen and (max-width: 480px) {
         font-size: 1rem;
@@ -66,7 +81,8 @@ export const Button = styled.button`
 
       &:hover {
         transition: 0.2s;
-        color: #0b0d17;
+        color: #fff;
+        background: #ff0033;
       }
     `}
 `;
@@ -126,10 +142,9 @@ export const HeroContentContainer = styled.div`
 
 export const HeroHeadingContainer = styled.div`
   z-index: 1;
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
 `;
 
 export const HeroHeading = styled.h1`
@@ -296,12 +311,10 @@ export const AppHeading = styled.p`
 // End of Hero
 
 // About FlamingWheelz Section
-export const AboutContainer = styled.section`
-  padding: 40px 20px;
-  max-width: 1400px;
-  margin: 40px auto;
-  color: white;
-`;
+export const About = styled.section`
+padding: 40px 0;
+
+`
 
 export const AboutRow = styled.div`
   display: flex;
@@ -407,11 +420,9 @@ export const NFTContentCon = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
+
 `;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
@@ -494,10 +505,7 @@ export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-`;
+ `;
 
 export const CommunityHeadingContainer = styled.div`
   width: 100%;
@@ -564,7 +572,6 @@ export const CommBtnContainer = styled.div`
 // The Patner
 export const Patner = styled.section`
   width: 100%;
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -576,18 +583,15 @@ export const Patner = styled.section`
 `;
 
 export const PatnerCon = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
 `;
 
 export const PatnerList = styled.img`
-  width: 120px;
+  width: 150px;
   height: 100%;
-  margin: 20px;
+  margin: 10px;
 
   @media screen and (max-width: 480px) {
     width: 100px;
@@ -608,12 +612,12 @@ export const PatnerHeading = styled.h5`
 `;
 
 // HGT Token
-export const HGTContainer = styled.section`
+export const HGT = styled.section`
   display: flex;
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 90vh;
+  height: 80vh;
  
 
   @media screen and (max-width: 900px) {
@@ -639,24 +643,14 @@ export const HGTImg = styled.img`
 `;
 
 
-export const HGTContentContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  z-index: 1;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  padding: 0 20px;
-`;
 
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding-top: 50px;
+  margin-top: 70px;
   display: flex;
   flex-flow: column;
+
   width: 60%;
 
   @media screen and (max-width: 900px) {
@@ -721,13 +715,12 @@ export const RoadMapHeading = styled.h3`
   font-weight: bold;
 `;
 export const RoadMapContainer = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
+   width: 100%;
   margin-top: 40px;
   display: flex;
   height: 100%;
 `;
+
 export const RoadMapRow1 = styled.div`
   display: flex;
   flex-flow: column;

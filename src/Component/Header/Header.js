@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Head,
+  NavContainer,
   TopHeader,
   DesktopContent,
   SideMenuContainer,
@@ -10,7 +10,7 @@ import {
   Img,
   StyledLink,
   StyledA,
-  HeaderContainer,
+  Head,
   ImgCon,
   OpenMenu,
   MenuContent,
@@ -19,6 +19,7 @@ import {
   FindUsLinkCon,
   StyledSocialLink,
   SocialLinkCon,
+  Container,
 } from './styles';
 import { Link } from 'react-router-dom';
 import Logo from '../../Image/Header/New_Logo_red.png';
@@ -54,9 +55,10 @@ function Header() {
 
   return (
     <>
-      <HeaderContainer>
-        <Head>
+      <Head>
+    
           <TopHeader>
+            <NavContainer>
             {/* Logo */}
             <ImgCon>
               <Link to="/">
@@ -73,7 +75,10 @@ function Header() {
             <OpenMenu onClick={menuOpen}>
               <FontAwesomeIcon icon={faBars} />
             </OpenMenu>
+            </NavContainer>
           </TopHeader>
+      
+          
 
           {/* <div className="sticky_Icon"></div> */}
 
@@ -121,8 +126,7 @@ function Header() {
               </SideMenuContainer>
             )}
           </div>
-        </Head>
-      </HeaderContainer>
+          </Head>
     </>
   );
 }

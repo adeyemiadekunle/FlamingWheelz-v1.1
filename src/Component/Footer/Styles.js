@@ -1,6 +1,19 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+export const Container = styled.section`
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+`;
+
 export const StyledFooter = styled.footer`
   color: white;
 
@@ -11,7 +24,19 @@ export const StyledFooter = styled.footer`
 `;
 
 export const FooterContainer = styled.div`
-  padding: 0px 20px;
+  
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+
  
 `;
 
@@ -135,12 +160,10 @@ export const LogoText = styled.p`
 
 // Under
 export const FooterUnder = styled.div`
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 20px;
+  
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 
   @media screen and (max-width: 765px) {
     display: flex;

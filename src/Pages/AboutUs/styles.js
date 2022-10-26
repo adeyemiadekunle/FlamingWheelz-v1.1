@@ -1,7 +1,17 @@
 import styled from 'styled-components';
-import FlamingIMG from '../../Image/About_Page/About_Flaming.jpg';
-import HypatiaIMG from '../../Image/About_Page/Hypatia.jpg';
 
+export const Container = styled.section`
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+`;
 
 export const SectionOverlay = styled.div`
 background: rgba(0,0,0,0.8);
@@ -65,15 +75,8 @@ export const FlamingContentContainer = styled.div`
   justify-content: flex-end;
   z-index: 1;
   align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
-
-  @media screen and (max-width: 480px) {
-    padding: 0 10px;
-  }
 `;
 
 export const FlamingTextContainer = styled.div`
@@ -183,15 +186,11 @@ export const HypatiaContentContainer = styled.div`
   justify-content: flex-start;
   z-index: 1;
   align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
 
-  @media screen and (max-width: 480px) {
-    padding: 0 10px;
-  }
+
+ 
 `;
 
 export const HypatiaTextContainer = styled.div`
@@ -276,21 +275,16 @@ export const FeatureContentContainer = styled.div`
   justify-content: flex-start;
   z-index: 1;
   align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
 
-  @media screen and (max-width: 480px) {
-    padding: 0 10px;
-  }
+
 `;
 
 export const FeatureTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 10px;
+  padding: 50px 0px;
   display: flex;
   flex-flow: column;
   width: 60%;
@@ -337,7 +331,7 @@ export const FeatureLists = styled.li`
 // The Team
 export const StyledTeam = styled.div`
   margin-bottom: 80px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 
   @media screen and (max-width: 480px) {
     padding: 0 10px;
@@ -353,8 +347,8 @@ export const TeamListCon = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding: 20px 0;
+  gap: 20px;
+  /* padding: 20px 0; */
   margin-bottom: 40px;
 
   

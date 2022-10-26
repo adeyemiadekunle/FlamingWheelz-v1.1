@@ -19,6 +19,7 @@ import {
   Row,
   Text,
   Hr,
+  Container,
 } from './Styles';
 
 import Logo from '../../Image/Header/New_Logo.png';
@@ -93,7 +94,7 @@ function Footer() {
           </FooterNavbar>
           <Hr></Hr>
         </FooterContainer>
-
+        <Container>
         <FooterUnder>
           <Copyright>
             @2022 FlamingWheelz | Powered by Hypatia Games
@@ -108,6 +109,7 @@ function Footer() {
           rel="noopener noreferrer">Telegram</SocialLink>
           </Allrightreserved>
         </FooterUnder>
+        </Container>
       </StyledFooter>
     </>
   );

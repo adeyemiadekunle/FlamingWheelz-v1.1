@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+
 import { Button } from '../Home/styles';
 import { Team } from '../../Component/Team/Team';
 import {
@@ -7,13 +7,11 @@ import {
   FlamingSectionIMG,
   StyledAbout,
   FlamingContainer,
-  // FlamingSectionbg,
   FlamingContentContainer,
   FlamingTextContainer,
   FlamingHeadingh2,
   FlamingText,
   HypatiaContainer,
-  HypatiaSectionbg,
   HypatiaSectionIMG,
   HypatiaContentContainer,
   HypatiaTextContainer,
@@ -34,6 +32,7 @@ import {
   TeamHeadingCon,
   TeamHeadingh3,
   HypatiaSectionOverlay,
+  Container,
 } from './styles';
 
 import Flaming_437 from '../../Image/About_Page/About_Flaming_hopgxp_c_scale,w_437.jpg';
@@ -156,6 +155,7 @@ function AboutUs() {
             ></FlamingSectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
+          <Container>
           <FlamingContentContainer>
             <FlamingTextContainer>
               <FlamingHeadingh2>About FlamingWheelz</FlamingHeadingh2>
@@ -190,10 +190,12 @@ function AboutUs() {
               </FlamingbtnContainer>
             </FlamingTextContainer>
           </FlamingContentContainer>
+          </Container>
         </FlamingContainer>
 
         <FlamingFeatureContainer>
           <FeatureSectionbg></FeatureSectionbg>
+          <Container>
           <FeatureContentContainer>
             <FeatureTextContainer>
               <FeatureHeadingh2>The Features</FeatureHeadingh2>
@@ -245,6 +247,7 @@ function AboutUs() {
               </FeatureText>
             </FeatureTextContainer>
           </FeatureContentContainer>
+          </Container>
         </FlamingFeatureContainer>
 
         <HypatiaContainer>
@@ -258,6 +261,7 @@ function AboutUs() {
             ></HypatiaSectionIMG>
           </SectionBg>
           <HypatiaSectionOverlay></HypatiaSectionOverlay>
+          <Container>
           <HypatiaContentContainer>
             <HypatiaTextContainer>
               <HypatiaHeadingh3>About</HypatiaHeadingh3>
@@ -286,6 +290,7 @@ function AboutUs() {
               </HypatiaText>
             </HypatiaTextContainer>
           </HypatiaContentContainer>
+          </Container>
         </HypatiaContainer>
 
        

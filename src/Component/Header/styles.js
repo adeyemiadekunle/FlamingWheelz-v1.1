@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
+
+export const Container = styled.section`
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+`;
+
 export const StyledLink = styled(Link)`
   color: #0b0d17;
   font-size: 1.2rem;
@@ -44,41 +58,44 @@ export const StyledA = styled.a`
 `
 
 // Header
-export const HeaderContainer = styled.header`
+export const Head = styled.header`
   height: 4rem;
   background: red;
   
-  
 `;
 
-export const Head = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
- 
 
+
+export const NavContainer = styled.div`
+    color: white;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1240px;
+   
+  }
+ 
 `;
 
 export const TopHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   position: fixed;
   left: 0;
   top: 0;
   z-index: 5;
   background-color: white;
-  padding: 0 2rem;
-  width: 100%;
+   width: 100%;
   height: 4rem;
   -webkit-box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
   -moz-box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
-    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
   
-
-  @media screen and (max-width: 480px) {
-    padding: 0 1rem;
-  }
 `;
 
 export const Img = styled.img`
@@ -91,7 +108,7 @@ export const ImgCon = styled.div`
   /* padding-left: 10px; */
 
   @media screen and (max-width: 480px) {
-    margin-left: -10px;
+    /* margin-left: -10px; */
   }
 `;
 

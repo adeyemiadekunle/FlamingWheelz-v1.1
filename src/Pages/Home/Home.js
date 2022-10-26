@@ -17,7 +17,8 @@ import {
   AppHeading,
   HeroContentContainer,
   HeroDownloadLinkCon,
-  AboutContainer,
+  Container,
+  About,
   AboutTextCon,
   AboutHeading,
   AboutHeadingh5,
@@ -47,8 +48,7 @@ import {
   PatnerList,
   PatnerHeading,
   PatnerListcon,
-  HGTContainer,
-  HGTContentContainer,
+  HGT,
   HGTTextContainer,
   HGTHeadingh2,
   HGTText,
@@ -92,6 +92,7 @@ import Unreal from '../../Image/Patner/Unreal.png';
 import Avax from '../../Image/Patner/Avax.png';
 import Dragon from '../../Image/Patner/Dragon.png';
 import EpicGame from '../../Image/Patner/Epicgame.png';
+import Pumpskin from '../../Image/Patner/pumpskin.png';
 
 function Home() {
   const Abouts = [
@@ -117,9 +118,10 @@ function Home() {
     { id: 0, img: EpicGame, title: 'EpicGame' },
     { id: 1, img: Klever, title: 'Klever' },
     { id: 2, img: Unreal, title: 'Unreal' },
-    { id: 3, img: Avax, title: 'Avax' },
-    { id: 4, img: Dragon, title: 'Dragon' },
-    { id: 5, img: KleverKid, title: 'KleverKid' },
+    { id: 3, img: Pumpskin, title: 'Pumpskin'},
+    { id: 4, img: Avax, title: 'Avax' },
+    { id: 5, img: Dragon, title: 'Dragon' },
+    { id: 6, img: KleverKid, title: 'KleverKid' },
   ];
 
   return (
@@ -135,6 +137,7 @@ function Home() {
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay />
+          <Container>
           <HeroContentContainer>
             <HeroHeadingContainer>
               <HeroHeadingh1>
@@ -159,6 +162,7 @@ function Home() {
               </HeroText>
             </HeroTextContainer>
           </HeroContentContainer>
+          </Container>
 
           <HeroDownloadContainer>
             <div>Download latest version</div>
@@ -191,7 +195,8 @@ function Home() {
         {/* End of Hero */}
 
         {/* About FlamingWheelz Section */}
-        <AboutContainer>
+        <About>
+        <Container>
           <AboutRow>
             <AboutTextCon>
               <AboutHeadingh5> OVERVIEW</AboutHeadingh5>
@@ -217,7 +222,8 @@ function Home() {
               ))}
             </AboutColumn>
           </AboutRow>
-        </AboutContainer>
+        </Container>
+        </About>
         {/* End of About */}
 
         {/* NFT Section */}
@@ -230,6 +236,7 @@ function Home() {
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay />
+          <Container>
           <NFTContentCon>
             <NFTTextContainer>
               <NFTHeadingContainer>
@@ -257,6 +264,7 @@ function Home() {
               </NFTBtnContainer>
             </NFTTextContainer>
           </NFTContentCon>
+          </Container>
         </NFTSection>
         {/* End of NFT */}
 
@@ -287,6 +295,7 @@ function Home() {
 
         {/* The Patner */}
         <Patner>
+         <Container>
           <PatnerCon>
             <div>
               <PatnerHeading>Our Partner</PatnerHeading>
@@ -301,11 +310,12 @@ function Home() {
               ))}
             </PatnerListcon>
           </PatnerCon>
+          </Container>
         </Patner>
         {/* End of Patner */}
 
         {/* HGT Token */}
-        <HGTContainer>
+        <HGT>
           <SectionBg>
           <SectionIMG
               sizes="(max-width: 1400px) 100vw, 1400px"
@@ -314,7 +324,7 @@ function Home() {
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
-          <HGTContentContainer>
+          <Container>
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>
                 Utility and Governance <img src="" alt="" /> HGT Token{' '}
@@ -330,13 +340,16 @@ function Home() {
                 </Button>
               </HGTbtnContainer>
             </HGTTextContainer>
-          </HGTContentContainer>
-        </HGTContainer>
+        
+          </Container>
+        </HGT>
         {/*  End HGT Token */}
+
 
         {/* RoadMap */}
         <RoadMap>
           <RoadMapHeading>RoadMap</RoadMapHeading>
+          <Container>
           <RoadMapContainer>
             <RoadMapRow1 right>
               <RoadMapYear>
@@ -388,6 +401,7 @@ function Home() {
               </RoadMapYear>
             </RoadMapRow2>
           </RoadMapContainer>
+          </Container>
           <ViewDetailRoadmap as="a" href="">
             View detailed roadmaps
           </ViewDetailRoadmap>
