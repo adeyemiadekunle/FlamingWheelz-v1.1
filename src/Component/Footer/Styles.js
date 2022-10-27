@@ -164,6 +164,7 @@ export const FooterUnder = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  padding-top: 10px;
 
   @media screen and (max-width: 765px) {
     display: flex;

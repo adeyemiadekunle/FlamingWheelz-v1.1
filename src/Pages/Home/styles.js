@@ -40,7 +40,7 @@ export const Button = styled.button`
   margin-top: 10px;
   padding: 15px 50px;
   background: #ff0033;
-  border-radius: 8px;
+  border-radius: 4px;
   border: #ff0033;
   color: white;
   font-weight: bold;
@@ -48,7 +48,7 @@ export const Button = styled.button`
 
   :hover {
     opacity: 0.8;
-    border-radius: 8px;
+    border-radius: 4px;
     background: #fff;
     color: #ff0033;
   }
@@ -312,8 +312,8 @@ export const AppHeading = styled.p`
 
 // About FlamingWheelz Section
 export const About = styled.section`
-padding: 40px 0;
-
+ padding-top: 60px;
+padding-bottom: 60px;
 `
 
 export const AboutRow = styled.div`
@@ -405,13 +405,19 @@ export const NFTSection = styled.section`
   display: flex;
   overflow: hidden;
   position: relative;
-  height: 90vh;
   justify-content: right;
   align-items: right;
+  padding-top: 60px;
+  padding-bottom: 70px;
 
   @media screen and (max-width: 900px) {
     text-align: center;
-    height: 75vh;
+
+  }
+
+  @media screen  and (min-width: 992px){
+    height: 80vh;
+    
   }
 `;
 
@@ -446,7 +452,6 @@ export const NFTTextContainer = styled.div`
   flex-flow: column;
   width: 100%;
   z-index: 1;
-  padding: 50px 20px;
   width: 60%;
 
   @media screen and (max-width: 900px) {
@@ -499,6 +504,8 @@ export const NFTBtnContainer = styled.div`
 // The Cummunity
 export const Community = styled.section`
   background: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `;
 
 export const CommunityContainer = styled.div`
@@ -575,11 +582,13 @@ export const Patner = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-  @media screen and (max-width: 900px) {
-    height: 70vh;
+  @media screen and (min-width: 992px) {
+    height: 70vh; 
   }
+
 `;
 
 export const PatnerCon = styled.div`
@@ -589,7 +598,7 @@ export const PatnerCon = styled.div`
 `;
 
 export const PatnerList = styled.img`
-  width: 150px;
+  width: 120px;
   height: 100%;
   margin: 10px;
 
@@ -611,23 +620,30 @@ export const PatnerHeading = styled.h5`
   font-size: 1.2rem;
 `;
 
+
+
 // HGT Token
 export const HGT = styled.section`
   display: flex;
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 80vh;
- 
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 60vh;
+  
+  }
+   
+  @media screen  and (min-width: 992px){
+    height: 80vh;
+    
   }
 
-  @media screen and (max-width: 480px) {
-    height: 80vh;
-  }
 `;
 
 
@@ -647,14 +663,13 @@ export const HGTImg = styled.img`
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  margin-top: 70px;
   display: flex;
   flex-flow: column;
-
   width: 60%;
 
   @media screen and (max-width: 900px) {
     width: 100%;
+ 
   }
 `;
 
@@ -707,7 +722,8 @@ export const RoadMap = styled.section`
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `;
 
 export const RoadMapHeading = styled.h3`

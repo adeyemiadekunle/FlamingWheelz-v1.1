@@ -79,7 +79,6 @@ function Header() {
           </TopHeader>
       
           
-
           {/* <div className="sticky_Icon"></div> */}
 
           <div>

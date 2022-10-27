@@ -84,11 +84,10 @@ export const NavContainer = styled.div`
 `;
 
 export const TopHeader = styled.div`
-
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 5;
+  /* position: fixed; */
+  /* left: 0; */
+  /* top: 0; */
+  /* z-index: 5; */
   background-color: white;
    width: 100%;
   height: 4rem;
@@ -101,14 +100,13 @@ export const TopHeader = styled.div`
 export const Img = styled.img`
   width: 160px;
 
- 
 `;
 
 export const ImgCon = styled.div`
   /* padding-left: 10px; */
 
   @media screen and (max-width: 480px) {
-    /* margin-left: -10px; */
+    margin-left: -10px;
   }
 `;
 

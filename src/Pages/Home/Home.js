@@ -349,7 +349,7 @@ function Home() {
         {/* RoadMap */}
         <RoadMap>
           <RoadMapHeading>RoadMap</RoadMapHeading>
-          <Container>
+       
           <RoadMapContainer>
             <RoadMapRow1 right>
               <RoadMapYear>
@@ -396,12 +396,12 @@ function Home() {
                 <p>Phase 1 and Release of Demo Version</p>
               </RoadMapText>
               <RoadMapYear>
-                <p>Q2</p>
+                <p>Q3</p>
                 <p>2023</p>
               </RoadMapYear>
             </RoadMapRow2>
           </RoadMapContainer>
-          </Container>
+      
           <ViewDetailRoadmap as="a" href="">
             View detailed roadmaps
           </ViewDetailRoadmap>

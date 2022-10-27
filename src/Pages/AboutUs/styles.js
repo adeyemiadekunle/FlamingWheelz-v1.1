@@ -44,22 +44,18 @@ export const FlamingContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 120vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 70vh;
+  
   };
 
-  @media screen and (max-width: 768px) {
-    justify-content: center; 
-    height: 120vh;
-  }
-
+ 
  
 `;
-
-
 
 export const FlamingSectionIMG = styled.img`
 object-fit: cover;
@@ -82,7 +78,6 @@ export const FlamingContentContainer = styled.div`
 export const FlamingTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 60px 10px;
   display: flex;
   flex-flow: column;
   width: 60%;
@@ -130,18 +125,15 @@ export const HypatiaContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 100vh;
- 
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 90vh;
+
   }
-  @media screen and (max-width: 480px) {
-    justify-content: center;
-    height: 90vh;
-  }
+ 
 `;
 
 
@@ -196,7 +188,6 @@ export const HypatiaContentContainer = styled.div`
 export const HypatiaTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 10px;
   display: flex;
   flex-flow: column;
   width: 60%;
@@ -249,16 +240,14 @@ export const FlamingFeatureContainer = styled.section`
   flex-flow: column;
   overflow: hidden;
   position: relative;
-  height: 110vh;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 
   @media screen and (max-width: 900px) {
     justify-content: center;
-    height: 100vh;
   }
-  @media screen and (max-width: 480px) {
-    justify-content: center;
-    height: 100vh;
-  }
+ 
   
 `;
 
@@ -284,7 +273,6 @@ export const FeatureContentContainer = styled.div`
 export const FeatureTextContainer = styled.div`
   z-index: 1;
   width: 100%;
-  padding: 50px 0px;
   display: flex;
   flex-flow: column;
   width: 60%;
@@ -330,28 +318,25 @@ export const FeatureLists = styled.li`
 
 // The Team
 export const StyledTeam = styled.div`
-  margin-bottom: 80px;
-  /* padding: 0 20px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (max-width: 480px) {
-    padding: 0 10px;
+    padding: 60px 16px;
   }
 `;
 
-export const TeamContainer = styled.div``;
+export const TeamContainer = styled.div`
+`;
 
 export const TeamListCon = styled.div`
-  margin: 20px;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* padding: 20px 0; */
-  margin-bottom: 40px;
-
-  
+ 
 `;
 
 export const TeamHeadingCon = styled.div`
@@ -359,8 +344,9 @@ export const TeamHeadingCon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding-bottom: 20px;
+
+ 
 `;
 export const TeamHeadingh3 = styled.h3`
   color: white;
