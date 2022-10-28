@@ -23,7 +23,7 @@ export const StyledLink = styled(Link)`
 
   &:hover {
     transition: all 0.1s;
-    /* color: #33aaf5; */
+    color: #33aaf5;
   }
 
   @media screen and (max-width: 768px) {
@@ -43,6 +43,7 @@ export const StyledA = styled.a`
   &:hover {
     transition: all 0.1s;
     color: #33aaf5;
+    /* border-bottom: 2px solid #33aaf5; */
   }
 
   @media screen and (max-width: 768px) {
@@ -84,7 +85,7 @@ export const TopHeader = styled(motion.div)`
 
 export const Img = styled.img`
   width: 160px;
-  height: 100%;
+  height: 50px;
 `;
 
 export const ImgCon = styled.div`
@@ -106,7 +107,7 @@ export const DesktopContent = styled.div`
 `;
 
 // The Side Menu
-export const SideMenuContainer = styled.header`
+export const SideMenuContainer = styled(motion.nav)`
   display: flex;
   flex-flow: column nowrap;
   transition: all 0.25s linear;
@@ -135,7 +136,6 @@ export const SideMenuHeader = styled.div`
   color: white;
   font-size: 1.8rem;
   padding: 16px 24px;
- 
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
@@ -158,8 +158,6 @@ export const SideMenuWrapper = styled.div`
 export const MenuContent = styled.nav`
   width: 100%;
 `;
-
-
 
 export const OpenMenu = styled.div`
   display: none;
@@ -213,4 +211,4 @@ export const StyledSocialLink = styled(FontAwesomeIcon)`
   color: white;
 `;
 
-export const SocialLinkCon = styled.div``;
+export const SocialLinkCon = styled(motion.div)``;

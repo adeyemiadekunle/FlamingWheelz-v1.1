@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   NavContainer,
   TopHeader,
@@ -10,7 +10,6 @@ import {
   SideMenuOverlay,
   Img,
   StyledLink,
-  StyledA,
   Head,
   ImgCon,
   OpenMenu,
@@ -20,10 +19,10 @@ import {
   FindUsLinkCon,
   StyledSocialLink,
   SocialLinkCon,
- 
+  StyledA,
 } from './styles';
 import { Link } from 'react-router-dom';
-import Logo from '../../Image/Header/New_Logo_red.png';
+import Logo from '../../Image/Header/New_Logo_red.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import {
@@ -33,32 +32,29 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
-function Header() {
-  const Menu = () => {
-    return (
-      <nav>
-        <StyledLink onClick={closeMenu} to="/">
-          HOME
-        </StyledLink>
-        <StyledLink onClick={closeMenu} to="/about">
-          ABOUT
-        </StyledLink>
-        <StyledLink onClick={closeMenu} to="/event">
-          EVENTS
-        </StyledLink>
-        <StyledA
-          onClick={closeMenu}
-          href="https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Redirect to flamingwheelz NFT Marketplace"
-        >
-          MARKET
-        </StyledA>
-      </nav>
-    );
-  };
+const links = [
+  { title: 'HOME', to: '/', id: 1 },
+  { title: 'ABOUT', to: '/about', id: 2 },
+  { title: 'EVENTS', to: '/event', id: 3 },
+  { title: 'MARKET', to: '/market', id: 4 },
+];
 
+const Menu = () => {
+  return(
+    <nav>
+      <StyledLink to="/" end>HOME</StyledLink>
+      <StyledLink to="/about">ABOUT</StyledLink>
+      <StyledLink to="/event">EVENT</StyledLink>
+      <StyledA as='a' href='https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1' target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Redirect to klevernft">MARKET</StyledA>
+    </nav>
+  )
+}
+
+
+
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   //  To Toggle Menu and Close it
@@ -68,35 +64,28 @@ function Header() {
   return (
     <>
       <Head>
-        <TopHeader 
-        initial={{y: -50}}
-        animate={{y: -10}}
-        transition={{delay: 0.2, type: 'spring', stiffness: 120}}
-        
-        >
+        <TopHeader>
           <NavContainer>
             {/* Logo */}
             <ImgCon>
               <Link to="/" aria-label="to homepage">
-                  <Img src={Logo} alt='flamingwheelz logo' />
+                <Img src={Logo} alt="flamingwheelz logo" />
               </Link>
             </ImgCon>
             {/* Nav Links */}
             <DesktopContent>
-              <Menu />
+              <Menu/>
             </DesktopContent>
             {/* Menubar */}
-           
+
             <OpenMenu onClick={menuOpen}>
               <FontAwesomeIcon icon={faBars} />
             </OpenMenu>
-           
           </NavContainer>
         </TopHeader>
 
         {/* <div className="sticky_Icon"></div> */}
-
-        <div>
+        <AnimatePresence>
           {isOpen && (
             <SideMenuContainer>
               <SideMenuOverlay />
@@ -107,10 +96,10 @@ function Header() {
               </SideMenuHeader>
               <SideMenuWrapper>
                 <MenuContent>
-                  <Menu />
+                  <Menu/>
                 </MenuContent>
                 <FindUsContainer>
-                  <div>Find us on</div>
+                  <motion.div>Find us on</motion.div>
                   <FindUsLinkCon>
                     <SocialLinkCon
                       as="a"
@@ -153,7 +142,7 @@ function Header() {
               </SideMenuWrapper>
             </SideMenuContainer>
           )}
-        </div>
+        </AnimatePresence>
       </Head>
     </>
   );

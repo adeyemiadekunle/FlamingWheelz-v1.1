@@ -1,8 +1,15 @@
+import { Helmet } from 'react-helmet-async';
+import style from './styles.css';
+import { motion } from 'framer-motion';
+import { SectionInView } from '../../Component/AnimateInViewHook/AnimateInView.js';
+import {
+  NormalButton,
+  PrimaryButton,
+} from '../../Component/Button/Button';
 import {
   SectionBg,
   SectionIMG,
   SectionOverlay,
-  Button,
   TextUnderline,
   HomeSection,
   HeroSection,
@@ -87,13 +94,29 @@ import Play_NFT_1400 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1400.we
 
 import Card from '../../Component/Card/Card';
 // import NewsCard from '../../Component/News/NewCard';
-import Klever from '../../Image/Patner/Klever.png';
-import KleverKid from '../../Image/Patner/KleverKid.png';
-import Unreal from '../../Image/Patner/Unreal.png';
-import Avax from '../../Image/Patner/Avax.png';
-import Dragon from '../../Image/Patner/Dragon.png';
-import EpicGame from '../../Image/Patner/Epicgame.png';
-import Pumpskin from '../../Image/Patner/pumpskin.png';
+import Klever from '../../Image/Patner/Klever.webp';
+import KleverKid from '../../Image/Patner/KleverKid.webp';
+import Unreal from '../../Image/Patner/Unreal.webp';
+import Avax from '../../Image/Patner/Avax.webp';
+import Dragon from '../../Image/Patner/Dragon.webp';
+import EpicGame from '../../Image/Patner/Epicgame.webp';
+import Pumpskin from '../../Image/Patner/pumpskin.webp';
+
+// Animate the Hero Section
+// const HeroVariants = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: {
+//     opacity: 1,
+//     y: 0,
+
+//     transition: {
+//       delay: 0.2,
+//       duration: 0.3,
+//       type: 'spring',
+//       stiffness: 100,
+//     },
+//   },
+// };
 
 function Home() {
   const Abouts = [
@@ -119,7 +142,7 @@ function Home() {
     { id: 0, img: EpicGame, title: 'EpicGame' },
     { id: 1, img: Klever, title: 'Klever' },
     { id: 2, img: Unreal, title: 'Unreal' },
-    { id: 3, img: Pumpskin, title: 'Pumpskin'},
+    { id: 3, img: Pumpskin, title: 'Pumpskin' },
     { id: 4, img: Avax, title: 'Avax' },
     { id: 5, img: Dragon, title: 'Dragon' },
     { id: 6, img: KleverKid, title: 'KleverKid' },
@@ -127,6 +150,16 @@ function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          FlamingWheelz - Redefined Web3 Gaming Experience
+        </title>
+        <meta
+          name="description"
+          content="A Hyper Realistic Racing Game, graced with tournaments, challenges and best of all Play and Earn."
+        />
+        {/* <link rel='canonical' href='../Home' /> */}
+      </Helmet>
       <HomeSection>
         {/* Hero */}
         <HeroSection>
@@ -136,60 +169,55 @@ function Home() {
               src={`${Hero_IMG_1400}`}
               srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
               alt="A gaming car"
+              loading="eager"
             ></HeroSectionIMG>
           </SectionBg>
           <SectionOverlay />
           <Container>
-          <HeroContentContainer
-           initial={{ opacity: 0 }}
-           animate={{ opacity: 1 }}
-           transition={{delay: 1.5, duration: 1.5, type: 'tween'}}
-          >
-            <HeroHeadingContainer>
-              <HeroHeadingh3>
-                Redefing Web3 Gaming Experience
-              </HeroHeadingh3>
-              <HeroHeading>
-                A Multi Chain
-                <br />
-                Fantasy Racing Game
-              </HeroHeading>
-            </HeroHeadingContainer>
+            <HeroContentContainer>
+              <HeroHeadingContainer>
+                <HeroHeadingh3>
+                  Redefing Web3 Gaming Experience
+                </HeroHeadingh3>
+                <HeroHeading>
+                  A Multi Chain
+                  <br />
+                  Fantasy Racing Game
+                </HeroHeading>
+              </HeroHeadingContainer>
 
-            <HeroTextContainer>
-              <HeroText>
-                A Hyper Realistic Racing Games developed by{' '}
-                <TextUnderline >
-                  Hypatia Games,
-                </TextUnderline>{' '}
-                graced with tournament, challenge and best of all{' '}
-                <TextUnderline>PLAY</TextUnderline> and{' '}
-                <TextUnderline>EARN.</TextUnderline>
-              </HeroText>
-            </HeroTextContainer>
-          </HeroContentContainer>
+              <HeroTextContainer>
+                <HeroText>
+                  A Hyper Realistic Racing Games developed by{' '}
+                  <TextUnderline>Hypatia Games,</TextUnderline> graced
+                  with tournament, challenge and best of all{' '}
+                  <TextUnderline>PLAY</TextUnderline> and{' '}
+                  <TextUnderline>EARN.</TextUnderline>
+                </HeroText>
+              </HeroTextContainer>
+            </HeroContentContainer>
           </Container>
 
           <HeroDownloadContainer>
             <div>Download latest version</div>
             <HeroDownloadLinkCon>
               <DownloadIcon />
-              <AppContainer >
-                <DownloadIcon icon={faGooglePlay} google='true' />
+              <AppContainer>
+                <DownloadIcon icon={faGooglePlay} google="true" />
                 <div>
                   <AppHeading>Get it on</AppHeading>
                   <p>GooglePlay</p>
                 </div>
               </AppContainer>
-              <AppContainer  >
-                <DownloadIcon icon={faAppStore} apple='true' />
+              <AppContainer>
+                <DownloadIcon icon={faAppStore} apple="true" />
                 <div>
                   <AppHeading>Download on the</AppHeading>
                   <p>AppStore</p>
                 </div>
               </AppContainer>
-              <AppContainer >
-                <DownloadIcon icon={faWindows} window='true' />
+              <AppContainer>
+                <DownloadIcon icon={faWindows} window="true" />
                 <div>
                   <AppHeading>Get it for</AppHeading>
                   <p>Windows</p>
@@ -201,82 +229,87 @@ function Home() {
         {/* End of Hero */}
 
         {/* About FlamingWheelz Section */}
+     
         <About>
-        <Container>
-          <AboutRow>
-            <AboutTextCon>
-              <AboutHeadingh3> OVERVIEW</AboutHeadingh3>
-              <AboutHeading>What is FlamingWheelz?</AboutHeading>
-              <AboutText>
-                FlamingWheelz is a fantasy RPG mixed with racing for
-                anyone who's ever think about fantasy creatures and
-                more with your driving expertise, and all of it is
-                fueled by HGT tokens.
-              </AboutText>
-              <Button normal='true'  >
-                Read More
-              </Button>
-            </AboutTextCon>
-            <AboutColumn>
-              <AboutFeature>Key Features</AboutFeature>
-              {Abouts.map((about) => (
-                <Card
-                  key={about.id}
-                  title={about.title}
-                  text={about.text}
-                  initial={{}}
-                  animate={{}}
-                  transition={{}
-                }
-                />
-              ))}
-            </AboutColumn>
-          </AboutRow>
-        </Container>
+          <Container>
+            <AboutRow>
+              <AboutTextCon>
+                <AboutHeadingh3> OVERVIEW</AboutHeadingh3>
+                <AboutHeading>What is FlamingWheelz?</AboutHeading>
+                <AboutText>
+                  FlamingWheelz is a fantasy RPG mixed with racing for
+                  anyone who's ever think about fantasy creatures and
+                  more with your driving expertise, and all of it is
+                  fueled by HGT tokens.
+                </AboutText>
+                <PrimaryButton
+                  role="link"
+                  href="https://frenify.net/envato/frenify/html/neoh/1/index.html"
+                >
+                  Read More
+                </PrimaryButton>
+              </AboutTextCon>
+              <AboutColumn>
+                <AboutFeature>Key Features</AboutFeature>
+                {Abouts.map((about) => (
+                  <Card
+                    key={about.id}
+                    title={about.title}
+                    text={about.text}
+                    initial={{}}
+                    animate={{}}
+                    transition={{}}
+                  />
+                ))}
+              </AboutColumn>
+            </AboutRow>
+          </Container>
         </About>
+    
         {/* End of About */}
 
         {/* NFT Section */}
+     
         <NFTSection>
           <SectionBg>
-          <SectionIMG
+            <SectionIMG
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Play_NFT_1400}`}
               srcSet={`${Play_NFT_200} 200w, ${Play_NFT_569} 569w, ${Play_NFT_879} 879w, ${Play_NFT_968} 968w, ${Play_NFT_1172} 1172w, ${Play_NFT_1388} 1388w, ${Play_NFT_1400} 1400w`}
               alt="A gaming car and a man standing playing game"
+              loading="lazy"
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay />
           <Container>
-          <NFTContentCon>
-            <NFTTextContainer>
-              <NFTHeadingContainer>
-                <NFTHeadingh2>Play and Earn with NFTs</NFTHeadingh2>
-              </NFTHeadingContainer>
+            <NFTContentCon>
+              <NFTTextContainer>
+                <NFTHeadingContainer>
+                  <NFTHeadingh2>Play and Earn with NFTs</NFTHeadingh2>
+                </NFTHeadingContainer>
 
-              <NFTTextRap>
-                <NFTText>
-                  A Genesis Collection of 4K NFTs that can really play
-                  a role in{' '}
-                  <TextUnderline>FlamingWheelz,</TextUnderline> Check
-                  out on Klever
-                  <KleverNFT>NFT </KleverNFT>
-                  and turn your NFTs to life.
-                </NFTText>
-              </NFTTextRap>
+                <NFTTextRap>
+                  <NFTText>
+                    A Genesis Collection of 4K NFTs that can really
+                    play a role in{' '}
+                    <TextUnderline>FlamingWheelz,</TextUnderline>{' '}
+                    Check out on Klever
+                    <KleverNFT>NFT </KleverNFT>
+                    and turn your NFTs to life.
+                  </NFTText>
+                </NFTTextRap>
 
-              <NFTBtnContainer className="btn">
-                <Button normal='true'  
-                  as="a"
-                  href="https://www.klevernft.com/launchpad/FWZ-COMING"
-                >
-                  Explore NFT Collections
-                </Button>
-              </NFTBtnContainer>
-            </NFTTextContainer>
-          </NFTContentCon>
+                <NFTBtnContainer className="btn">
+                  <NormalButton href="https://www.klevernft.com/launchpad/FWZ-COMING">
+                    {' '}
+                    Explore NFT Collections
+                  </NormalButton>
+                </NFTBtnContainer>
+              </NFTTextContainer>
+            </NFTContentCon>
           </Container>
         </NFTSection>
+   
         {/* End of NFT */}
 
         {/*  The Community New */}
@@ -306,21 +339,22 @@ function Home() {
 
         {/* The Patner */}
         <Patner>
-         <Container>
-          <PatnerCon>
-            <div>
-              <PatnerHeading>Our Partner</PatnerHeading>
-            </div>
-            <PatnerListcon>
-              {Patners.map((patner) => (
-                <PatnerList
-                  key={patner.id}
-                  src={patner.img}
-                  alt={patner.title}
-                />
-              ))}
-            </PatnerListcon>
-          </PatnerCon>
+          <Container>
+            <PatnerCon>
+              <div>
+                <PatnerHeading>Our Partner</PatnerHeading>
+              </div>
+              <PatnerListcon>
+                {Patners.map((patner) => (
+                  <PatnerList
+                    key={patner.id}
+                    src={patner.img}
+                    alt={patner.title}
+                    loading="lazy"
+                  />
+                ))}
+              </PatnerListcon>
+            </PatnerCon>
           </Container>
         </Patner>
         {/* End of Patner */}
@@ -328,11 +362,12 @@ function Home() {
         {/* HGT Token */}
         <HGT>
           <SectionBg>
-          <SectionIMG
+            <SectionIMG
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Hero_IMG_1400}`}
               srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
               alt="Hypatia coin"
+              loading="lazy"
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
@@ -347,21 +382,17 @@ function Home() {
                 for Hypatia ecosystem.
               </HGTText>
               <HGTbtnContainer>
-                <Button primary ='true' as="">
-                  Token Economics
-                </Button>
+                <NormalButton> Token Economics</NormalButton>
               </HGTbtnContainer>
             </HGTTextContainer>
-        
           </Container>
         </HGT>
         {/*  End HGT Token */}
 
-
         {/* RoadMap */}
         <RoadMap>
           <RoadMapHeading>RoadMap</RoadMapHeading>
-       
+
           <RoadMapContainer>
             <RoadMapRow1 right>
               <RoadMapYear>
@@ -413,8 +444,8 @@ function Home() {
               </RoadMapYear>
             </RoadMapRow2>
           </RoadMapContainer>
-      
-          <ViewDetailRoadmap  >
+
+          <ViewDetailRoadmap>
             View detailed roadmaps
           </ViewDetailRoadmap>
           <RoadmapTerms>

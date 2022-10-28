@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 // Section Overlay
 export const SectionOverlay = styled.div`
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.47);
   bottom: 0;
   height: 100%;
   position: absolute;
@@ -30,66 +30,10 @@ export const Container = styled.section`
   margin-right: auto;
   width: 100%;
 
+
   @media screen and (min-width: 1280px) {
     max-width: 1240px;
   }
-`;
-
-// Button
-export const Button = styled(motion.button)`
-  margin-top: 10px;
-  padding: 15px 30px;
-  background: #ff0033;
-  border-radius: 5px;
-  border: #ff0033;
-  color: white;
-  font-weight: bold;
-  outline-offset: 2px;
-  width: fit-content;
-  max-width: 100%;
-
-
-  :hover {
-    opacity: 0.8;
-    border-radius: 4px;
-    background: #fff;
-    color: #ff0033;
-   
-  }
-
-  ${(props) =>
-    props.primary &&
-    css`
-      background: transparent;
-      color: white;
-      border: 2px solid #ffffff;
-      font-size: 1.5rem;
-
-      &:hover {
-        border: 2px solid #ff0033;
-        transition: all 0.2s;
-        background: transparent;
-      }
-      @media screen and (max-width: 480px) {
-        font-size: 1rem;
-        padding: 15px 30px;
-      }
-    `};
-
-  ${(props) =>
-    props.normal &&
-    css`
-      background: transparent;
-      color: #ff0033;
-      border: 2px solid white;
-
-      &:hover {
-        transition: 0.2s;
-        color: #fff;
-        border: 2px solid #ff0033;
-        background: transparent;
-      }
-    `}
 `;
 
 export const TextUnderline = styled.span`
@@ -97,6 +41,7 @@ export const TextUnderline = styled.span`
   text-decoration: underline;
   font-weight: bold;
 `;
+
 // End of Global
 
 // Home Section
@@ -150,7 +95,7 @@ export const HeroContentContainer = styled(motion.div)`
   align-items: center;
 
   @media screen and (max-width: 480px) {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 `;
 
@@ -226,32 +171,6 @@ export const HeroLink = styled.span`
   font-weight: bold;
 `;
 
-export const HeroBtnContainer = styled.div`
-  margin-top: 50px;
-  margin-bottom: 30px;
-`;
-
-export const HeroButton = styled.button`
-  border-radius: 100px;
-  padding: 1.2rem 2rem;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  background: transparent;
-  border: 1px solid #33aaf5;
-
-  &:hover {
-    transition: 0s;
-    cursor: pointer;
-    color: #33aaf5;
-  }
-
-  @media screen and (max-width: 480px) {
-    padding: 1rem 1.2rem;
-    font-size: 1rem;
-  }
-`;
 
 export const HeroDownloadContainer = styled.div`
   padding: 20px;
@@ -405,15 +324,14 @@ export const NFTSection = styled.section`
   position: relative;
   justify-content: right;
   align-items: right;
-  padding-top: 60px;
-  padding-bottom: 70px;
+ 
 
   @media screen and (max-width: 900px) {
     text-align: center;
   }
 
   @media screen and (min-width: 992px) {
-    height: 80vh;
+    height: 90vh;
   }
 `;
 
@@ -424,6 +342,7 @@ export const NFTContentCon = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+
 `;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
@@ -606,6 +525,7 @@ export const PatnerListcon = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40px;
+  gap: 20px;
 `;
 
 export const PatnerHeading = styled.h2`

@@ -1,18 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const TeamCard = styled.div`
+export const TeamCard = styled(motion.div)`
   width: 400px;
   border: 2px solid grey;
   border-radius: 5px;
   transition: 0.3s;
   background: #0b0d17;
-
-  :hover {
-    border: 2px solid #33aa;
-    color: #33aaf5;
-    transition: 0.3s;
-  }
 `;
 
 export const TeamInfo = styled.div`
@@ -60,7 +55,7 @@ export const TeamSocial = styled.div`
   padding-top: 10px;
 `;
 
-export const SocialListCon = styled.ul`
+export const SocialListCon = styled.div`
   list-style-type: none;
   display: flex;
   gap: 30px;
@@ -83,6 +78,6 @@ export const Social = styled(FontAwesomeIcon)`
 `;
 
 
-export const SocialList = styled.li`
+export const SocialList = styled.div`
 
 `;

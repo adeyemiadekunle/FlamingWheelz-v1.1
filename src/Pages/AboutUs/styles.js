@@ -1,5 +1,43 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import {motion} from 'framer-motion';
 
+// Button
+export const Button = styled(motion.button)`
+  margin-top: 10px;
+  padding: 15px 30px;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #ff0033;
+  font-weight: bold;
+  outline-offset: 2px;
+  width: fit-content;
+  max-width: 100%;
+  font-size: 1.2rem;
+
+  :hover {
+    opacity: 0.8;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #ff0033;
+  }
+
+  ${(props) =>
+    props.primary &&
+    css`
+      color: white;
+
+      &:hover {
+        border: 2px solid #ff0033;
+        transition: all 0.2s;
+        background: transparent;
+      }
+      /* @media screen and (max-width: 480px) {
+        font-size: 1rem;
+        padding: 15px 30px;
+      } */
+    `};
+`;
 export const Container = styled.section`
   color: white;
   max-width: 90%;
@@ -33,20 +71,22 @@ export const SectionBg = styled.div`
 `;
 
 export const StyledAbout = styled.main`
-  position: relative;
+ 
   margin: auto;
-  margin-top: -5rem;
-  z-index: -1;
+ 
 `;
 
 // About FlamingWheelz
-export const FlamingContainer = styled.section`
+export const FlamingSection = styled.section`
   display: flex;
   flex-flow: column;
   overflow: hidden;
   position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+  margin-top: -5rem;
+  z-index: -1;
 
   @media screen and (max-width: 900px) {
     justify-content: center;
@@ -111,6 +151,8 @@ export const FlamingbtnContainer = styled.div`
   display: flex;
   justify-content: left;
   padding-top: 30px;
+  ;
+ 
 `;
 // End of FlamingWheelz
 
@@ -309,7 +351,7 @@ export const TeamListCon = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 `;
 
 export const TeamHeadingCon = styled.div`

@@ -58,7 +58,7 @@ export const JoinCommunity = styled.div`
   }
 `;
 
-export const JoinUsHeading = styled.h1`
+export const JoinUsHeading = styled.h2`
   color: white;
   font-size: 3rem;
   text-align: left;
@@ -134,7 +134,7 @@ export const FooterNavbar = styled.div`
 export const FooterLogo = styled.img`
   width: 200px;
   margin-left: -10px;
-  height: 100%;
+  height: 50px;
 `;
 
 export const ContactHeading = styled.p`

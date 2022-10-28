@@ -27,10 +27,16 @@ export const Team = ({
   Facebook,
 }) => {
   return (
-    <TeamCard>
+    <TeamCard
+      whileHover={{
+        scale: 1.02,
+        transition: 0.3,
+        border: 'solid #ff0033',
+      }}
+    >
       <TeamInfo>
         <ImgHolder>
-          <IMG src={ImgUrl} alt="The Team"></IMG>
+          <IMG src={ImgUrl} alt="The Team" loading="lazy"></IMG>
         </ImgHolder>
         <div>
           <TeamName>{FullName}</TeamName>
