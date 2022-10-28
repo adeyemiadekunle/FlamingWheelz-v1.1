@@ -229,7 +229,7 @@ function Home() {
         {/* End of Hero */}
 
         {/* About FlamingWheelz Section */}
-     
+
         <About>
           <Container>
             <AboutRow>
@@ -243,8 +243,10 @@ function Home() {
                   fueled by HGT tokens.
                 </AboutText>
                 <PrimaryButton
-                  role="link"
-                  href="https://frenify.net/envato/frenify/html/neoh/1/index.html"
+                  href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Redirect to flamingwheelz overview"
                 >
                   Read More
                 </PrimaryButton>
@@ -265,11 +267,11 @@ function Home() {
             </AboutRow>
           </Container>
         </About>
-    
+
         {/* End of About */}
 
         {/* NFT Section */}
-     
+
         <NFTSection>
           <SectionBg>
             <SectionIMG
@@ -300,7 +302,7 @@ function Home() {
                 </NFTTextRap>
 
                 <NFTBtnContainer className="btn">
-                  <NormalButton href="https://www.klevernft.com/launchpad/FWZ-COMING">
+                  <NormalButton href="https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1">
                     {' '}
                     Explore NFT Collections
                   </NormalButton>
@@ -309,7 +311,7 @@ function Home() {
             </NFTContentCon>
           </Container>
         </NFTSection>
-   
+
         {/* End of NFT */}
 
         {/*  The Community New */}
@@ -361,16 +363,8 @@ function Home() {
 
         {/* HGT Token */}
         <HGT>
-          <SectionBg>
-            <SectionIMG
-              sizes="(max-width: 1400px) 100vw, 1400px"
-              src={`${Hero_IMG_1400}`}
-              srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
-              alt="Hypatia coin"
-              loading="lazy"
-            ></SectionIMG>
-          </SectionBg>
-          <SectionOverlay></SectionOverlay>
+          <SectionBg></SectionBg>
+          {/* <SectionOverlay></SectionOverlay> */}
           <Container>
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>
@@ -382,7 +376,15 @@ function Home() {
                 for Hypatia ecosystem.
               </HGTText>
               <HGTbtnContainer>
-                <NormalButton> Token Economics</NormalButton>
+                <NormalButton
+                  href="https://hypatia-games004s-organization.gitbook.io/flaming-book/nfts/game-economy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Redirect to HGT Tokenomics"
+                >
+                  {' '}
+                  Token Economics
+                </NormalButton>
               </HGTbtnContainer>
             </HGTTextContainer>
           </Container>
@@ -445,7 +447,13 @@ function Home() {
             </RoadMapRow2>
           </RoadMapContainer>
 
-          <ViewDetailRoadmap>
+          <ViewDetailRoadmap
+            as="a"
+            href="https://hypatia-games004s-organization.gitbook.io/flaming-book/our-token/roadmap"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Redirect to flamingwheelz roadmap"
+          >
             View detailed roadmaps
           </ViewDetailRoadmap>
           <RoadmapTerms>

@@ -543,13 +543,14 @@ export const HGT = styled.section`
   padding-bottom: 60px;
   justify-content: center;
   align-items: center;
+  background: #0b0d17;
 
   @media screen and (max-width: 900px) {
     justify-content: center;
   }
 
   @media screen and (min-width: 992px) {
-    height: 80vh;
+    height: 90vh;
   }
 `;
 
