@@ -1,56 +1,60 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
 
 // Global Style
 
 // Section Overlay
 export const SectionOverlay = styled.div`
-background: rgba(0,0,0,0.47);
-bottom: 0;
-height: 100%;
-position: absolute;
-width: 100%;
-z-index: -1;
-`
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+`;
 // SectionIMG Background
 export const SectionIMG = styled.img`
-object-fit: cover;
-object-position: center;
-height: 100%;
-left: 0;
-width: 100%;
-position: absolute;
-`
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+`;
 
 export const Container = styled.section`
-    color: white;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  color: white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
   @media screen and (min-width: 1280px) {
     max-width: 1240px;
-   
   }
 `;
 
 // Button
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   margin-top: 10px;
-  padding: 15px 50px;
+  padding: 15px 30px;
   background: #ff0033;
-  border-radius: 4px;
+  border-radius: 5px;
   border: #ff0033;
   color: white;
   font-weight: bold;
   outline-offset: 2px;
+  width: fit-content;
+  max-width: 100%;
+
 
   :hover {
     opacity: 0.8;
     border-radius: 4px;
     background: #fff;
     color: #ff0033;
+   
   }
 
   ${(props) =>
@@ -68,21 +72,22 @@ export const Button = styled.button`
       }
       @media screen and (max-width: 480px) {
         font-size: 1rem;
-        padding: 15px 40px;
+        padding: 15px 30px;
       }
     `};
 
   ${(props) =>
     props.normal &&
     css`
-      background: white;
+      background: transparent;
       color: #ff0033;
       border: 2px solid white;
 
       &:hover {
         transition: 0.2s;
         color: #fff;
-        background: #ff0033;
+        border: 2px solid #ff0033;
+        background: transparent;
       }
     `}
 `;
@@ -107,6 +112,9 @@ export const HeroSection = styled.section`
   overflow: hidden;
   position: relative;
   height: 100vh;
+  margin-top: -5rem;
+  z-index: -1;
+
   @media screen and (max-width: 900px) {
     height: 80vh;
   }
@@ -125,15 +133,21 @@ export const SectionBg = styled.div`
   top: 0;
 `;
 
+export const HeroSectionIMG = styled.img`
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+`;
 
-
-export const HeroContentContainer = styled.div`
+export const HeroContentContainer = styled(motion.div)`
   margin-top: 10rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
 
   @media screen and (max-width: 480px) {
     margin-top: 5rem;
@@ -163,7 +177,7 @@ export const HeroHeading = styled.h1`
   }
 `;
 
-export const HeroHeadingh1 = styled.h1`
+export const HeroHeadingh3 = styled.h3`
   font-size: 1.8rem;
   color: #33aaf5;
   padding-bottom: 10px;
@@ -248,10 +262,8 @@ export const HeroDownloadContainer = styled.div`
   color: white;
   gap: 20px;
 
-
   @media screen and (max-width: 480px) {
     flex-flow: column;
-  
   }
 `;
 
@@ -267,13 +279,7 @@ export const DownloadIcon = styled(FontAwesomeIcon)`
   color: grey;
   font-size: 30px;
 
-
-
-  ${(props) =>
-    props.google &&
-    css`
-      
-    `};
+  ${(props) => props.google && css``};
 
   ${(props) =>
     props.apple &&
@@ -286,9 +292,7 @@ export const DownloadIcon = styled(FontAwesomeIcon)`
     css`
       color: #00b6ea;
     `}
-
 `;
-
 
 export const AppContainer = styled.div`
   display: flex;
@@ -298,23 +302,20 @@ export const AppContainer = styled.div`
   padding: 10px;
   gap: 10px;
   border-radius: 10px;
-  cursor: pointer; 
+  cursor: pointer;
   color: white;
-
- 
 `;
 export const AppHeading = styled.p`
   font-size: 0.6rem;
 `;
 
-
 // End of Hero
 
 // About FlamingWheelz Section
 export const About = styled.section`
- padding-top: 60px;
-padding-bottom: 60px;
-`
+  padding-top: 60px;
+  padding-bottom: 60px;
+`;
 
 export const AboutRow = styled.div`
   display: flex;
@@ -335,7 +336,7 @@ export const AboutTextCon = styled.div`
   }
 `;
 
-export const AboutHeading = styled.h1`
+export const AboutHeading = styled.h2`
   padding-top: 20px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -346,7 +347,7 @@ export const AboutHeading = styled.h1`
   }
 `;
 
-export const AboutHeadingh5 = styled.h5`
+export const AboutHeadingh3 = styled.p`
   color: #fff;
   font-size: 1rem;
   font-weight: 300;
@@ -365,7 +366,6 @@ export const AboutText = styled.p`
 
   @media screen and (max-width: 1200px) {
     font-size: 2.2rem;
-
   }
 
   @media screen and (max-width: 480px) {
@@ -397,8 +397,6 @@ export const AboutFeature = styled.h3`
 
 // End of About Section
 
-
-
 // Play with your NFT Section
 
 export const NFTSection = styled.section`
@@ -412,12 +410,10 @@ export const NFTSection = styled.section`
 
   @media screen and (max-width: 900px) {
     text-align: center;
-
   }
 
-  @media screen  and (min-width: 992px){
+  @media screen and (min-width: 992px) {
     height: 80vh;
-    
   }
 `;
 
@@ -428,7 +424,6 @@ export const NFTContentCon = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-
 `;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
@@ -500,7 +495,6 @@ export const NFTBtnContainer = styled.div`
   padding-top: 30px;
 `;
 
-
 // The Cummunity
 export const Community = styled.section`
   background: white;
@@ -512,7 +506,7 @@ export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column;
   overflow: hidden;
- `;
+`;
 
 export const CommunityHeadingContainer = styled.div`
   width: 100%;
@@ -586,9 +580,8 @@ export const Patner = styled.section`
   padding-bottom: 50px;
 
   @media screen and (min-width: 992px) {
-    height: 70vh; 
+    height: 70vh;
   }
-
 `;
 
 export const PatnerCon = styled.div`
@@ -615,12 +608,10 @@ export const PatnerListcon = styled.div`
   margin-top: 40px;
 `;
 
-export const PatnerHeading = styled.h5`
+export const PatnerHeading = styled.h2`
   color: #33aaf5;
   font-size: 1.2rem;
 `;
-
-
 
 // HGT Token
 export const HGT = styled.section`
@@ -633,19 +624,14 @@ export const HGT = styled.section`
   justify-content: center;
   align-items: center;
 
-
   @media screen and (max-width: 900px) {
     justify-content: center;
-  
   }
-   
-  @media screen  and (min-width: 992px){
+
+  @media screen and (min-width: 992px) {
     height: 80vh;
-    
   }
-
 `;
-
 
 export const HGTImg = styled.img`
   height: 100%;
@@ -658,8 +644,6 @@ export const HGTImg = styled.img`
   object-position: center;
 `;
 
-
-
 export const HGTTextContainer = styled.div`
   z-index: 1;
   width: 100%;
@@ -669,11 +653,10 @@ export const HGTTextContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
- 
   }
 `;
 
-export const HGTHeadingh2 = styled.h4`
+export const HGTHeadingh2 = styled.h2`
   font-size: 1.5rem;
   text-align: left;
   font-weight: 400;
@@ -731,7 +714,7 @@ export const RoadMapHeading = styled.h3`
   font-weight: bold;
 `;
 export const RoadMapContainer = styled.div`
-   width: 100%;
+  width: 100%;
   margin-top: 40px;
   display: flex;
   height: 100%;

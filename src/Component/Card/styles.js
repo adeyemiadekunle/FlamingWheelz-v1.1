@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const StyledCard = styled.div`
+export const StyledCard = styled(motion.div)`
 width: 500px;
 height: 200px;
 background: #ffffff;

@@ -1,26 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    color: white;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  color: white;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
   @media screen and (min-width: 1280px) {
     max-width: 1240px;
-   
   }
 `;
 
 export const SectionOverlay = styled.div`
-background: rgba(0,0,0,0.8);
-bottom: 0;
-height: 100%;
-position: absolute;
-width: 100%;
-z-index: -1;
-`
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+`;
+
 // Section Background
 
 export const SectionBg = styled.div`
@@ -32,10 +32,11 @@ export const SectionBg = styled.div`
   top: 0;
 `;
 
-
-
 export const StyledAbout = styled.main`
+  position: relative;
   margin: auto;
+  margin-top: -5rem;
+  z-index: -1;
 `;
 
 // About FlamingWheelz
@@ -47,24 +48,19 @@ export const FlamingContainer = styled.section`
   padding-top: 60px;
   padding-bottom: 60px;
 
-
   @media screen and (max-width: 900px) {
     justify-content: center;
-  
-  };
-
- 
- 
+  } ;
 `;
 
 export const FlamingSectionIMG = styled.img`
-object-fit: cover;
-object-position: center;
-height: 100%;
-left: 0;
-width: 100%;
-position: absolute;
-`
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+`;
 
 export const FlamingContentContainer = styled.div`
   display: flex;
@@ -73,6 +69,7 @@ export const FlamingContentContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-top: 5rem;
 `;
 
 export const FlamingTextContainer = styled.div`
@@ -85,7 +82,6 @@ export const FlamingTextContainer = styled.div`
   @media screen and (max-width: 900px) {
     width: 100%;
   }
-
 `;
 
 export const FlamingHeadingh2 = styled.h2`
@@ -118,7 +114,6 @@ export const FlamingbtnContainer = styled.div`
 `;
 // End of FlamingWheelz
 
-
 // Hypatia Games
 export const HypatiaContainer = styled.section`
   display: flex;
@@ -128,50 +123,44 @@ export const HypatiaContainer = styled.section`
   padding-top: 60px;
   padding-bottom: 60px;
 
-
   @media screen and (max-width: 900px) {
     justify-content: center;
-
   }
- 
 `;
 
-
 export const HypatiaSectionOverlay = styled.div`
-background-image: linear-gradient(
-      to left,
-       rgba(11, 13, 23, 0.2),
-       rgba(11, 13, 23, 1),
-       rgba(11, 13, 23, 1)
+  background-image: linear-gradient(
+    to left,
+    rgba(11, 13, 23, 0.2),
+    rgba(11, 13, 23, 1),
+    rgba(11, 13, 23, 1)
+  );
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+
+  @media screen and (max-width: 900px) {
+    background-image: linear-gradient(
+      rgba(11, 13, 23, 0),
+      rgba(11, 13, 23, 1)
     );
-bottom: 0;
-height: 100%;
-position: absolute;
-width: 100%;
-z-index: -1;
-
-@media screen and (max-width: 900px) {
-  background-image: linear-gradient(rgba(11, 13, 23, 0),
-   rgba(11, 13, 23, 1))
-
-}
-`
+  }
+`;
 export const HypatiaSectionIMG = styled.img`
-object-fit: contain;
-object-position: right;
-height: 100%;
-left: 0;
-width: 100%;
-position: absolute;
+  object-fit: contain;
+  object-position: right;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
 
-   
-@media screen and (max-width: 900px) {
-  object-fit: cover;
-  object-position: center;
-
-}
-
-`
+  @media screen and (max-width: 900px) {
+    object-fit: cover;
+    object-position: center;
+  }
+`;
 
 export const HypatiaContentContainer = styled.div`
   display: flex;
@@ -180,9 +169,6 @@ export const HypatiaContentContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-
-
- 
 `;
 
 export const HypatiaTextContainer = styled.div`
@@ -195,8 +181,6 @@ export const HypatiaTextContainer = styled.div`
   @media screen and (max-width: 900px) {
     width: 100%;
   }
-
-
 `;
 
 export const HypatiaHeadingh3 = styled.h3`
@@ -243,12 +227,9 @@ export const FlamingFeatureContainer = styled.section`
   padding-top: 60px;
   padding-bottom: 60px;
 
-
   @media screen and (max-width: 900px) {
     justify-content: center;
   }
- 
-  
 `;
 
 export const FeatureSectionbg = styled.div`
@@ -266,8 +247,6 @@ export const FeatureContentContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-
-
 `;
 
 export const FeatureTextContainer = styled.div`
@@ -279,10 +258,7 @@ export const FeatureTextContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
-
   }
- 
-
 `;
 
 export const FeatureHeadingh2 = styled.h2`
@@ -315,7 +291,6 @@ export const FeatureLists = styled.li`
 `;
 // End of Features
 
-
 // The Team
 export const StyledTeam = styled.div`
   padding-top: 60px;
@@ -326,8 +301,7 @@ export const StyledTeam = styled.div`
   }
 `;
 
-export const TeamContainer = styled.div`
-`;
+export const TeamContainer = styled.div``;
 
 export const TeamListCon = styled.div`
   display: flex;
@@ -336,7 +310,6 @@ export const TeamListCon = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
- 
 `;
 
 export const TeamHeadingCon = styled.div`
@@ -345,14 +318,12 @@ export const TeamHeadingCon = styled.div`
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-
- 
 `;
 export const TeamHeadingh3 = styled.h3`
   color: white;
   font-size: 1.5rem;
- 
+
   @media screen and (max-width: 768px) {
-   text-align: center;
- }
+    text-align: center;
+  }
 `;

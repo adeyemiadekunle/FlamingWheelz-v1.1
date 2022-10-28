@@ -46,19 +46,36 @@ function Footer() {
             </div>
 
             <Social>
-              <SocialLinkCon as="a" href="https://twitter.com/FlmnWheelzAlpha" target="_blank"
-          rel="noopener noreferrer">
+              <SocialLinkCon
+                as="a"
+                href="https://twitter.com/FlmnWheelzAlpha"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz twitter"
+              >
                 <StyledSocialLink icon={faTwitter} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="https://discord.com/invite/v5R6Cf5NGW" target="_blank"
-          rel="noopener noreferrer">
+              <SocialLinkCon
+                as="a"
+                href="https://discord.com/invite/v5R6Cf5NGW"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz discord"
+              >
                 <StyledSocialLink icon={faDiscord} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="https://t.me/Hypatiatokenofficial" target="_blank"
-          rel="noopener noreferrer">
+              <SocialLinkCon
+                as="a"
+                href="https://t.me/Hypatiatokenofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz telegram"
+              >
                 <StyledSocialLink icon={faTelegram} />
               </SocialLinkCon>
-              <SocialLinkCon as="a" href="#">
+              <SocialLinkCon as="a" href="#"
+              aria-label="Redirect to flamingwheelz youtube">
+              >
                 <StyledSocialLink icon={faYoutube} />
               </SocialLinkCon>
             </Social>
@@ -66,25 +83,25 @@ function Footer() {
 
           <FooterNavbar>
             <div>
-              <FooterLogo src={Logo} alt="" />
+              <FooterLogo src={Logo} alt="FlamingWheelz Logo" />
               <LogoText> Developed by Hypatia Games</LogoText>
             </div>
 
             <Row>
               <div>
-                <Text as="a">About Us</Text>
-                <Text as="a">FAQ</Text>
-                <Text as="a">Whitepaper</Text>
+                <Text >About Us</Text>
+                <Text >FAQ</Text>
+                <Text >Whitepaper</Text>
               </div>
               <div>
-                <Text as="a">Roadmap</Text>
-                <Text as="a">Download</Text>
-                <Text as="a">Terms of use</Text>
+                <Text >Roadmap</Text>
+                <Text >Download</Text>
+                <Text >Terms of use</Text>
               </div>
               <div>
-                <Text as="a">Team</Text>
-                <Text as="a">Career</Text>
-                <Text as="a">Private Policy</Text>
+                <Text >Team</Text>
+                <Text >Career</Text>
+                <Text >Private Policy</Text>
               </div>
             </Row>
             <div>
@@ -95,20 +112,41 @@ function Footer() {
           <Hr></Hr>
         </FooterContainer>
         <Container>
-        <FooterUnder>
-          <Copyright>
-            @2022 FlamingWheelz | Powered by Hypatia Games
-          </Copyright>
-          <Allrightreserved>
-            All Rights Reserved
-            <SocialLink as="a" href='https://twitter.com/FlmnWheelzAlpha' target="_blank"
-          rel="noopener noreferrer">Twitter</SocialLink>
-            <SocialLink as="a" href='https://discord.com/invite/v5R6Cf5NGW' target="_blank"
-          rel="noopener noreferrer">Discord</SocialLink>
-            <SocialLink as="a" href='https://t.me/Hypatiatokenofficial' target="_blank"
-          rel="noopener noreferrer">Telegram</SocialLink>
-          </Allrightreserved>
-        </FooterUnder>
+          <FooterUnder>
+            <Copyright>
+              @2022 FlamingWheelz | Powered by Hypatia Games
+            </Copyright>
+            <Allrightreserved>
+              All Rights Reserved
+              <SocialLink
+                as="a"
+                href="https://twitter.com/FlmnWheelzAlpha"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz twitter"
+              >
+                Twitter
+              </SocialLink>
+              <SocialLink
+                as="a"
+                href="https://discord.com/invite/v5R6Cf5NGW"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz discord"
+              >
+                Discord
+              </SocialLink>
+              <SocialLink
+                as="a"
+                href="https://t.me/Hypatiatokenofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Redirect to flamingwheelz telegram"
+              >
+                Telegram
+              </SocialLink>
+            </Allrightreserved>
+          </FooterUnder>
         </Container>
       </StyledFooter>
     </>

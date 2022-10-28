@@ -152,7 +152,8 @@ function AboutUs() {
             sizes="(max-width: 1400px) 100vw, 1400px"
             src={`${Flaming_1400}`}
             srcSet={`${Flaming_437} 437w, ${Flaming_632} 632w, ${Flaming_815} 815w, ${Flaming_1013} 1013w, ${Flaming_1275} 1275w, ${Flaming_1400} 1400w`}
-            ></FlamingSectionIMG>
+            alt="A gaming car"
+           ></FlamingSectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
           <Container>

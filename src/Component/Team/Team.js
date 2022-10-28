@@ -30,7 +30,7 @@ export const Team = ({
     <TeamCard>
       <TeamInfo>
         <ImgHolder>
-          <IMG src={ImgUrl} alt=""></IMG>
+          <IMG src={ImgUrl} alt="The Team"></IMG>
         </ImgHolder>
         <div>
           <TeamName>{FullName}</TeamName>
@@ -44,6 +44,7 @@ export const Team = ({
             href={Twitter}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Redirect to the team twitter"
           >
             <Social icon={faTwitter} />
           </SocialList>
@@ -52,6 +53,7 @@ export const Team = ({
             href={Instagram}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Redirect to the team instagram"
           >
             <Social icon={faInstagram} />
           </SocialList>
@@ -60,6 +62,7 @@ export const Team = ({
             href={LinkedIn}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Redirect to the team linkedin"
           >
             <Social icon={faLinkedinIn} />
           </SocialList>
@@ -68,6 +71,7 @@ export const Team = ({
             href={Facebook}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Redirect to the team facebook"
           >
             <Social icon={faFacebook} />
           </SocialList>

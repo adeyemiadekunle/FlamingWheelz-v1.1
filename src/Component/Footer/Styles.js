@@ -134,9 +134,10 @@ export const FooterNavbar = styled.div`
 export const FooterLogo = styled.img`
   width: 200px;
   margin-left: -10px;
+  height: 100%;
 `;
 
-export const ContactHeading = styled.h5`
+export const ContactHeading = styled.p`
   color: white;
   font-size: 90%;
   padding-bottom: 10px;

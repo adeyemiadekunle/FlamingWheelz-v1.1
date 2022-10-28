@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import {
   NavContainer,
   TopHeader,
@@ -19,7 +20,7 @@ import {
   FindUsLinkCon,
   StyledSocialLink,
   SocialLinkCon,
-  Container,
+ 
 } from './styles';
 import { Link } from 'react-router-dom';
 import Logo from '../../Image/Header/New_Logo_red.png';
@@ -35,15 +36,26 @@ import {
 function Header() {
   const Menu = () => {
     return (
-      <div>
-        <StyledLink onClick={closeMenu} to="/">HOME</StyledLink>
-        <StyledLink onClick={closeMenu} to="/about">ABOUT</StyledLink>
-        <StyledLink onClick={closeMenu} to="/event">EVENTS</StyledLink>
-        <StyledA onClick={closeMenu}
+      <nav>
+        <StyledLink onClick={closeMenu} to="/">
+          HOME
+        </StyledLink>
+        <StyledLink onClick={closeMenu} to="/about">
+          ABOUT
+        </StyledLink>
+        <StyledLink onClick={closeMenu} to="/event">
+          EVENTS
+        </StyledLink>
+        <StyledA
+          onClick={closeMenu}
           href="https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1"
           target="_blank"
-          rel="noopener noreferrer">MARKET</StyledA>
-      </div>
+          rel="noopener noreferrer"
+          aria-label="Redirect to flamingwheelz NFT Marketplace"
+        >
+          MARKET
+        </StyledA>
+      </nav>
     );
   };
 
@@ -56,15 +68,17 @@ function Header() {
   return (
     <>
       <Head>
-    
-          <TopHeader>
-            <NavContainer>
+        <TopHeader 
+        initial={{y: -50}}
+        animate={{y: -10}}
+        transition={{delay: 0.2, type: 'spring', stiffness: 120}}
+        
+        >
+          <NavContainer>
             {/* Logo */}
             <ImgCon>
-              <Link to="/">
-                <span>
-                  <Img src={Logo} Img />
-                </span>
+              <Link to="/" aria-label="to homepage">
+                  <Img src={Logo} alt='flamingwheelz logo' />
               </Link>
             </ImgCon>
             {/* Nav Links */}
@@ -72,60 +86,75 @@ function Header() {
               <Menu />
             </DesktopContent>
             {/* Menubar */}
+           
             <OpenMenu onClick={menuOpen}>
               <FontAwesomeIcon icon={faBars} />
             </OpenMenu>
-            </NavContainer>
-          </TopHeader>
-      
-          
-          {/* <div className="sticky_Icon"></div> */}
+           
+          </NavContainer>
+        </TopHeader>
 
-          <div>
-            {isOpen && (
-              <SideMenuContainer>
-                <SideMenuOverlay />
-                <SideMenuHeader>
-                  <CloseMenu onClick={closeMenu}>
-                    <FontAwesomeIcon icon={faTimes} />
-                  </CloseMenu>
-                </SideMenuHeader>
-                <SideMenuWrapper>
-                  <MenuContent>
-                    <Menu />
-                  </MenuContent>
-                  <FindUsContainer>
-                    <div>Find us on</div>
-                    <FindUsLinkCon>
-                      <SocialLinkCon
-                        as="a"
-                        href="https://twitter.com/FlmnWheelzAlpha"
-                        target="_blank"
-          rel="noopener noreferrer"
-                      >
-                        <StyledSocialLink icon={faTwitter} />
-                      </SocialLinkCon>
-                      <SocialLinkCon as="a" href="https://discord.com/invite/v5R6Cf5NGW" target="_blank"
-          rel="noopener noreferrer">
-                        <StyledSocialLink icon={faDiscord} />
-                      </SocialLinkCon>
-                      <SocialLinkCon as="a" href="https://t.me/Hypatiatokenofficial"
+        {/* <div className="sticky_Icon"></div> */}
+
+        <div>
+          {isOpen && (
+            <SideMenuContainer>
+              <SideMenuOverlay />
+              <SideMenuHeader>
+                <CloseMenu onClick={closeMenu}>
+                  <FontAwesomeIcon icon={faTimes} />
+                </CloseMenu>
+              </SideMenuHeader>
+              <SideMenuWrapper>
+                <MenuContent>
+                  <Menu />
+                </MenuContent>
+                <FindUsContainer>
+                  <div>Find us on</div>
+                  <FindUsLinkCon>
+                    <SocialLinkCon
+                      as="a"
+                      href="https://twitter.com/FlmnWheelzAlpha"
                       target="_blank"
-                      rel="noopener noreferrer">
-                        <StyledSocialLink icon={faTelegram} />
-                      </SocialLinkCon>
-                      <SocialLinkCon as="a" href="#"
+                      rel="noopener noreferrer"
+                      aria-label="Redirect to flamingwheelz twitter"
+                    >
+                      <StyledSocialLink icon={faTwitter} />
+                    </SocialLinkCon>
+                    <SocialLinkCon
+                      as="a"
+                      href="https://discord.com/invite/v5R6Cf5NGW"
                       target="_blank"
-                      rel="noopener noreferrer">
-                        <StyledSocialLink icon={faYoutube} />
-                      </SocialLinkCon>
-                    </FindUsLinkCon>
-                  </FindUsContainer>
-                </SideMenuWrapper>
-              </SideMenuContainer>
-            )}
-          </div>
-          </Head>
+                      rel="noopener noreferrer"
+                      aria-label="Redirect to flamingwheelz discord"
+                    >
+                      <StyledSocialLink icon={faDiscord} />
+                    </SocialLinkCon>
+                    <SocialLinkCon
+                      as="a"
+                      href="https://t.me/Hypatiatokenofficial"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Redirect to flamingwheelz telegram"
+                    >
+                      <StyledSocialLink icon={faTelegram} />
+                    </SocialLinkCon>
+                    <SocialLinkCon
+                      as="a"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Redirect to flamingwheelz youtube"
+                    >
+                      <StyledSocialLink icon={faYoutube} />
+                    </SocialLinkCon>
+                  </FindUsLinkCon>
+                </FindUsContainer>
+              </SideMenuWrapper>
+            </SideMenuContainer>
+          )}
+        </div>
+      </Head>
     </>
   );
 }

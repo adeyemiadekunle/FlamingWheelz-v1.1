@@ -5,6 +5,7 @@ import Footer from './Component/Footer/Footer';
 import Loader from './Component/Loader/Loader';
 import { Route, Routes } from 'react-router-dom';
 
+
 function App() {
   const Home = lazy(() => import('./Pages/Home/Home'));
   const Event = lazy(() => import('./Pages/Events/Events'));

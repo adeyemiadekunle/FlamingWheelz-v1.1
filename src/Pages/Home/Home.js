@@ -6,9 +6,10 @@ import {
   TextUnderline,
   HomeSection,
   HeroSection,
+  HeroSectionIMG,
   HeroHeadingContainer,
   HeroHeading,
-  HeroHeadingh1,
+  HeroHeadingh3,
   HeroTextContainer,
   HeroText,
   HeroDownloadContainer,
@@ -21,7 +22,7 @@ import {
   About,
   AboutTextCon,
   AboutHeading,
-  AboutHeadingh5,
+  AboutHeadingh3,
   AboutText,
   AboutRow,
   AboutColumn,
@@ -130,19 +131,24 @@ function Home() {
         {/* Hero */}
         <HeroSection>
           <SectionBg>
-            <SectionIMG
+            <HeroSectionIMG
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Hero_IMG_1400}`}
               srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
-            ></SectionIMG>
+              alt="A gaming car"
+            ></HeroSectionIMG>
           </SectionBg>
           <SectionOverlay />
           <Container>
-          <HeroContentContainer>
+          <HeroContentContainer
+           initial={{ opacity: 0 }}
+           animate={{ opacity: 1 }}
+           transition={{delay: 1.5, duration: 1.5, type: 'tween'}}
+          >
             <HeroHeadingContainer>
-              <HeroHeadingh1>
+              <HeroHeadingh3>
                 Redefing Web3 Gaming Experience
-              </HeroHeadingh1>
+              </HeroHeadingh3>
               <HeroHeading>
                 A Multi Chain
                 <br />
@@ -153,7 +159,7 @@ function Home() {
             <HeroTextContainer>
               <HeroText>
                 A Hyper Realistic Racing Games developed by{' '}
-                <TextUnderline as="a" href="">
+                <TextUnderline >
                   Hypatia Games,
                 </TextUnderline>{' '}
                 graced with tournament, challenge and best of all{' '}
@@ -168,22 +174,22 @@ function Home() {
             <div>Download latest version</div>
             <HeroDownloadLinkCon>
               <DownloadIcon />
-              <AppContainer as='a' href=''>
-                <DownloadIcon icon={faGooglePlay} google />
+              <AppContainer >
+                <DownloadIcon icon={faGooglePlay} google='true' />
                 <div>
                   <AppHeading>Get it on</AppHeading>
                   <p>GooglePlay</p>
                 </div>
               </AppContainer>
-              <AppContainer  as='a' href=''>
-                <DownloadIcon icon={faAppStore} apple />
+              <AppContainer  >
+                <DownloadIcon icon={faAppStore} apple='true' />
                 <div>
                   <AppHeading>Download on the</AppHeading>
                   <p>AppStore</p>
                 </div>
               </AppContainer>
-              <AppContainer  as='a' href=''>
-                <DownloadIcon icon={faWindows} window />
+              <AppContainer >
+                <DownloadIcon icon={faWindows} window='true' />
                 <div>
                   <AppHeading>Get it for</AppHeading>
                   <p>Windows</p>
@@ -199,7 +205,7 @@ function Home() {
         <Container>
           <AboutRow>
             <AboutTextCon>
-              <AboutHeadingh5> OVERVIEW</AboutHeadingh5>
+              <AboutHeadingh3> OVERVIEW</AboutHeadingh3>
               <AboutHeading>What is FlamingWheelz?</AboutHeading>
               <AboutText>
                 FlamingWheelz is a fantasy RPG mixed with racing for
@@ -207,7 +213,7 @@ function Home() {
                 more with your driving expertise, and all of it is
                 fueled by HGT tokens.
               </AboutText>
-              <Button normal as="">
+              <Button normal='true'  >
                 Read More
               </Button>
             </AboutTextCon>
@@ -218,6 +224,10 @@ function Home() {
                   key={about.id}
                   title={about.title}
                   text={about.text}
+                  initial={{}}
+                  animate={{}}
+                  transition={{}
+                }
                 />
               ))}
             </AboutColumn>
@@ -233,6 +243,7 @@ function Home() {
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Play_NFT_1400}`}
               srcSet={`${Play_NFT_200} 200w, ${Play_NFT_569} 569w, ${Play_NFT_879} 879w, ${Play_NFT_968} 968w, ${Play_NFT_1172} 1172w, ${Play_NFT_1388} 1388w, ${Play_NFT_1400} 1400w`}
+              alt="A gaming car and a man standing playing game"
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay />
@@ -255,7 +266,7 @@ function Home() {
               </NFTTextRap>
 
               <NFTBtnContainer className="btn">
-                <Button
+                <Button normal='true'  
                   as="a"
                   href="https://www.klevernft.com/launchpad/FWZ-COMING"
                 >
@@ -321,6 +332,7 @@ function Home() {
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Hero_IMG_1400}`}
               srcSet={`${Hero_IMG_200} 200w, ${Hero_IMG_661} 661w, ${Hero_IMG_953} 953w, ${Hero_IMG_1245} 1245w, ${Hero_IMG_1335} 1335w, ${Hero_IMG_1400} 1400w`}
+              alt="Hypatia coin"
             ></SectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
@@ -335,7 +347,7 @@ function Home() {
                 for Hypatia ecosystem.
               </HGTText>
               <HGTbtnContainer>
-                <Button primary as="">
+                <Button primary ='true' as="">
                   Token Economics
                 </Button>
               </HGTbtnContainer>
@@ -402,7 +414,7 @@ function Home() {
             </RoadMapRow2>
           </RoadMapContainer>
       
-          <ViewDetailRoadmap as="a" href="">
+          <ViewDetailRoadmap  >
             View detailed roadmaps
           </ViewDetailRoadmap>
           <RoadmapTerms>
