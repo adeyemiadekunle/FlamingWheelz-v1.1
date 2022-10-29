@@ -1,5 +1,6 @@
 import { StyledNFT } from './styles';
 
+
 function Events() {
   return (
     <>

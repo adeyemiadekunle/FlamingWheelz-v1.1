@@ -1,7 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import style from './styles.css';
-import { motion } from 'framer-motion';
-import { SectionInView } from '../../Component/AnimateInViewHook/AnimateInView.js';
+
 import {
   NormalButton,
   PrimaryButton,
@@ -16,7 +14,7 @@ import {
   HeroSectionIMG,
   HeroHeadingContainer,
   HeroHeading,
-  HeroHeadingh3,
+  // HeroHeadingh3,
   HeroTextContainer,
   HeroText,
   HeroDownloadContainer,
@@ -158,7 +156,7 @@ function Home() {
           name="description"
           content="A Hyper Realistic Racing Game, graced with tournaments, challenges and best of all Play and Earn."
         />
-        {/* <link rel='canonical' href='../Home' /> */}
+        <link rel='canonical' href='https://beta-flamingwheelz.web.app/' />
       </Helmet>
       <HomeSection>
         {/* Hero */}
@@ -176,9 +174,9 @@ function Home() {
           <Container>
             <HeroContentContainer>
               <HeroHeadingContainer>
-                <HeroHeadingh3>
+                {/* <HeroHeadingh3>
                   Redefing Web3 Gaming Experience
-                </HeroHeadingh3>
+                </HeroHeadingh3> */}
                 <HeroHeading>
                   A Multi Chain
                   <br />
@@ -199,7 +197,7 @@ function Home() {
           </Container>
 
           <HeroDownloadContainer>
-            <div>Download latest version</div>
+            <div>Download latest version coming soon</div>
             <HeroDownloadLinkCon>
               <DownloadIcon />
               <AppContainer>
@@ -242,14 +240,16 @@ function Home() {
                   more with your driving expertise, and all of it is
                   fueled by HGT tokens.
                 </AboutText>
+                <div>
                 <PrimaryButton
                   href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                   aria-label="Redirect to flamingwheelz overview"
                 >
-                  Read More
+                  Learn More
                 </PrimaryButton>
+                </div> 
               </AboutTextCon>
               <AboutColumn>
                 <AboutFeature>Key Features</AboutFeature>
@@ -379,7 +379,7 @@ function Home() {
                 <NormalButton
                   href="https://hypatia-games004s-organization.gitbook.io/flaming-book/nfts/game-economy"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  // rel="noopener noreferrer"
                   aria-label="Redirect to HGT Tokenomics"
                 >
                   {' '}
@@ -451,7 +451,7 @@ function Home() {
             as="a"
             href="https://hypatia-games004s-organization.gitbook.io/flaming-book/our-token/roadmap"
             target="_blank"
-            rel="noopener noreferrer"
+            // rel="noopener noreferrer"
             aria-label="Redirect to flamingwheelz roadmap"
           >
             View detailed roadmaps

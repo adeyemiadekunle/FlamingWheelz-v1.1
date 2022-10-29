@@ -33,6 +33,11 @@ export const Team = ({
         transition: 0.3,
         border: 'solid #ff0033',
       }}
+      whileTap={{
+        scale: 0.9,
+        transition: 0.3,
+        border: 'solid #ff0033',
+      }}
     >
       <TeamInfo>
         <ImgHolder>

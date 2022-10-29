@@ -75,7 +75,7 @@ function Footer() {
               </SocialLinkCon>
               <SocialLinkCon as="a" href="#"
               aria-label="Redirect to flamingwheelz youtube">
-              >
+              
                 <StyledSocialLink icon={faYoutube} />
               </SocialLinkCon>
             </Social>

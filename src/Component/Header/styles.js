@@ -131,11 +131,11 @@ export const SideMenuContainer = styled(motion.nav)`
 export const SideMenuHeader = styled.div`
   display: flex;
   align-items: center;
-  height: 5rem;
+  height: 5.5rem;
   justify-content: flex-end;
   color: white;
   font-size: 1.8rem;
-  padding: 16px 24px;
+
 
   @media screen and (max-width: 480px) {
     padding: 0 1rem;
@@ -176,6 +176,8 @@ export const CloseMenu = styled.div`
   cursor: pointer;
   position: relative;
   font-size: 2rem;
+  padding-right: 5px;
+  padding-top: 6px;
 `;
 
 export const SideMenuOverlay = styled.div`

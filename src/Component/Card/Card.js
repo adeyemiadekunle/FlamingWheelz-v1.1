@@ -4,10 +4,14 @@ function Card({ title, text }) {
   return (
     <>
       <StyledCard 
-      whileHover={{scale: 1.02, 
+      whileHover={{scale: 1, 
         boxShadow: '0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(208, 214, 249, 0.3)',
         transition: 0.3,
       }}
+
+      whileTap={{scale: 0.9, 
+        boxShadow: '0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(208, 214, 249, 0.3)',
+        transition: 0.3,}}
       >
         <Cardh3>{title}</Cardh3>
         <CardText>{text}</CardText>

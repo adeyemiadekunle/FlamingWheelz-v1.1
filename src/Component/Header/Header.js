@@ -32,26 +32,6 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 
-const links = [
-  { title: 'HOME', to: '/', id: 1 },
-  { title: 'ABOUT', to: '/about', id: 2 },
-  { title: 'EVENTS', to: '/event', id: 3 },
-  { title: 'MARKET', to: '/market', id: 4 },
-];
-
-const Menu = () => {
-  return(
-    <nav>
-      <StyledLink to="/" end>HOME</StyledLink>
-      <StyledLink to="/about">ABOUT</StyledLink>
-      <StyledLink to="/event">EVENT</StyledLink>
-      <StyledA as='a' href='https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1' target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Redirect to klevernft">MARKET</StyledA>
-    </nav>
-  )
-}
-
 
 
 function Header() {
@@ -61,6 +41,18 @@ function Header() {
   const menuOpen = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const Menu = () => {
+    return(
+      <nav>
+        <StyledLink to="/" end onClick={closeMenu}>HOME</StyledLink>
+        <StyledLink to="/about" onClick={closeMenu}>ABOUT</StyledLink>
+        <StyledLink to="/event" onClick={closeMenu}>EVENT</StyledLink>
+        <StyledA as='a' href='https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1' target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Redirect to klevernft" onClick={closeMenu}>MARKET</StyledA>
+      </nav>
+    )
+  }
   return (
     <>
       <Head>

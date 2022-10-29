@@ -152,7 +152,7 @@ function AboutUs() {
       <meta
       name="description"
       content="Overview about FlamingWheelz, Hypatia Games and the Team"/>
-      {/* <link rel='canonical' href='../Home' /> */}
+      <link rel='canonical' href='https://beta-flamingwheelz.web.app/about' />
     </Helmet>
       <StyledAbout>
         <FlamingSection>
@@ -306,7 +306,7 @@ function AboutUs() {
                 <FlamingbtnContainer>
                   <PrimaryButton  href='https://hypatia-games004s-organization.gitbook.io/flaming-book/'
                    target="_blank"
-                   rel="noopener noreferrer"
+                  //  rel="noopener noreferrer"
                    aria-label="Redirect to flamingwheelz whitepaper"
                   >Read the Whitepaper </PrimaryButton>
                 

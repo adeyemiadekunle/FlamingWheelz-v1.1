@@ -65,7 +65,7 @@ export const HeroSection = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    height: 90vh;
+   height: 100vh;
   }
 `;
 
@@ -95,7 +95,7 @@ export const HeroContentContainer = styled(motion.div)`
   align-items: center;
 
   @media screen and (max-width: 480px) {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -183,6 +183,8 @@ export const HeroDownloadContainer = styled.div`
 
   @media screen and (max-width: 480px) {
     flex-flow: column;
+    padding-bottom: 20px;
+   
   }
 `;
 
@@ -370,6 +372,8 @@ export const NFTTextContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 `;
 
