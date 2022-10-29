@@ -1,8 +1,8 @@
 import { Team } from '../../Component/Team/Team';
 import { Helmet } from 'react-helmet-async';
-import { NormalButton, PrimaryButton } from '../../Component/Button/Button';
+import {  PrimaryButton } from '../../Component/Button/Button';
 import {
-  Button,
+
   SectionBg,
   SectionOverlay,
   FlamingSectionIMG,
@@ -152,7 +152,7 @@ function AboutUs() {
       <meta
       name="description"
       content="Overview about FlamingWheelz, Hypatia Games and the Team"/>
-      <link rel='canonical' href='https://beta-flamingwheelz.web.app/about' />
+      <link rel='canonical' href='https://flamingwheelz.com/about' />
     </Helmet>
       <StyledAbout>
         <FlamingSection>
