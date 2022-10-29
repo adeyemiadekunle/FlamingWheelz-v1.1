@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { motion } from 'framer-motion';
+
 
 // Global Style
 
