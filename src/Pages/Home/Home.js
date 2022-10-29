@@ -156,7 +156,7 @@ function Home() {
           name="description"
           content="A Hyper Realistic Racing Game, graced with tournaments, challenges and best of all Play and Earn."
         />
-        <link rel='canonical' href='https://flamingwheelz.com/#/' />
+        <link rel="canonical" href="https://flamingwheelz.com/#/" />
       </Helmet>
       <HomeSection>
         {/* Hero */}
@@ -171,20 +171,21 @@ function Home() {
             ></HeroSectionIMG>
           </SectionBg>
           <SectionOverlay />
-          <Container>
-            <HeroContentContainer>
-              <HeroHeadingContainer>
-                {/* <HeroHeadingh3>
+
+          <HeroContentContainer>
+            <Container>
+              <HeroTextContainer>
+                <HeroHeadingContainer>
+                  {/* <HeroHeadingh3>
                   Redefing Web3 Gaming Experience
                 </HeroHeadingh3> */}
-                <HeroHeading>
-                  A Multi Chain
-                  <br />
-                  Fantasy Racing Game
-                </HeroHeading>
-              </HeroHeadingContainer>
+                  <HeroHeading>
+                    A Multi Chain
+                    <br />
+                    Fantasy Racing Game
+                  </HeroHeading>
+                </HeroHeadingContainer>
 
-              <HeroTextContainer>
                 <HeroText>
                   A Hyper Realistic Racing Games developed by{' '}
                   <TextUnderline>Hypatia Games,</TextUnderline> graced
@@ -193,36 +194,36 @@ function Home() {
                   <TextUnderline>EARN.</TextUnderline>
                 </HeroText>
               </HeroTextContainer>
-            </HeroContentContainer>
-          </Container>
+            </Container>
 
-          <HeroDownloadContainer>
-            <div>Download latest version coming soon</div>
-            <HeroDownloadLinkCon>
-              <DownloadIcon />
-              <AppContainer>
-                <DownloadIcon icon={faGooglePlay} google="true" />
-                <div>
-                  <AppHeading>Get it on</AppHeading>
-                  <p>GooglePlay</p>
-                </div>
-              </AppContainer>
-              <AppContainer>
-                <DownloadIcon icon={faAppStore} apple="true" />
-                <div>
-                  <AppHeading>Download on the</AppHeading>
-                  <p>AppStore</p>
-                </div>
-              </AppContainer>
-              <AppContainer>
-                <DownloadIcon icon={faWindows} window="true" />
-                <div>
-                  <AppHeading>Get it for</AppHeading>
-                  <p>Windows</p>
-                </div>
-              </AppContainer>
-            </HeroDownloadLinkCon>
-          </HeroDownloadContainer>
+            <HeroDownloadContainer>
+              <div>Download latest version coming soon</div>
+              <HeroDownloadLinkCon>
+                <DownloadIcon />
+                <AppContainer>
+                  <DownloadIcon icon={faGooglePlay} google="true" />
+                  <div>
+                    <AppHeading>Get it on</AppHeading>
+                    <p>GooglePlay</p>
+                  </div>
+                </AppContainer>
+                <AppContainer>
+                  <DownloadIcon icon={faAppStore} apple="true" />
+                  <div>
+                    <AppHeading>Download on the</AppHeading>
+                    <p>AppStore</p>
+                  </div>
+                </AppContainer>
+                <AppContainer>
+                  <DownloadIcon icon={faWindows} window="true" />
+                  <div>
+                    <AppHeading>Get it for</AppHeading>
+                    <p>Windows</p>
+                  </div>
+                </AppContainer>
+              </HeroDownloadLinkCon>
+            </HeroDownloadContainer>
+          </HeroContentContainer>
         </HeroSection>
         {/* End of Hero */}
 
@@ -241,15 +242,15 @@ function Home() {
                   fueled by HGT tokens.
                 </AboutText>
                 <div>
-                <PrimaryButton
-                  href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="flamingwheelz overview"
-                >
-                  Learn More
-                </PrimaryButton>
-                </div> 
+                  <PrimaryButton
+                    href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="flamingwheelz overview"
+                  >
+                    Learn More
+                  </PrimaryButton>
+                </div>
               </AboutTextCon>
               <AboutColumn>
                 <AboutFeature>Key Features</AboutFeature>
