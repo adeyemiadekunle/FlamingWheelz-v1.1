@@ -61,7 +61,7 @@ export const HeroSection = styled.section`
   z-index: -1;
 
   @media screen and (max-width: 900px) {
-    height: 80vh;
+    height: 70vh;
   }
 
   @media screen and (max-width: 480px) {
@@ -94,9 +94,15 @@ export const HeroContentContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 10rem;
+  }
+
   @media screen and (max-width: 480px) {
     margin-top: 8rem;
   }
+
+
 `;
 
 export const HeroHeadingContainer = styled.div`
@@ -181,7 +187,7 @@ export const HeroDownloadContainer = styled.div`
   color: white;
   gap: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     flex-flow: column;
     padding-bottom: 20px;
    

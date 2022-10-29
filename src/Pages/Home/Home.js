@@ -156,7 +156,7 @@ function Home() {
           name="description"
           content="A Hyper Realistic Racing Game, graced with tournaments, challenges and best of all Play and Earn."
         />
-        <link rel='canonical' href='https://beta-flamingwheelz.web.app/' />
+        <link rel='canonical' href='https://flamingwheelz.com/' />
       </Helmet>
       <HomeSection>
         {/* Hero */}
