@@ -422,6 +422,12 @@ export const NFTBtnContainer = styled.div`
   width: 100%;
   z-index: 1;
   padding-top: 30px;
+
+  @media screen  and (max-width: 900px) {
+    display: flex;
+  justify-content: center;
+  }
+  
 `;
 
 // The Cummunity
