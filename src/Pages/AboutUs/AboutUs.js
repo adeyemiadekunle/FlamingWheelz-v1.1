@@ -152,7 +152,7 @@ function AboutUs() {
       <meta
       name="description"
       content="Overview about FlamingWheelz, Hypatia Games and the Team"/>
-      <link rel='canonical' href='https://flamingwheelz.com/about' />
+      <link rel='canonical' href='https://flamingwheelz.com/#/about' />
     </Helmet>
       <StyledAbout>
         <FlamingSection>
