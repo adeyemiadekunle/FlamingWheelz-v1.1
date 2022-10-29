@@ -29,8 +29,6 @@ export const Container = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
-
   @media screen and (min-width: 1280px) {
     max-width: 1240px;
   }
@@ -46,7 +44,7 @@ export const TextUnderline = styled.span`
 
 // Home Section
 export const HomeSection = styled.main`
-  margin: auto;
+
 `;
 
 // Hero Section
@@ -56,17 +54,9 @@ export const HeroSection = styled.section`
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  height: 100vh;
-  margin-top: -5rem;
+  height: 100%;
   z-index: -1;
-
-  @media screen and (max-width: 900px) {
-    height: 70vh;
-  }
-
-  @media screen and (max-width: 480px) {
-   height: 100vh;
-  }
+  margin-top: -5rem;
 `;
 
 export const SectionBg = styled.div`
@@ -87,20 +77,12 @@ export const HeroSectionIMG = styled.img`
   position: absolute;
 `;
 
-export const HeroContentContainer = styled(motion.div)`
-  margin-top: 10rem;
+export const HeroContentContainer = styled.div`
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 10rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    margin-top: 8rem;
-  }
+  height: 100%;
 
 
 `;
@@ -148,9 +130,12 @@ export const HeroTextContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+  height: 100%;
 
   @media screen and (max-width: 768px) {
-    /* padding: 0 20px; */
+    
   }
 `;
 
@@ -186,10 +171,12 @@ export const HeroDownloadContainer = styled.div`
   background: rgba(11, 13, 23, 0.5);
   color: white;
   gap: 20px;
+  margin-top: 2.4rem;
+  width: 100%;
 
   @media screen and (max-width: 900px) {
     flex-flow: column;
-    padding-bottom: 20px;
+    margin-top: 1.5rem;
    
   }
 `;
@@ -339,7 +326,8 @@ export const NFTSection = styled.section`
   }
 
   @media screen and (min-width: 992px) {
-    height: 90vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 `;
 
@@ -515,7 +503,8 @@ export const Patner = styled.section`
   padding-bottom: 50px;
 
   @media screen and (min-width: 992px) {
-    height: 70vh;
+    padding-top: 120px;
+    padding-bottom:  130px;
   }
 `;
 
@@ -566,7 +555,8 @@ export const HGT = styled.section`
   }
 
   @media screen and (min-width: 992px) {
-    height: 90vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 `;
 
