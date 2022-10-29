@@ -244,8 +244,8 @@ function Home() {
                 <PrimaryButton
                   href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
                   target="_blank"
-                  // rel="noopener noreferrer"
-                  aria-label="Redirect to flamingwheelz overview"
+                  rel="noopener noreferrer"
+                  aria-label="flamingwheelz overview"
                 >
                   Learn More
                 </PrimaryButton>
@@ -379,7 +379,7 @@ function Home() {
                 <NormalButton
                   href="https://hypatia-games004s-organization.gitbook.io/flaming-book/nfts/game-economy"
                   target="_blank"
-                  // rel="noopener noreferrer"
+                  rel="noopener noreferrer"
                   aria-label="Redirect to HGT Tokenomics"
                 >
                   {' '}
@@ -451,7 +451,7 @@ function Home() {
             as="a"
             href="https://hypatia-games004s-organization.gitbook.io/flaming-book/our-token/roadmap"
             target="_blank"
-            // rel="noopener noreferrer"
+            rel="noopener noreferrer"
             aria-label="Redirect to flamingwheelz roadmap"
           >
             View detailed roadmaps
