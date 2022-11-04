@@ -304,7 +304,7 @@ function AboutUs() {
                   expanding the Hypatia Games Ecosystem.
                 </HypatiaText>
                 <FlamingbtnContainer>
-                  <PrimaryButton  href='https://hypatia-games004s-organization.gitbook.io/flaming-book/'
+                  <PrimaryButton  href=''
                    target="_blank"
                   //  rel="noopener noreferrer"
                    aria-label="Redirect to flamingwheelz whitepaper"

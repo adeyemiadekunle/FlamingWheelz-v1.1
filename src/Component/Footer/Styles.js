@@ -52,7 +52,7 @@ export const JoinCommunity = styled.div`
   padding-top: 50px 0px;
 
 
-  @media screen and (max-width: 756px) {
+  @media screen and (max-width: 900px) {
     flex-flow: column;
     justify-content: center;
   }

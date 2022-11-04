@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Section Overlay
 export const SectionOverlay = styled.div`
-  background: rgba(0, 0, 0, 0.47);
+  background: rgba(0, 0, 0, 0.77);
   bottom: 0;
   height: 100%;
   position: absolute;
@@ -29,6 +29,7 @@ export const Container = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
   @media screen and (min-width: 1280px) {
     max-width: 1240px;
   }
@@ -77,32 +78,30 @@ export const HeroSectionIMG = styled.img`
   position: absolute;
 `;
 
+
+
 export const HeroContentContainer = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-
-
 `;
 
 export const HeroHeadingContainer = styled.div`
-  z-index: 1;
-  max-width: 1280px;
-  margin: 0 auto;
   width: 100%;
 `;
 
-export const HeroHeading = styled.h1`
+export const HeroHeading = styled.h2`
   font-size: 5rem;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   color: white;
   padding-bottom: 20px;
 
   @media screen and (max-width: 900px) {
     font-size: 4rem;
+    text-align: center;
   }
 
   @media screen and (max-width: 480px) {
@@ -110,31 +109,34 @@ export const HeroHeading = styled.h1`
   }
 `;
 
-export const HeroHeadingh3 = styled.h3`
-  font-size: 1.8rem;
+export const HeroHeadingh3 = styled.h1`
+  font-size: 4rem;
   color: #33aaf5;
   padding-bottom: 10px;
-  text-align: center;
-  font-weight: 400;
+  text-align: left;
+  font-weight: 700;
 
-  @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
+  @media screen and (max-width: 900px) {
+    font-size: 3rem;
+    text-align: center;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 `;
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
-  max-width: 1000px;
-  margin: 0 auto;
+  /* max-width: 1000px; */
+  /* margin: 0 auto; */
   width: 100%;
   margin-bottom: 5rem;
   margin-top: 10rem;
   height: 100%;
 
+
   @media screen and (max-width: 768px) {
+
     
   }
 `;
@@ -143,12 +145,14 @@ export const HeroText = styled.p`
   font-size: 1.5rem;
   color: white;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   width: 100%;
+  max-width: 1000px;
 
   @media screen and (max-width: 900px) {
     padding-top: 30px;
     padding: 0 20px;
+    text-align: center;
   }
 
   @media screen and (max-width: 480px) {
@@ -725,6 +729,10 @@ export const ViewDetailRoadmap = styled.h2`
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 20px;
+
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 export const RoadmapTerms = styled.p`

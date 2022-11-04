@@ -69,6 +69,7 @@ import {
   ViewDetailRoadmap,
   RoadmapTerms,
   RoadMapHeading,
+  HeroHeadingh3,
 } from './styles';
 import {
   faGooglePlay,
@@ -176,14 +177,8 @@ function Home() {
             <Container>
               <HeroTextContainer>
                 <HeroHeadingContainer>
-                  {/* <HeroHeadingh3>
-                  Redefing Web3 Gaming Experience
-                </HeroHeadingh3> */}
-                  <HeroHeading>
-                    A Multi Chain
-                    <br />
-                    Fantasy Racing Game
-                  </HeroHeading>
+                  <HeroHeadingh3>A Multi Chain</HeroHeadingh3>
+                  <HeroHeading>Fantasy Racing Game</HeroHeading>
                 </HeroHeadingContainer>
 
                 <HeroText>
@@ -243,7 +238,7 @@ function Home() {
                 </AboutText>
                 <div>
                   <PrimaryButton
-                    href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="flamingwheelz overview"
@@ -378,7 +373,7 @@ function Home() {
               </HGTText>
               <HGTbtnContainer>
                 <NormalButton
-                  href="https://hypatia-games004s-organization.gitbook.io/flaming-book/nfts/game-economy"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Redirect to HGT Tokenomics"
@@ -450,7 +445,7 @@ function Home() {
 
           <ViewDetailRoadmap
             as="a"
-            href="https://hypatia-games004s-organization.gitbook.io/flaming-book/our-token/roadmap"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Redirect to flamingwheelz roadmap"
