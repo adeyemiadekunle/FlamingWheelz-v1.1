@@ -2,15 +2,17 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Container = styled.section`
-    color: white;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  color: white;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
-   
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 `;
 
@@ -26,15 +28,17 @@ export const StyledFooter = styled.footer`
 export const FooterContainer = styled.div`
   
     color: white;
-    max-width: 90%;
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-   
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
-   
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 
  
@@ -42,8 +46,8 @@ export const FooterContainer = styled.div`
 
 // Join the Community
 export const JoinCommunity = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
   width: 100%;
   display: flex;
   justify-content: space-between;

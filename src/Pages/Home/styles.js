@@ -25,13 +25,16 @@ export const SectionIMG = styled.img`
 
 export const Container = styled.section`
   color: white;
-  max-width: 90%;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 `;
 
@@ -131,7 +134,7 @@ export const HeroTextContainer = styled.div`
   /* margin: 0 auto; */
   width: 100%;
   margin-bottom: 5rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
   height: 100%;
 
 
@@ -175,12 +178,12 @@ export const HeroDownloadContainer = styled.div`
   background: rgba(11, 13, 23, 0.5);
   color: white;
   gap: 20px;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
   width: 100%;
 
   @media screen and (max-width: 900px) {
     flex-flow: column;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
    
   }
 `;

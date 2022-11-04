@@ -40,13 +40,16 @@ export const Button = styled(motion.button)`
 `;
 export const Container = styled.section`
   color: white;
-  max-width: 90%;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 `;
 
