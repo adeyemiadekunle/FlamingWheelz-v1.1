@@ -22,7 +22,7 @@ import {
   Container,
 } from './Styles';
 
-import Logo from '../../Image/Header/New_Logo_red.webp';
+import Logo from '../../Image/Header/latest_logo_red.webp';
 import {
   faTwitter,
   faDiscord,

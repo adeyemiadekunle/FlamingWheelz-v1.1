@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 // Global Style
 
 // Section Overlay
@@ -47,9 +46,7 @@ export const TextUnderline = styled.span`
 // End of Global
 
 // Home Section
-export const HomeSection = styled.main`
-
-`;
+export const HomeSection = styled.main``;
 
 // Hero Section
 export const HeroSection = styled.section`
@@ -80,8 +77,6 @@ export const HeroSectionIMG = styled.img`
   width: 100%;
   position: absolute;
 `;
-
-
 
 export const HeroContentContainer = styled.div`
   display: flex;
@@ -137,10 +132,7 @@ export const HeroTextContainer = styled.div`
   margin-top: 12rem;
   height: 100%;
 
-
   @media screen and (max-width: 768px) {
-
-    
   }
 `;
 
@@ -169,7 +161,6 @@ export const HeroLink = styled.span`
   font-weight: bold;
 `;
 
-
 export const HeroDownloadContainer = styled.div`
   padding: 20px;
   display: flex;
@@ -184,7 +175,6 @@ export const HeroDownloadContainer = styled.div`
   @media screen and (max-width: 900px) {
     flex-flow: column;
     margin-top: 1rem;
-   
   }
 `;
 
@@ -326,7 +316,6 @@ export const NFTSection = styled.section`
   position: relative;
   justify-content: right;
   align-items: right;
- 
 
   @media screen and (max-width: 900px) {
     text-align: center;
@@ -345,7 +334,6 @@ export const NFTContentCon = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-
 `;
 export const NFTHeadingContainer = styled.div`
   z-index: 1;
@@ -418,11 +406,10 @@ export const NFTBtnContainer = styled.div`
   z-index: 1;
   padding-top: 30px;
 
-  @media screen  and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
-  
 `;
 
 // The Cummunity
@@ -511,20 +498,34 @@ export const Patner = styled.section`
 
   @media screen and (min-width: 992px) {
     padding-top: 120px;
-    padding-bottom:  130px;
+    padding-bottom: 130px;
   }
 `;
 
 export const PatnerCon = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  @media screen and (max-width: 992px) {
+    gap: 50px;
+  }
+`;
+export const PatnerInnerCon = styled.div`
+  width: 50%;
+  height: auto;
+  /* border: 1px solid white; */
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 `;
 
 export const PatnerList = styled.img`
   width: 120px;
   height: 100%;
   margin: 10px;
+  max-width: 100%;
 
   @media screen and (max-width: 480px) {
     width: 100px;
@@ -535,14 +536,14 @@ export const PatnerListcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 40px;
   gap: 20px;
+  flex-wrap: wrap;
 `;
 
 export const PatnerHeading = styled.h2`
   color: #33aaf5;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 
 // HGT Token

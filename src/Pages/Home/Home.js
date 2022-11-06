@@ -51,6 +51,7 @@ import {
   // CommBtnContainer,
   Patner,
   PatnerCon,
+  PatnerInnerCon,
   PatnerList,
   PatnerHeading,
   PatnerListcon,
@@ -97,25 +98,10 @@ import Klever from '../../Image/Patner/Klever.webp';
 import KleverKid from '../../Image/Patner/KleverKid.webp';
 import Unreal from '../../Image/Patner/Unreal.webp';
 import Avax from '../../Image/Patner/Avax.webp';
-import Dragon from '../../Image/Patner/Dragon.webp';
 import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
 
-// Animate the Hero Section
-// const HeroVariants = {
-//   hidden: { opacity: 0, y: 50 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
 
-//     transition: {
-//       delay: 0.2,
-//       duration: 0.3,
-//       type: 'spring',
-//       stiffness: 100,
-//     },
-//   },
-// };
 
 function Home() {
   const Abouts = [
@@ -138,15 +124,16 @@ function Home() {
   ];
 
   const Patners = [
-    { id: 0, img: EpicGame, title: 'EpicGame' },
-    { id: 1, img: Klever, title: 'Klever' },
-    { id: 2, img: Unreal, title: 'Unreal' },
-    { id: 3, img: Pumpskin, title: 'Pumpskin' },
-    { id: 4, img: Avax, title: 'Avax' },
-    { id: 5, img: Dragon, title: 'Dragon' },
-    { id: 6, img: KleverKid, title: 'KleverKid' },
+    { id: 0, img: Pumpskin, title: 'Pumpskin' },
+    { id: 1, img: KleverKid, title: 'KleverKid' },
   ];
 
+  const PoweredBy = [
+    { id: 0, img: Klever, title: 'Klever' },
+    { id: 1, img: Unreal, title: 'Unreal' },
+    { id: 2, img: EpicGame, title: 'EpicGame' },
+    { id: 3, img: Avax, title: 'Avax' },
+  ]
   return (
     <>
       <Helmet>
@@ -339,23 +326,45 @@ function Home() {
         <Patner>
           <Container>
             <PatnerCon>
-              <div>
-                <PatnerHeading>Our Partner</PatnerHeading>
-              </div>
-              <PatnerListcon>
-                {Patners.map((patner) => (
-                  <PatnerList
-                    key={patner.id}
-                    src={patner.img}
-                    alt={patner.title}
-                    loading="lazy"
-                  />
-                ))}
-              </PatnerListcon>
+              <PatnerInnerCon>
+                <div>
+                  <PatnerHeading>Our Partner</PatnerHeading>
+                </div>
+                <PatnerListcon>
+                  {Patners.map((patner) => (
+                    <PatnerList
+                      key={patner.id}
+                      src={patner.img}
+                      alt={patner.title}
+                      loading="lazy"
+                    />
+                  ))}
+                </PatnerListcon>
+              </PatnerInnerCon>
+
+              <PatnerInnerCon>
+                <div>
+                  <PatnerHeading>Powered By</PatnerHeading>
+                </div>
+                <PatnerListcon>
+                  {PoweredBy.map((powered) => (
+                    <PatnerList
+                      key={powered.id}
+                      src={powered.img}
+                      alt={powered.title}
+                      loading="lazy"
+                    />
+                  ))}
+                </PatnerListcon>
+              </PatnerInnerCon>
+
             </PatnerCon>
           </Container>
         </Patner>
         {/* End of Patner */}
+
+
+
 
         {/* HGT Token */}
         <HGT>

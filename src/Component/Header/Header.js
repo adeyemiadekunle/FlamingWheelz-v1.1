@@ -22,7 +22,7 @@ import {
   StyledA,
 } from './styles';
 import { Link } from 'react-router-dom';
-import Logo from '../../Image/Header/New_Logo_red.webp';
+import Logo from '../../Image/Header/latest_logo_red.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import {
