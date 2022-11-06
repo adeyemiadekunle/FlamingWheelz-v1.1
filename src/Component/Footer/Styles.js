@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -107,6 +108,8 @@ export const StyledSocialLink = styled(FontAwesomeIcon)`
     font-size: 1.8rem;
   }
 `;
+
+
 export const SocialLinkCon = styled.div``;
 
 export const Row = styled.div`
@@ -195,6 +198,8 @@ export const Copyright = styled.div`
 export const Allrightreserved = styled.div`
   font-size: 80%;
   color: lightgrey;
+  display: flex;
+  gap: 10px;
 `;
 
 export const SocialLink = styled.span`
@@ -202,3 +207,7 @@ export const SocialLink = styled.span`
   font-size: 90%;
   padding-left: 10px;
 `;
+
+export const Links = styled(Link)`
+  color: lightgrey;
+  `
