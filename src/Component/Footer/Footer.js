@@ -7,30 +7,20 @@ import {
   Social,
   StyledSocialLink,
   SocialLinkCon,
-  FooterNavbar,
   FooterUnder,
   Copyright,
   Allrightreserved,
-  SocialLink,
-  FooterLogo,
-  LogoText,
-  ContactHeading,
-  ContactText,
-  Row,
-  Text,
   Links,
   Hr,
   Container,
 } from './Styles';
 
-import Logo from '../../Image/Header/latest_logo_red.webp';
 import {
   faTwitter,
   faDiscord,
   faTelegram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (

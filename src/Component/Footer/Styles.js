@@ -112,59 +112,7 @@ export const StyledSocialLink = styled(FontAwesomeIcon)`
 
 export const SocialLinkCon = styled.div``;
 
-export const Row = styled.div`
-  display: flex;
-  gap: 50px;
 
-  @media screen and (max-width: 756px) {
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-`;
-
-export const FooterNavbar = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-
-  
-  @media screen and (max-width: 756px) {
-    flex-flow: column;
-  }
-`;
-
-export const FooterLogo = styled.img`
-  width: 200px;
-  margin-left: -10px;
-  height: 50px;
-`;
-
-export const ContactHeading = styled.p`
-  color: white;
-  font-size: 90%;
-  padding-bottom: 10px;
-`;
-export const ContactText = styled.p`
-  font-size: 80%;
-`;
-
-export const Text = styled.p`
-  color: white;
-  display: block;
-  padding: 10px 0px;
-  font-size: 0.9rem;
-`;
-export const LogoText = styled.p`
-  color: white;
-  font-size: 0.6rem;
-  font-style: italic;
-  margin-top: -10px;
-`;
 
 // Under
 export const FooterUnder = styled.div`
@@ -202,11 +150,6 @@ export const Allrightreserved = styled.div`
   gap: 10px;
 `;
 
-export const SocialLink = styled.span`
-  color: lightgrey;
-  font-size: 90%;
-  padding-left: 10px;
-`;
 
 export const Links = styled(Link)`
   color: lightgrey;
