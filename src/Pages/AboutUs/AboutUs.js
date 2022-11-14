@@ -99,7 +99,7 @@ function AboutUs() {
       id: 3,
       ImgUrl: CMO,
       full_name: 'Egor Vaganov',
-      Job: 'Director of Communications and Chief Marketing Officer',
+      Job: 'Director of Communications & CMO',
       Social: {
         twitter: 'https://twitter.com/EgorVaganovv',
         instagram: '',
