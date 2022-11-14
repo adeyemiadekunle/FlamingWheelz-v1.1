@@ -54,6 +54,7 @@ import Advisor from '../../Image/Team/Advisor.webp';
 import FrontEndDeveloper from '../../Image/Team/Software Developer.webp';
 import GraphicDesigner from '../../Image/Team/Graphic Designer.webp';
 import SocialManager from '../../Image/Team/Social Manager.webp';
+import CMO from '../../Image/Team/CMO.webp'
 
 function AboutUs() {
   const TeamDatas = [
@@ -93,8 +94,23 @@ function AboutUs() {
         facebook: '',
       },
     },
+
     {
       id: 3,
+      ImgUrl: CMO,
+      full_name: 'Egor Vaganov',
+      Job: 'Director of Communications and Chief Marketing Officer',
+      Social: {
+        twitter: 'https://twitter.com/EgorVaganovv',
+        instagram: '',
+        linkedIn:
+          'https://www.linkedin.com/',
+        facebook: '',
+      },
+    },
+
+    {
+      id: 4,
       ImgUrl: Advisor,
       full_name: 'Fred Blake',
       Job: 'Advisor',
@@ -106,7 +122,7 @@ function AboutUs() {
       },
     },
     {
-      id: 4,
+      id: 5,
       ImgUrl: FrontEndDeveloper,
       full_name: 'Adeyemi Adekunle',
       Job: 'Software Developer',
@@ -119,7 +135,7 @@ function AboutUs() {
       },
     },
     {
-      id: 5,
+      id: 6,
       ImgUrl: GraphicDesigner,
       full_name: 'Kay Amire',
       Job: 'Graphic Designer',
@@ -131,7 +147,7 @@ function AboutUs() {
       },
     },
     {
-      id: 6,
+      id: 7,
       ImgUrl: SocialManager,
       full_name: 'Benamba B. Victor',
       Job: 'Social Manager',
@@ -143,6 +159,7 @@ function AboutUs() {
         facebook: '',
       },
     },
+   
   ];
 
   return (
