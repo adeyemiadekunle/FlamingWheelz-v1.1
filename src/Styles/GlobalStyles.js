@@ -1,12 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export default createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
-  }
  
 
   body {
@@ -14,14 +9,13 @@ export default createGlobalStyle`
     background: linear-gradient(to bottom right, #ff0033 0%, #0b0d17 60%);
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.2;
     -webkit-text-size-adjust: 100%;
-    
       
   }
 
   body, input, textarea, button {
-    font: 500 1rem 'Montserrat', sans-serif;
+    font: 500 1rem;
    
    
   }

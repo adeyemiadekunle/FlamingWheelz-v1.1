@@ -95,7 +95,7 @@ export const HeroHeading = styled.h2`
   text-align: left;
   font-weight: 700;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @media screen and (max-width: 900px) {
     font-size: 4rem;
@@ -110,7 +110,6 @@ export const HeroHeading = styled.h2`
 export const HeroHeadingh3 = styled.h1`
   font-size: 4rem;
   color: #33aaf5;
-  padding-bottom: 10px;
   text-align: left;
   font-weight: 700;
 
@@ -125,21 +124,20 @@ export const HeroHeadingh3 = styled.h1`
 
 export const HeroTextContainer = styled.div`
   z-index: 1;
-  /* max-width: 1000px; */
-  /* margin: 0 auto; */
   width: 100%;
   margin-bottom: 5rem;
   margin-top: 12rem;
   height: 100%;
 
   @media screen and (max-width: 768px) {
+    margin-bottom: 4rem;
   }
 `;
 
 export const HeroText = styled.p`
   font-size: 1.5rem;
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: left;
   width: 100%;
   max-width: 1000px;
@@ -148,6 +146,7 @@ export const HeroText = styled.p`
     padding-top: 30px;
     padding: 0 20px;
     text-align: center;
+    line-height: 1.5;
   }
 
   @media screen and (max-width: 480px) {
@@ -174,8 +173,13 @@ export const HeroDownloadContainer = styled.div`
 
   @media screen and (max-width: 900px) {
     flex-flow: column;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 0rem;
+  }
+
 `;
 
 export const HeroDownloadLinkCon = styled.div`
@@ -269,7 +273,7 @@ export const AboutHeadingh3 = styled.p`
 `;
 
 export const AboutText = styled.p`
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 2.5rem;
   font-weight: bold;
   padding-top: 20px;
@@ -281,7 +285,7 @@ export const AboutText = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.4;
     width: 100%;
   }
 `;
@@ -316,15 +320,12 @@ export const NFTSection = styled.section`
   position: relative;
   justify-content: right;
   align-items: right;
+  height: 600px;
 
   @media screen and (max-width: 900px) {
     text-align: center;
   }
 
-  @media screen and (min-width: 992px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 `;
 
 export const NFTContentCon = styled.div`
@@ -368,7 +369,7 @@ export const NFTTextContainer = styled.div`
 
 export const NFTTextRap = styled.div`
   color: white;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: left;
   margin-bottom: 20px;
 
@@ -381,14 +382,14 @@ export const NFTTextRap = styled.div`
 export const NFTText = styled.p`
   font-size: 2.5rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @media screen and (max-width: 900px) {
     font-size: 2.2rem;
   }
   @media screen and (max-width: 480px) {
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.4;
   } ;
 `;
 
@@ -556,15 +557,16 @@ export const HGT = styled.section`
   padding-bottom: 60px;
   justify-content: center;
   align-items: center;
-  background: #0b0d17;
+  height: 600px;
+
+  
 
   @media screen and (max-width: 900px) {
     justify-content: center;
   }
 
-  @media screen and (min-width: 992px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  @media screen and (max-width: 480px) {
+    height: 500px;
   }
 `;
 
@@ -611,7 +613,7 @@ export const HGTText = styled.p`
   font-size: 2.5rem;
   color: #fff;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: bold;
 
   @media screen and (max-width: 900px) {
@@ -620,7 +622,7 @@ export const HGTText = styled.p`
 
   @media screen and (max-width: 480px) {
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 `;
 

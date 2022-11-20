@@ -321,7 +321,7 @@ function AboutUs() {
                   expanding the Hypatia Games Ecosystem.
                 </HypatiaText>
                 <FlamingbtnContainer>
-                  <PrimaryButton  href=''
+                  <PrimaryButton  href='https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk'
                    target="_blank"
                   //  rel="noopener noreferrer"
                    aria-label="Redirect to flamingwheelz whitepaper"
@@ -337,7 +337,7 @@ function AboutUs() {
         <StyledTeam>
           <TeamHeadingCon>
             <TeamHeadingh3>
-              Meet the Team Behind Hypatia Games
+              The Team Behind Hypatia Games
             </TeamHeadingh3>
           </TeamHeadingCon>
           <TeamContainer>

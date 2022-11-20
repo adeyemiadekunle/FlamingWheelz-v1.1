@@ -10,7 +10,7 @@ font-size: 1.2rem;
 
 
 @media screen  and (max-width: 900px){
- width: 650px;
+ width: 600px;
     
 };
 

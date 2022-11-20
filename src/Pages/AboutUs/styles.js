@@ -29,7 +29,7 @@ export const Button = styled(motion.button)`
 
       &:hover {
         border: 2px solid #ff0033;
-        transition: all 0.2s;
+        transition: {duration: 0.2};
         background: transparent;
       }
       /* @media screen and (max-width: 480px) {
@@ -38,6 +38,8 @@ export const Button = styled(motion.button)`
       } */
     `};
 `;
+
+
 export const Container = styled.section`
   color: white;
   max-width: 95%;
@@ -128,7 +130,7 @@ export const FlamingTextContainer = styled.div`
 `;
 
 export const FlamingHeadingh2 = styled.h2`
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: left;
   font-weight: bold;
   color: #f3f3f3;
@@ -140,13 +142,13 @@ export const FlamingHeadingh2 = styled.h2`
 `;
 
 export const FlamingText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #fff;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -252,13 +254,13 @@ export const HypatiaHeadingh2 = styled.h2`
 `;
 
 export const HypatiaText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #fff;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @media screen and (max-width: 480px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -319,13 +321,13 @@ export const FeatureHeadingh2 = styled.h2`
 `;
 
 export const FeatureText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #fff;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @media screen and (max-width: 480px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 

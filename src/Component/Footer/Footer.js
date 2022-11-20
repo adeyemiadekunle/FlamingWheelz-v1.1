@@ -26,6 +26,8 @@ function Footer() {
   return (
     <>
       <StyledFooter>
+        <div className="footer_bg"
+        ></div>
         <FooterContainer>
           <JoinCommunity>
             <div>
@@ -73,10 +75,10 @@ function Footer() {
             </Social>
           </JoinCommunity>
 
-
-          <Hr></Hr>
+  
         </FooterContainer>
         <Container>
+        <Hr></Hr>
           <FooterUnder>
             <Copyright>
               @2022 FlamingWheelz | Powered by Hypatia Games
@@ -85,6 +87,7 @@ function Footer() {
               <p>All Rights Reserved</p>
               <Links to='/about'>About Us</Links>
               <Links to='/about'>Team</Links>
+              <a href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Whitepaper</a>
             </Allrightreserved>
           </FooterUnder>
         </Container>

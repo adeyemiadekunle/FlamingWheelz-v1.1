@@ -29,14 +29,12 @@ export const Team = ({
   return (
     <TeamCard
       whileHover={{
-        scale: 1.02,
-        transition: 0.3,
-        border: 'solid #ff0033',
+        scale: 1.01,
+        transition: { duration: 0.2 },
       }}
       whileTap={{
         scale: 0.9,
-        transition: 0.3,
-        border: 'solid #ff0033',
+        transition: { duration: 0.2 },
       }}
     >
       <TeamInfo>

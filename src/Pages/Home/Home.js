@@ -100,6 +100,8 @@ import Unreal from '../../Image/Patner/Unreal.webp';
 import Avax from '../../Image/Patner/Avax.webp';
 import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
+import HumbleCat from '../../Image/Patner/HumbleCat.webp';
+import Rockpaper from '../../Image/Patner/Rockpaper.webp';
 
 
 
@@ -124,14 +126,17 @@ function Home() {
   ];
 
   const Patners = [
-    { id: 0, img: Pumpskin, title: 'Pumpskin' },
-    { id: 1, img: KleverKid, title: 'KleverKid' },
+  
+    { id: 0, img: KleverKid, title: 'KleverKid' },
+    { id: 1, img: HumbleCat, title: 'HumbleCat' },
+    { id: 2, img: Rockpaper, title: 'Rockpaper' },
+    { id: 3, img: Pumpskin, title: 'Pumpskin' },
   ];
 
   const PoweredBy = [
     { id: 0, img: Klever, title: 'Klever' },
     { id: 1, img: Unreal, title: 'Unreal' },
-    { id: 2, img: EpicGame, title: 'EpicGame' },
+    { id: 2, img: EpicGame, title:'EpicGame' },
     { id: 3, img: Avax, title: 'Avax' },
   ]
   return (
@@ -368,8 +373,7 @@ function Home() {
 
         {/* HGT Token */}
         <HGT>
-          <SectionBg></SectionBg>
-          {/* <SectionOverlay></SectionOverlay> */}
+          <div className='HGT_bg'></div>
           <Container>
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>
@@ -382,7 +386,7 @@ function Home() {
               </HGTText>
               <HGTbtnContainer>
                 <NormalButton
-                  href=""
+                  href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Redirect to HGT Tokenomics"
@@ -454,7 +458,7 @@ function Home() {
 
           <ViewDetailRoadmap
             as="a"
-            href=""
+            href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Redirect to flamingwheelz roadmap"
