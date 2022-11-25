@@ -516,31 +516,33 @@ export const PatnerCon = styled.div`
 export const PatnerInnerCon = styled.div`
   width: 50%;
   height: auto;
-  /* border: 1px solid white; */
   @media screen and (max-width: 992px) {
     width: 100%;
   }
 `;
 
-export const PatnerList = styled.img`
-  width: 120px;
-  height: 100%;
-  margin: 10px;
-  max-width: 100%;
-
-  @media screen and (max-width: 480px) {
-    width: 100px;
-  }
-`;
-
 export const PatnerListcon = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 40px;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 20px 10px;
 `;
+
+export const PatnerList = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+
+  // @media screen and (max-width: 480px) {
+  //   width: 100px;
+  // }
+`;
+
 
 export const PatnerHeading = styled.h2`
   color: #33aaf5;

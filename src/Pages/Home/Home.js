@@ -102,6 +102,7 @@ import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
 import HumbleCat from '../../Image/Patner/HumbleCat.webp';
 import Rockpaper from '../../Image/Patner/Rockpaper.webp';
+import LuckyUnicorn from '../../Image/Patner/Lucky_Unicorn.webp';
 
 
 
@@ -131,6 +132,7 @@ function Home() {
     { id: 1, img: HumbleCat, title: 'HumbleCat' },
     { id: 2, img: Rockpaper, title: 'Rockpaper' },
     { id: 3, img: Pumpskin, title: 'Pumpskin' },
+    { id: 4, img: LuckyUnicorn, title: 'LuckyUnicorn' },
   ];
 
   const PoweredBy = [
@@ -337,12 +339,12 @@ function Home() {
                 </div>
                 <PatnerListcon>
                   {Patners.map((patner) => (
-                    <PatnerList
-                      key={patner.id}
-                      src={patner.img}
-                      alt={patner.title}
-                      loading="lazy"
-                    />
+                    <div className='image_container'><PatnerList
+                    key={patner.id}
+                    src={patner.img}
+                    alt={patner.title}
+                    loading="lazy"
+                  /></div>  
                   ))}
                 </PatnerListcon>
               </PatnerInnerCon>
@@ -353,12 +355,13 @@ function Home() {
                 </div>
                 <PatnerListcon>
                   {PoweredBy.map((powered) => (
-                    <PatnerList
-                      key={powered.id}
-                      src={powered.img}
-                      alt={powered.title}
-                      loading="lazy"
-                    />
+                    <div className='image_container'> <PatnerList
+                    key={powered.id}
+                    src={powered.img}
+                    alt={powered.title}
+                    loading="lazy"
+                  /></div>
+                   
                   ))}
                 </PatnerListcon>
               </PatnerInnerCon>
