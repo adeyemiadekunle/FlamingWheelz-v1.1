@@ -44,7 +44,7 @@ function Header() {
   const Menu = () => {
     return(
       <nav>
-        <StyledLink to="/" end onClick={closeMenu}>HOME</StyledLink>
+        <StyledLink to="/" end='true' onClick={closeMenu}>HOME</StyledLink>
         <StyledLink to="/about" onClick={closeMenu}>ABOUT</StyledLink>
         <StyledLink to="/event" onClick={closeMenu}>EVENT</StyledLink>
         <StyledA as='a' href='https://www.klevernft.com/marketplace/FWZG-2Y4P?page=1' target="_blank"

@@ -100,7 +100,6 @@ import Unreal from '../../Image/Patner/Unreal.webp';
 import Avax from '../../Image/Patner/Avax.webp';
 import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
-import HumbleCat from '../../Image/Patner/HumbleCat.webp';
 import Rockpaper from '../../Image/Patner/Rockpaper.webp';
 import LuckyUnicorn from '../../Image/Patner/Lucky_Unicorn.webp';
 
@@ -129,10 +128,9 @@ function Home() {
   const Patners = [
   
     { id: 0, img: KleverKid, title: 'KleverKid' },
-    { id: 1, img: HumbleCat, title: 'HumbleCat' },
-    { id: 2, img: Rockpaper, title: 'Rockpaper' },
-    { id: 3, img: Pumpskin, title: 'Pumpskin' },
-    { id: 4, img: LuckyUnicorn, title: 'LuckyUnicorn' },
+    { id: 1, img: Rockpaper, title: 'Rockpaper' },
+    { id: 2, img: Pumpskin, title: 'Pumpskin' },
+    { id: 3, img: LuckyUnicorn, title: 'LuckyUnicorn' },
   ];
 
   const PoweredBy = [

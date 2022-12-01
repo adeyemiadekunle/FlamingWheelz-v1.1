@@ -1,5 +1,6 @@
 import { Team } from '../../Component/Team/Team';
 import { Helmet } from 'react-helmet-async';
+import lozad from 'lozad';
 import {  PrimaryButton } from '../../Component/Button/Button';
 import {
 
@@ -57,6 +58,9 @@ import SocialManager from '../../Image/Team/Social Manager.webp';
 import CMO from '../../Image/Team/CMO.webp'
 
 function AboutUs() {
+  const observer = lozad();
+  observer.observe();
+
   const TeamDatas = [
     {
       id: 0,
@@ -175,11 +179,11 @@ function AboutUs() {
         <FlamingSection>
           <SectionBg>
             <FlamingSectionIMG
+              className="lozad"
               sizes="(max-width: 1400px) 100vw, 1400px"
               src={`${Flaming_1400}`}
               srcSet={`${Flaming_437} 437w, ${Flaming_632} 632w, ${Flaming_815} 815w, ${Flaming_1013} 1013w, ${Flaming_1275} 1275w, ${Flaming_1400} 1400w`}
               alt="A gaming car"
-              loading="eager"
             ></FlamingSectionIMG>
           </SectionBg>
           <SectionOverlay></SectionOverlay>
@@ -284,7 +288,8 @@ function AboutUs() {
           {/* <HypatiaSectionbg></HypatiaSectionbg> */}
           <SectionBg>
             <HypatiaSectionIMG
-              src={`${Hypatia_1040}`}
+              className="lozad"
+              datasrc={`${Hypatia_1040}`}
               sizes="(max-width: 1040px) 100vw, 1040px"
               srcSet={`${Hypatia_200} 200w, ${Hypatia_793} 793w, ${Hypatia_1040} 1040w`}
               alt="Xbox_Keypad"
