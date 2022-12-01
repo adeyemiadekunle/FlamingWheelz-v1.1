@@ -60,7 +60,7 @@ export const Head = styled.header`
 
 export const NavContainer = styled.nav`
   color: white;
-  max-width: 90%;
+  max-width: 98%;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -69,8 +69,8 @@ export const NavContainer = styled.nav`
   align-items: center;
   padding-top: 10px;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
+  @media screen and (max-width: 768px) {
+    max-width: 94%;
   }
 `;
 
@@ -176,8 +176,9 @@ export const CloseMenu = styled.div`
   cursor: pointer;
   position: relative;
   font-size: 2rem;
-  padding-right: 5px;
-  padding-top: 6px;
+  /* padding-right: 2px; */
+  padding-top: 10px;
+
 `;
 
 export const SideMenuOverlay = styled.div`

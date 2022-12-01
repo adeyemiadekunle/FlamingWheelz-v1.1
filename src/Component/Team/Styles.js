@@ -11,10 +11,11 @@ export const TeamCard = styled(motion.div)`
 `;
 
 export const TeamInfo = styled.div`
-  padding: 50px 50px 22px;
+  padding: 40px 40px 22px;
   text-align: center;
   color: white;
-`;
+
+`
 
 export const ImgHolder = styled.div`
   width: 100%;
@@ -43,8 +44,9 @@ export const TeamName = styled.h3`
 export const TeamDesc = styled.h4`
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: lightgrey;
+  white-space: nowrap;
 `;
 
 export const TeamSocial = styled.div`

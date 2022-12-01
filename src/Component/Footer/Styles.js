@@ -1,40 +1,48 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export const Container = styled.section`
-    color: white;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
-   
+export const Container = styled.section`
+  color: white;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 `;
 
 export const StyledFooter = styled.footer`
   color: white;
-
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  height: auto;
 `;
 
+
+
 export const FooterContainer = styled.div`
-  
     color: white;
-    max-width: 90%;
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-   
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1240px;
-   
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
   }
 
  
@@ -42,19 +50,17 @@ export const FooterContainer = styled.div`
 
 // Join the Community
 export const JoinCommunity = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-  padding-top: 50px 0px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 
-
-  @media screen and (max-width: 756px) {
+  @media screen and (max-width: 900px) {
     flex-flow: column;
-    justify-content: center;
+    justify-content: left;
+    margin-bottom: 0;
   }
 `;
 
@@ -88,7 +94,7 @@ export const Social = styled.div`
   gap: 30px;
   padding: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
     width: 100%;
     justify-content: flex-start;
   }
@@ -103,61 +109,11 @@ export const StyledSocialLink = styled(FontAwesomeIcon)`
     font-size: 1.8rem;
   }
 `;
+
+
 export const SocialLinkCon = styled.div``;
 
-export const Row = styled.div`
-  display: flex;
-  gap: 50px;
 
-  @media screen and (max-width: 756px) {
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
-`;
-
-export const FooterNavbar = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-
-  
-  @media screen and (max-width: 756px) {
-    flex-flow: column;
-  }
-`;
-
-export const FooterLogo = styled.img`
-  width: 200px;
-  margin-left: -10px;
-  height: 50px;
-`;
-
-export const ContactHeading = styled.p`
-  color: white;
-  font-size: 90%;
-  padding-bottom: 10px;
-`;
-export const ContactText = styled.p`
-  font-size: 80%;
-`;
-
-export const Text = styled.p`
-  color: white;
-  display: block;
-  padding: 10px 0px;
-  font-size: 0.9rem;
-`;
-export const LogoText = styled.p`
-  color: white;
-  font-size: 0.6rem;
-  font-style: italic;
-  margin-top: -10px;
-`;
 
 // Under
 export const FooterUnder = styled.div`
@@ -181,6 +137,10 @@ export const Hr = styled.hr`
   margin-top: 4rem;
   opacity: 0.5;
   border-top: 0.5px solid rgba(255, 255, 255, 0.2);
+
+  @media screen and (max-width: 420px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const Copyright = styled.div`
@@ -191,10 +151,11 @@ export const Copyright = styled.div`
 export const Allrightreserved = styled.div`
   font-size: 80%;
   color: lightgrey;
+  display: flex;
+  gap: 10px;
 `;
 
-export const SocialLink = styled.span`
+
+export const Links = styled(Link)`
   color: lightgrey;
-  font-size: 90%;
-  padding-left: 10px;
-`;
+  `

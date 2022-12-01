@@ -7,22 +7,14 @@ import {
   Social,
   StyledSocialLink,
   SocialLinkCon,
-  FooterNavbar,
   FooterUnder,
   Copyright,
   Allrightreserved,
-  SocialLink,
-  FooterLogo,
-  LogoText,
-  ContactHeading,
-  ContactText,
-  Row,
-  Text,
+  Links,
   Hr,
   Container,
 } from './Styles';
 
-import Logo from '../../Image/Header/New_Logo_red.webp';
 import {
   faTwitter,
   faDiscord,
@@ -34,6 +26,8 @@ function Footer() {
   return (
     <>
       <StyledFooter>
+        <div className="footer_bg"
+        ></div>
         <FooterContainer>
           <JoinCommunity>
             <div>
@@ -74,77 +68,26 @@ function Footer() {
                 <StyledSocialLink icon={faTelegram} />
               </SocialLinkCon>
               <SocialLinkCon as="a" href="#"
-              aria-label="Redirect to flamingwheelz youtube">
-              
+                aria-label="Redirect to flamingwheelz youtube">
+
                 <StyledSocialLink icon={faYoutube} />
               </SocialLinkCon>
             </Social>
           </JoinCommunity>
 
-          <FooterNavbar>
-            <div>
-              <FooterLogo src={Logo} alt="FlamingWheelz Logo" />
-              <LogoText> Developed by Hypatia Games</LogoText>
-            </div>
-
-            <Row>
-              <div>
-                <Text >About Us</Text>
-                <Text >FAQ</Text>
-                <Text >Whitepaper</Text>
-              </div>
-              <div>
-                <Text >Roadmap</Text>
-                <Text >Download</Text>
-                <Text >Terms of use</Text>
-              </div>
-              <div>
-                <Text >Team</Text>
-                <Text >Career</Text>
-                <Text >Private Policy</Text>
-              </div>
-            </Row>
-            <div>
-              <ContactHeading>CONTACT US</ContactHeading>
-              <ContactText>hello@hypatiagames.net</ContactText>
-            </div>
-          </FooterNavbar>
-          <Hr></Hr>
+  
         </FooterContainer>
         <Container>
+        <Hr></Hr>
           <FooterUnder>
             <Copyright>
               @2022 FlamingWheelz | Powered by Hypatia Games
             </Copyright>
             <Allrightreserved>
-              All Rights Reserved
-              <SocialLink
-                as="a"
-                href="https://twitter.com/FlmnWheelzAlpha"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Redirect to flamingwheelz twitter"
-              >
-                Twitter
-              </SocialLink>
-              <SocialLink
-                as="a"
-                href="https://discord.com/invite/v5R6Cf5NGW"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Redirect to flamingwheelz discord"
-              >
-                Discord
-              </SocialLink>
-              <SocialLink
-                as="a"
-                href="https://t.me/Hypatiatokenofficial"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Redirect to flamingwheelz telegram"
-              >
-                Telegram
-              </SocialLink>
+              <p>All Rights Reserved</p>
+              <Links to='/about'>About Us</Links>
+              <Links to='/about'>Team</Links>
+              <a href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Whitepaper</a>
             </Allrightreserved>
           </FooterUnder>
         </Container>

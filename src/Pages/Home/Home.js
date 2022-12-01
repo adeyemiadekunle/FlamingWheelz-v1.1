@@ -51,6 +51,7 @@ import {
   // CommBtnContainer,
   Patner,
   PatnerCon,
+  PatnerInnerCon,
   PatnerList,
   PatnerHeading,
   PatnerListcon,
@@ -69,6 +70,7 @@ import {
   ViewDetailRoadmap,
   RoadmapTerms,
   RoadMapHeading,
+  HeroHeadingh3,
 } from './styles';
 import {
   faGooglePlay,
@@ -96,25 +98,12 @@ import Klever from '../../Image/Patner/Klever.webp';
 import KleverKid from '../../Image/Patner/KleverKid.webp';
 import Unreal from '../../Image/Patner/Unreal.webp';
 import Avax from '../../Image/Patner/Avax.webp';
-import Dragon from '../../Image/Patner/Dragon.webp';
 import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
+import Rockpaper from '../../Image/Patner/Rockpaper.webp';
+import LuckyUnicorn from '../../Image/Patner/Lucky_Unicorn.webp';
 
-// Animate the Hero Section
-// const HeroVariants = {
-//   hidden: { opacity: 0, y: 50 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
 
-//     transition: {
-//       delay: 0.2,
-//       duration: 0.3,
-//       type: 'spring',
-//       stiffness: 100,
-//     },
-//   },
-// };
 
 function Home() {
   const Abouts = [
@@ -137,15 +126,19 @@ function Home() {
   ];
 
   const Patners = [
-    { id: 0, img: EpicGame, title: 'EpicGame' },
-    { id: 1, img: Klever, title: 'Klever' },
-    { id: 2, img: Unreal, title: 'Unreal' },
-    { id: 3, img: Pumpskin, title: 'Pumpskin' },
-    { id: 4, img: Avax, title: 'Avax' },
-    { id: 5, img: Dragon, title: 'Dragon' },
-    { id: 6, img: KleverKid, title: 'KleverKid' },
+  
+    { id: 0, img: KleverKid, title: 'KleverKid' },
+    { id: 1, img: Rockpaper, title: 'Rockpaper' },
+    { id: 2, img: Pumpskin, title: 'Pumpskin' },
+    { id: 3, img: LuckyUnicorn, title: 'LuckyUnicorn' },
   ];
 
+  const PoweredBy = [
+    { id: 0, img: Klever, title: 'Klever' },
+    { id: 1, img: Unreal, title: 'Unreal' },
+    { id: 2, img: EpicGame, title:'EpicGame' },
+    { id: 3, img: Avax, title: 'Avax' },
+  ]
   return (
     <>
       <Helmet>
@@ -176,14 +169,8 @@ function Home() {
             <Container>
               <HeroTextContainer>
                 <HeroHeadingContainer>
-                  {/* <HeroHeadingh3>
-                  Redefing Web3 Gaming Experience
-                </HeroHeadingh3> */}
-                  <HeroHeading>
-                    A Multi Chain
-                    <br />
-                    Fantasy Racing Game
-                  </HeroHeading>
+                  <HeroHeadingh3>A Multi Chain</HeroHeadingh3>
+                  <HeroHeading>Fantasy Racing Game</HeroHeading>
                 </HeroHeadingContainer>
 
                 <HeroText>
@@ -243,7 +230,7 @@ function Home() {
                 </AboutText>
                 <div>
                   <PrimaryButton
-                    href="https://hypatia-games004s-organization.gitbook.io/flaming-book/hypatia-games/introduction"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="flamingwheelz overview"
@@ -344,28 +331,50 @@ function Home() {
         <Patner>
           <Container>
             <PatnerCon>
-              <div>
-                <PatnerHeading>Our Partner</PatnerHeading>
-              </div>
-              <PatnerListcon>
-                {Patners.map((patner) => (
-                  <PatnerList
+              <PatnerInnerCon>
+                <div>
+                  <PatnerHeading>Our Partner</PatnerHeading>
+                </div>
+                <PatnerListcon>
+                  {Patners.map((patner) => (
+                    <div className='image_container'><PatnerList
                     key={patner.id}
                     src={patner.img}
                     alt={patner.title}
                     loading="lazy"
-                  />
-                ))}
-              </PatnerListcon>
+                  /></div>  
+                  ))}
+                </PatnerListcon>
+              </PatnerInnerCon>
+
+              <PatnerInnerCon>
+                <div>
+                  <PatnerHeading>Powered By</PatnerHeading>
+                </div>
+                <PatnerListcon>
+                  {PoweredBy.map((powered) => (
+                    <div className='image_container'> <PatnerList
+                    key={powered.id}
+                    src={powered.img}
+                    alt={powered.title}
+                    loading="lazy"
+                  /></div>
+                   
+                  ))}
+                </PatnerListcon>
+              </PatnerInnerCon>
+
             </PatnerCon>
           </Container>
         </Patner>
         {/* End of Patner */}
 
+
+
+
         {/* HGT Token */}
         <HGT>
-          <SectionBg></SectionBg>
-          {/* <SectionOverlay></SectionOverlay> */}
+          <div className='HGT_bg'></div>
           <Container>
             <HGTTextContainer className="headingCon">
               <HGTHeadingh2>
@@ -378,7 +387,7 @@ function Home() {
               </HGTText>
               <HGTbtnContainer>
                 <NormalButton
-                  href="https://hypatia-games004s-organization.gitbook.io/flaming-book/nfts/game-economy"
+                  href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Redirect to HGT Tokenomics"
@@ -450,7 +459,7 @@ function Home() {
 
           <ViewDetailRoadmap
             as="a"
-            href="https://hypatia-games004s-organization.gitbook.io/flaming-book/our-token/roadmap"
+            href="https://drive.google.com/file/d/1ckKJOHqoJ78vbjRWFqgPpqytjs2svUxx/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Redirect to flamingwheelz roadmap"
