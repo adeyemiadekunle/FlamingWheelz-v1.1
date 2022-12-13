@@ -93,7 +93,6 @@ import Play_NFT_1388 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1388.we
 import Play_NFT_1400 from '../../Image/PlayNFT/Play-NFT_lzfu8b_c_scale,w_1400.webp';
 
 import Card from '../../Component/Card/Card';
-// import NewsCard from '../../Component/News/NewCard';
 import Klever from '../../Image/Patner/Klever.webp';
 import KleverKid from '../../Image/Patner/KleverKid.webp';
 import Unreal from '../../Image/Patner/Unreal.webp';
@@ -102,6 +101,7 @@ import EpicGame from '../../Image/Patner/Epicgame.webp';
 import Pumpskin from '../../Image/Patner/pumpskin.webp';
 import Rockpaper from '../../Image/Patner/Rockpaper.webp';
 import LuckyUnicorn from '../../Image/Patner/Lucky_Unicorn.webp';
+import NFT_Kult from '../../Image/Patner/NFT-KULT.webp';
 
 
 
@@ -131,6 +131,7 @@ function Home() {
     { id: 1, img: Rockpaper, title: 'Rockpaper' },
     { id: 2, img: Pumpskin, title: 'Pumpskin' },
     { id: 3, img: LuckyUnicorn, title: 'LuckyUnicorn' },
+    { id: 4, img: NFT_Kult, title: 'NFT_Kult' },
   ];
 
   const PoweredBy = [
