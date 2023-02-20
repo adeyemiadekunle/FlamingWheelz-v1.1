@@ -55,7 +55,7 @@ import Advisor from '../../Image/Team/Advisor.webp';
 import FrontEndDeveloper from '../../Image/Team/Software Developer.webp';
 import GraphicDesigner from '../../Image/Team/Graphic Designer.webp';
 import SocialManager from '../../Image/Team/Social Manager.webp';
-import CMO from '../../Image/Team/CMO.webp'
+import CMO from '../../Image/Team/CMO.webp';
 
 function AboutUs() {
   const observer = lozad();
@@ -102,13 +102,13 @@ function AboutUs() {
     {
       id: 3,
       ImgUrl: CMO,
-      full_name: 'Egor Vaganov',
-      Job: 'Director of Communications & CMO',
+      full_name: 'Charly Azzi',
+      Job: 'CMO & Advisor',
       Social: {
-        twitter: 'https://twitter.com/EgorVaganovv',
+        twitter: 'https://twitter.com/chrlyaz?t=sGXMIo_AVhAw5PKUJi5jzQ&s=09',
         instagram: '',
         linkedIn:
-          'https://www.linkedin.com/',
+          'https://www.linkedin.com/in/charly-azzi-59a526217',
         facebook: '',
       },
     },
