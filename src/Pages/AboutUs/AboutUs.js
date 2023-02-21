@@ -275,7 +275,7 @@ function AboutUs() {
                     </FeatureLists>
                     <FeatureLists>
                       {' '}
-                      Develop on KleverChain and Avax Network.
+                      Develop on Multichain platform.
                     </FeatureLists>
                   </ul>
                 </FeatureText>
