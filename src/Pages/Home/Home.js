@@ -102,6 +102,9 @@ import Pumpskin from '../../Image/Patner/pumpskin.webp';
 import Rockpaper from '../../Image/Patner/Rockpaper.webp';
 import LuckyUnicorn from '../../Image/Patner/Lucky_Unicorn.webp';
 import NFT_Kult from '../../Image/Patner/NFT-KULT.webp';
+import Myria from '../../Image/Patner/Myria.webp';
+import VezaNFT from '../../Image/Patner/VezaNFT.webp';
+import MobilityGood from '../../Image/Patner/MobilityGood.webp';
 
 
 
@@ -132,13 +135,16 @@ function Home() {
     { id: 2, img: Pumpskin, title: 'Pumpskin' },
     { id: 3, img: LuckyUnicorn, title: 'LuckyUnicorn' },
     { id: 4, img: NFT_Kult, title: 'NFT_Kult' },
+    { id: 5, img: MobilityGood, title: 'MobilityGood' },
+    { id: 6, img: VezaNFT, title: 'VezaNFT' },
   ];
 
   const PoweredBy = [
     { id: 0, img: Klever, title: 'Klever' },
-    { id: 1, img: Unreal, title: 'Unreal' },
-    { id: 2, img: EpicGame, title:'EpicGame' },
-    { id: 3, img: Avax, title: 'Avax' },
+    { id: 1, img: EpicGame, title:'EpicGame' },
+    { id: 2, img: Avax, title: 'Avax' },
+    { id: 3, img: Myria, title: 'Myria' },
+    { id: 4, img: Unreal, title: 'Unreal' },
   ]
   return (
     <>

@@ -536,6 +536,7 @@ export const PatnerList = styled.img`
   height: 100%;
   object-fit: contain;
   object-position: center;
+  filter: grayscale(100%);
 
 
   // @media screen and (max-width: 480px) {
